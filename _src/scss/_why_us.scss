@@ -1,0 +1,44 @@
+.why_us{
+    height: 704px;
+    padding: 75px 0 90px;
+    background: url(../img/why-choose-us.png) 0% 100%/33%, $accent;
+    background-size: 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+
+    h3{
+        color: $text-white;
+        margin-bottom: 3rem;
+    }
+
+    h4{
+        font-size: 24px;
+        font-weight: 700;
+        color: $text-white;
+    }
+
+    p{
+        font-size: 14px;
+        color: $text-white;
+    }
+
+    ul{
+        li{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            min-height: 8rem;
+
+            div{
+                width: 89%;
+                margin-left: 1.2rem;
+            }
+        }
+    }
+
+    .bg-limon{
+        width: 65px;
+        height: 65px;
+    }
+
+}

@@ -1,0 +1,23 @@
+.statistics{
+    padding: 3rem 0;
+
+    .statistics-card{
+        color: $accent;
+        padding: 0 1.3rem; 
+        font-weight: 700;
+        border-right: 1px solid #D9D9D9;
+        height: 130px;
+
+        .numb{
+            font-size: 60px;
+            text-shadow: 1px 0px 0px $green-shadow;
+        }
+
+        .text{
+            font-size: 17px;
+        }
+    }
+    .statistics-card-last{
+        border-right: none;
+    }
+}

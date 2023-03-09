@@ -1,0 +1,35 @@
+// USER VARIABLES SECTION
+
+$accent: #3C79F5; // Accent Color
+$fontsize: 16px; // Body Font Size
+$text-black: #1A1E1C;
+$text-white: #ffff;
+$textcolor: rgba($color: #000000, $alpha: .7); // Text Color
+$bg-yellow: #FDA43B;
+$bg-gray: #F5F4FA;
+$bgdark-blue: #2F37A4;
+$text-gray: #969696;
+
+$green-shadow: #007793;
+$lineheight: 1.65; // Document Line Height
+// $userfont: roboto-oh5, sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px;
+$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+
+
+@import 'node_modules/swiper/swiper.scss';
+@import 'node_modules/swiper/modules/pagination/pagination.scss';
+
+
+
+// FONTS LOAD SECTION
+
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');

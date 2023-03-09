@@ -1,0 +1,114 @@
+// GENERAL PROJECT STYLES
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: rgba($color: #000000, $alpha: .7);
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    svg{
+        transition: all .2s ease-in-out; 
+        path{
+            transition: all .2s ease-in-out;  
+        }
+    }
+
+    p{
+        color: $textcolor;
+        font-size: 14px;
+        margin: 0;
+    }
+    
+    h3{
+        font-size: 30px;
+        font-weight: 700;
+        color: $text-black;
+    }
+    
+    
+    
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    button{
+        outline: none;
+        border: none;
+        background: none;
+        transition: all .2s ease-in-out;
+    }
+    
+    a{
+        color: $text-white;
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+        &:hover{
+            color: $text-white;
+        }
+    }
+
+
+    .btns-wrap{
+        padding: 20px 40px;
+        background-color: $text-white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 50px;
+    }
+
+    .btn-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $text-white;
+        padding: .4rem .5rem;
+        border-radius: 20px;
+        width: 230px;
+        height: 37px;
+        font-size: 16px; 
+        color: $text-gray;
+        
+        svg{
+             margin-right: .5rem;
+        }
+
+        &:hover{
+            color: $text-gray;
+        }
+    }
+
+    .btn-link-active{
+        background: $bg-yellow;
+        color: $text-white;
+        
+        &:hover{
+            color: $text-white;;
+        }
+        svg{
+            path{
+                fill: white;
+            }
+        }
+    }
+
+
+    .bg-limon{
+        width: 45px;
+        height: 45px;
+        background: $bgdark-blue;
+        border-radius:  0% 70% 0% 70%;; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $text-white;
+    }
+}
+
+
+
+
