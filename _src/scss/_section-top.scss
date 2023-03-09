@@ -1,0 +1,41 @@
+.section-top{
+    height: 895px;
+    background: url(../img/bg-section-top.png);
+    background-size: 80%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    padding-top: 188px;
+    color: $text-white;
+
+    h1{
+        font-size: 54px;
+        margin-bottom: 35px;
+    }
+
+    p{
+        color: $text-white; 
+        margin-bottom: 35px;
+    }
+
+    .bg-blue{
+        margin-bottom: 20px;
+        background: url(../img/bg-blue1.png);
+        background-size: 96%;
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+        width: 377px;
+        height: 42px;
+        padding: 0.8rem 1rem;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .img-top{
+
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
