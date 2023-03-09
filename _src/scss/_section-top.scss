@@ -32,20 +32,21 @@
 
     .img-top{
         position: relative;
-        &::before{
+
+        img{
+            width: 100%;
+        }
+
+        .btn-play{
             position: absolute;
-            content: '';
             left: 4%;
             top: 13%;
             width: 90px;
             height: 90px;
-            background: url(../img/play.png);
-            background-repeat: no-repeat;
-            background-size: 90%;
-
-        }
-        img{
-            width: 100%;
+            cursor: pointer;
+            img{
+             width: 100%;
+            }
         }
     }
 

@@ -23,6 +23,10 @@ $gutter: $grid-gutter-width;
 
 @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
 @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+@import 'node_modules/bootstrap/scss/_popover.scss'; // Optional Bootstrap 
+@import "node_modules/bootstrap/scss/_modal.scss";
+@import "node_modules/bootstrap/scss/_buttons.scss";
+
 
 
 @import 'node_modules/swiper/swiper.scss';

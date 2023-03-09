@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
+
 	<meta charset="UTF-8">
+
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +13,10 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<link
-	rel="stylesheet"
-	href="libs/swiper.min.css"
-	/>
-
-
+	<link rel="stylesheet" href="libs/swiper.min.css"/>
 
 	<title>capable community</title>
+
 </head>
 
 <body>
@@ -64,7 +62,7 @@
 			</div>
 
 
-			<div class="col-md-3 p-0 d-flex align-items-center justify-content-between">
+			<div class="col-md-4 p-0 d-flex align-items-center justify-content-between">
 
 				<a class="btn-link btn-link-active" href="#">
 
@@ -85,6 +83,18 @@
 					</svg>
 				</button>
 
+				<div class="lang">
+
+					<a href="#" class="lang-opener">
+						<img src="img/flag-ua.svg" alt="ua flag">
+					</a>
+
+					<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6.7071 6.17089C6.31634 6.56002 5.68432 6.55936 5.29437 6.16942L0.536819 1.41187C0.240342 1.11539 0.240342 0.634706 0.53682 0.338229C0.833828 0.0412211 1.31556 0.0418307 1.61182 0.33959L5.2929 4.03936C5.68313 4.43157 6.31768 4.43237 6.7089 4.04115L10.3881 0.361987C10.6846 0.0654443 11.1654 0.0654441 11.4619 0.361987C11.7589 0.658968 11.7584 1.14062 11.4608 1.43699L6.7071 6.17089Z" fill="#3C79F5"/>
+					</svg>
+
+				</div>
+
 			</div>
 
 		</div>
@@ -99,7 +109,7 @@
         
         <div class="row align-items-center justify-content-between">
 
-            <div class="col-md-7">
+            <div class="col-md-7" >
 
                 <div class="bg-blue">
                     Щаслива дитина - Міцна сім’я - Спроможна громада
@@ -165,6 +175,11 @@
 
                 <div class="img-top">
                     <img src="img/img-section-top.png" alt="meet">
+
+                    <div class="btn-play" data-toggle="modal" data-target="#exampleModal">
+                        <img src="img/play.png" alt="play">
+                    </div>
+
                 </div>
 
             </div>
@@ -835,7 +850,7 @@
 		<section class="blog-section">
     <div class="container">
         <h3>
-            Блок
+            Блог
         </h3>
 
         <div class="swiper swiperBlogs">
@@ -1162,10 +1177,35 @@
 		</div>
 	</div>
 </footer>
-	
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  ...
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
 	<script src="libs/swiper.min.js"></script>
 	<script src="libs/jquery.js"></script>
 	<script src="js/scripts.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+	
 </body>
 
 </html>

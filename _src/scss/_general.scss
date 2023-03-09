@@ -3,7 +3,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     color: rgba($color: #000000, $alpha: .7);
-
+    overflow-x: hidden;
     &::-webkit-scrollbar {
         width: 0;
     }
@@ -44,7 +44,7 @@ body{
     
     a{
         color: $text-white;
-        text-decoration: none;
+        text-decoration: none !important;
         transition: all .2s ease-in-out;
         &:hover{
             color: $text-white;
