@@ -6,6 +6,10 @@
     background-position: 0% 0%;
     background-repeat: no-repeat;
 
+    @include media-for(null, $tablet){
+        display: none;
+    }
+
     h3{
         color: $text-white;
         margin-bottom: 3rem;
