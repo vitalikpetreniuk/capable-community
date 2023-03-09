@@ -37,22 +37,39 @@ header{
     }
 
     .lang{
-        transition: all .2s ease-in-out;
+        position: relative;
+        transition: 0.7s;
         padding: .2rem .3rem;
-        border-radius: 5px;
         cursor: pointer;
-
-        svg{
-            margin-left: .3rem;
-        }
-
-        &:hover{
+        &::before {
+            content: "";
             background-color: $accent;
+            width: 0;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            transition: 0.7s;
+          }
+
+        &:hover::before {
+            width: 100%;
+            border-radius: 5px;
+        }
+        &:hover{
             svg{
                 path{
                     fill: #fff;
                 }
             }
+        }
+
+
+
+        svg{
+            transition: 0.7s;
+            margin-left: .3rem;
         }
     }
 

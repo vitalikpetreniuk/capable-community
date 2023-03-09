@@ -1,5 +1,6 @@
 .news-section{
     padding: 0 0 4rem;
+
     h3{
         text-align: center;
         margin-bottom: 1.5rem;
@@ -14,10 +15,19 @@
         bottom: 0rem;
     }
 
+
     .swiper-slide{
         box-shadow: 0px 1px 6px 0px #D9D9D9;
         border-radius: 30px;
+
+        p{
+            height: 2.7rem;
+            overflow: hidden;
+        }
+    
     }
+
+
 
     .data-span{
         display: block;

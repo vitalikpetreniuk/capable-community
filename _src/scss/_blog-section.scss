@@ -42,10 +42,14 @@
     
         .description{
             box-shadow: 0px 0px 0px 0px #D9D9D9;
-            padding: 20px 28px;
+            padding: 20px 24px;
 
-            h4{
-                font-size: 24px;
+            .title{
+                a{
+                    font-size: 24px;
+                    color: $text-black;
+                    font-weight: 700;
+                }
             }
     
             P{
@@ -67,20 +71,48 @@
                 color: $accent;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 margin-top: 32px;
 
-                h5{
-                    font-size: 16px;
-                    font-weight: 500;
+                .name{
+                    a{
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
                 }
+
                 span{
-                    font-weight: 500;
                     display: inline-block;
                     margin-left: 1rem;
+                    height: 2.1rem;
+
+                    a{
+                        color: $accent;
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
+                    
+
+                    &:hover{
+
+                        a{
+                            color: $textcolor;
+                        }
+
+                        svg{
+                            path{
+                                fill: $textcolor;
+                            }
+                        }
+                    }
                 }
                 .dislike{
                     position: relative;
                     transform: rotate(180deg);
+                    margin-bottom: .4rem;
+                }
+                .like{
+                    margin-bottom: .4rem;
                 }
                 span{
                     cursor: pointer;

@@ -1,13 +1,16 @@
 .reviews-section{
     padding: 48px 0 80px;
+    
     h3{
         text-align: center;
         margin-bottom: 1.5rem;
         text-transform: uppercase;
     }
+
     .swiper{
         padding: 1rem 0 3rem;
     }
+
     .swiper-slide{
         box-shadow: 0px 1px 6px 0px #D9D9D9;
         border-radius: 25px;
@@ -16,16 +19,20 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             span{
                 display: block;
-                margin: 43px 0 35px;
+                margin: 22px 0 22px;
             }
 
             p{
                 font-size: 14px;
                 font-weight: 300;
-                margin-bottom: 40px;
+                margin-bottom: 6px;
+                height: 5rem;
+                overflow: hidden;
             }
+
 
             h4{
                 color: $text-black

@@ -3081,7 +3081,7 @@ body .slides-items .description {
   background-color: #ffff;
   -webkit-box-shadow: 0px 1px 6px 0px #D9D9D9;
           box-shadow: 0px 1px 6px 0px #D9D9D9;
-  padding: 20px 25px;
+  padding: 20px 21px;
   border-radius: 30px;
   margin-top: -17%;
   position: relative;
@@ -3091,6 +3091,7 @@ body .slides-items .description {
 body .slides-items .description h4 {
   font-weight: 700;
   font-size: 16px;
+  color: #1A1E1C;
 }
 
 body .slides-items .description P {
@@ -3132,6 +3133,68 @@ body .slides-items .description P {
   -webkit-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
           transform: rotate(135deg);
+}
+
+.full_testimonial {
+  position: absolute;
+  text-align: left;
+  font-size: 12px;
+  width: 387px;
+  left: 3%;
+  height: 14rem;
+  bottom: 60px;
+  background-color: #fff;
+  padding: 10px;
+  -webkit-box-shadow: 6px 14px 15px -6px rgba(147, 147, 147, 0.74);
+          box-shadow: 6px 14px 15px -6px rgba(147, 147, 147, 0.74);
+  z-index: 30;
+  max-width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.full_testimonial .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 40;
+}
+
+.full_testimonial .close::before {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  content: "";
+  background-color: black;
+  width: 3px;
+  height: 100%;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.full_testimonial .close::after {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  content: "";
+  background-color: black;
+  width: 3px;
+  height: 100%;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.expand_testimonial {
+  color: #3C79F5;
+  cursor: pointer;
+  padding: 9px;
+  text-align: center;
+  display: block;
 }
 
 header {
@@ -3178,24 +3241,42 @@ header nav ul li a {
 }
 
 header .lang {
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  position: relative;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
   padding: 0.2rem 0.3rem;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-header .lang svg {
-  margin-left: 0.3rem;
+header .lang::before {
+  content: "";
+  background-color: #3C79F5;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
 }
 
-header .lang:hover {
-  background-color: #3C79F5;
+header .lang:hover::before {
+  width: 100%;
+  border-radius: 5px;
 }
 
 header .lang:hover svg path {
   fill: #fff;
+}
+
+header .lang svg {
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+  margin-left: 0.3rem;
 }
 
 .header-fixed {
@@ -3555,13 +3636,15 @@ header .lang:hover svg path {
 
 .reviews-section .swiper-slide .review-blocks span {
   display: block;
-  margin: 43px 0 35px;
+  margin: 22px 0 22px;
 }
 
 .reviews-section .swiper-slide .review-blocks p {
   font-size: 14px;
   font-weight: 300;
-  margin-bottom: 40px;
+  margin-bottom: 6px;
+  height: 5rem;
+  overflow: hidden;
 }
 
 .reviews-section .swiper-slide .review-blocks h4 {
@@ -3608,6 +3691,11 @@ header .lang:hover svg path {
   -webkit-box-shadow: 0px 1px 6px 0px #D9D9D9;
           box-shadow: 0px 1px 6px 0px #D9D9D9;
   border-radius: 30px;
+}
+
+.news-section .swiper-slide p {
+  height: 2.7rem;
+  overflow: hidden;
 }
 
 .news-section .data-span {
@@ -3668,11 +3756,13 @@ header .lang:hover svg path {
 .blog-section .blogs-blocks .description {
   -webkit-box-shadow: 0px 0px 0px 0px #D9D9D9;
           box-shadow: 0px 0px 0px 0px #D9D9D9;
-  padding: 20px 28px;
+  padding: 20px 24px;
 }
 
-.blog-section .blogs-blocks .description h4 {
+.blog-section .blogs-blocks .description .title a {
   font-size: 24px;
+  color: #1A1E1C;
+  font-weight: 700;
 }
 
 .blog-section .blogs-blocks .description P {
@@ -3701,18 +3791,35 @@ header .lang:hover svg path {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 32px;
 }
 
-.blog-section .blogs-blocks .description .information h5 {
+.blog-section .blogs-blocks .description .information .name a {
   font-size: 16px;
   font-weight: 500;
 }
 
 .blog-section .blogs-blocks .description .information span {
-  font-weight: 500;
   display: inline-block;
   margin-left: 1rem;
+  height: 2.1rem;
+}
+
+.blog-section .blogs-blocks .description .information span a {
+  color: #3C79F5;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.blog-section .blogs-blocks .description .information span:hover a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.blog-section .blogs-blocks .description .information span:hover svg path {
+  fill: rgba(0, 0, 0, 0.7);
 }
 
 .blog-section .blogs-blocks .description .information .dislike {
@@ -3720,6 +3827,11 @@ header .lang:hover svg path {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+  margin-bottom: 0.4rem;
+}
+
+.blog-section .blogs-blocks .description .information .like {
+  margin-bottom: 0.4rem;
 }
 
 .blog-section .blogs-blocks .description .information span {

@@ -6,6 +6,8 @@
 // import Swiper, { Pagination } from 'swiper';
 
 
+
+
 //scroll header
 
 $(window).on("scroll",function() {
@@ -18,6 +20,9 @@ $(window).on("scroll",function() {
 	}
 });
 
+
+
+
 //hover efect
 
 $('.btns-wrap > .btn-link').hover(
@@ -29,19 +34,15 @@ $('.btns-wrap > .btn-link').hover(
 
 
 
-//swiper review
+
+
+//sslider review
 
 var swiperReviews = new Swiper(".swiperReviews", {
     loop: true,
     speed: 1200,
 		slidesPerView: 1.7,
 		spaceBetween: 30,
-		// pagination: {
-		//   el: ".swiper-pagination",
-		//   clickable: true,
-		  
-		// },
-
 		breakpoints: {
             
             // 320: {
@@ -67,103 +68,78 @@ var swiperReviews = new Swiper(".swiperReviews", {
 
 
         }
-	});
+});
+
+
+//sslider News
+
+var swiperNews = new Swiper(".swiperNews", {
+	loop: true,
+	speed: 1200,
+		slidesPerView: 4,
+		spaceBetween: 30,
+		pagination: {
+		  el: ".swiper-pagination-news",
+		  clickable: true,
+		  
+		},
+
+});
 
 
 
 
-	var swiperNews = new Swiper(".swiperNews", {
-		loop: true,
-		speed: 1200,
-			slidesPerView: 4,
-			spaceBetween: 30,
-			pagination: {
-			  el: ".swiper-pagination-news",
-			  clickable: true,
-			  
-			},
+//sslider Blogs
+
+var swiperBlogs = new Swiper(".swiperBlogs", {
+	loop: true,
+	speed: 1200,
+		slidesPerView: 3,
+		spaceBetween: 30,
+		pagination: {
+		  el: ".swiper-pagination-blogs",
+		  clickable: true,
+		  
+		},
+
+});
+
+
+
+    
+//widget-btns
+
+$('.widget-btn').on('click', function(){
 	
-			breakpoints: {
-				
-				// 320: {
-				//   slidesPerView: 2.05,
-				//   spaceBetween: 10,
-				// },
-			  
-				// 480: {
-				//   slidesPerView: 2.03,
-				//   spaceBetween: 10,
-				// },
-		
-				// 760: {
-				//   slidesPerView: 2,
-				//   spaceBetween: 30,
-				// },
-	
-				// 1100: {
-				//   slidesPerView: 3,
-				//   spaceBetween: 30,
-				// },
-	
-	
-	
-			}
-	});
-
-
-
-	var swiperBlogs = new Swiper(".swiperBlogs", {
-		loop: true,
-		speed: 1200,
-			slidesPerView: 3,
-			spaceBetween: 30,
-			pagination: {
-			  el: ".swiper-pagination-blogs",
-			  clickable: true,
-			  
-			},
-	
-			breakpoints: {
-				
-				// 320: {
-				//   slidesPerView: 2.05,
-				//   spaceBetween: 10,
-				// },
-			  
-				// 480: {
-				//   slidesPerView: 2.03,
-				//   spaceBetween: 10,
-				// },
-		
-				// 760: {
-				//   slidesPerView: 2,
-				//   spaceBetween: 30,
-				// },
-	
-				// 1100: {
-				//   slidesPerView: 3,
-				//   spaceBetween: 30,
-				// },
-	
-	
-	
-			}
-	});
+	if( $(this).hasClass('widget-btn-active') ){
+		$(this).removeClass('widget-btn-active')
+	}
+	else{
+		$('.widget-btn').removeClass('widget-btn-active')
+		$(this).addClass('widget-btn-active');
+	}
+});;
 
 
 
 
-	$('.widget-btn').on('click', function(){
-		
-		if( $(this).hasClass('widget-btn-active') ){
+//read more
 
-			$(this).removeClass('widget-btn-active')
-		}
-		else{
-			$('.widget-btn').removeClass('widget-btn-active')
-			$(this).addClass('widget-btn-active');
-		}
-	});;
+$(document).on("click",".expand_testimonial",function () {
+    var fullText = $(this).parent().find(".full_testimonial");
+        $(".full_testimonial").hide();
+    $(fullText).show("slow");
+    
+  })
+
+  $(document).on("click",".full_testimonial .close",function () {
+    $(this).parent().hide();    
+    
+  })
+
+
+
+
 
 
 
