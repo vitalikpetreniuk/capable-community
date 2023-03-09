@@ -153,6 +153,23 @@ var swiperReviews = new Swiper(".swiperReviews", {
 
 
 
+	$('.widget-btn').on('click', function(){
+		
+		if( $(this).hasClass('widget-btn-active') ){
+
+			$(this).removeClass('widget-btn-active')
+		}
+		else{
+			$('.widget-btn').removeClass('widget-btn-active')
+			$(this).addClass('widget-btn-active');
+		}
+	});;
+
+
+
+
+
+
 
 
 
