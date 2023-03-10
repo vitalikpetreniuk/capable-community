@@ -30,7 +30,31 @@ header{
             li{
                 a{
                     font-size: 14px;
-                    font-size: 500;
+                    font-weight: 500;
+                    display: block;
+                    width: 5rem;
+                    transition: all .2s ease-in;
+                    text-align: center;
+                    &:hover{
+                        font-weight: 700;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-link{
+        &:hover{
+            background-color: $accent;
+        }
+    }
+
+    .user{
+        &:hover{
+            svg{
+                path{
+                    fill: $yellow;
                 }
             }
         }
@@ -51,12 +75,13 @@ header{
             top: 0;
             left: 0;
             transition: 0.7s;
-          }
+        }
 
         &:hover::before {
             width: 100%;
             border-radius: 5px;
         }
+
         &:hover{
             svg{
                 path{

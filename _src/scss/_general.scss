@@ -101,7 +101,7 @@ body{
         width: 45px;
         height: 45px;
         background: $bgdark-blue;
-        border-radius:  0% 70% 0% 70%;; 
+        border-radius:  70% 0% 70% 0%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -109,7 +109,7 @@ body{
     }
 
     .bg-limon-rotate{
-        border-radius:  70% 0% 70% 0%;; 
+        border-radius:  0% 70% 0% 70%;
     }
 
 
@@ -244,14 +244,6 @@ body{
     }
 }
 
-// .full_testimonial small {
-//     font-size: 15px;
-//     font-weight: initial;
-//     position: absolute;
-//     right: 8px;
-//     top: -1px;
-//     cursor:pointer;
-// }
 
 .expand_testimonial{
     color: $accent;

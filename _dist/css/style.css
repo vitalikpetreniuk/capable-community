@@ -3041,7 +3041,7 @@ body .bg-limon {
   width: 45px;
   height: 45px;
   background: #2F37A4;
-  border-radius: 0% 70% 0% 70%;
+  border-radius: 70% 0% 70% 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3055,7 +3055,7 @@ body .bg-limon {
 }
 
 body .bg-limon-rotate {
-  border-radius: 70% 0% 70% 0%;
+  border-radius: 0% 70% 0% 70%;
 }
 
 body .slides-items {
@@ -3237,7 +3237,28 @@ header nav ul {
 
 header nav ul li a {
   font-size: 14px;
-  font-size: 500;
+  font-weight: 500;
+  display: block;
+  width: 5rem;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  text-align: center;
+}
+
+header nav ul li a:hover {
+  font-weight: 700;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+header .btn-link:hover {
+  background-color: #3C79F5;
+}
+
+header .user:hover svg path {
+  fill: #ffc107;
 }
 
 header .lang {
@@ -3485,8 +3506,8 @@ header .lang svg {
 
 .сommunity-strengthening {
   padding: 184px 0 200px;
-  height: 950px;
-  background: url(../img/сommunity-strengthening.png) 0% 100%/33%, url(../img/bg-dots-two.png) 73% 52%/44%, #F5F4FA;
+  height: 905px;
+  background: url(../img/сommunity-strengthening.png) 0% 100%/40%, url(../img/bg-dots-two.png) 73% 52%/44%, #F5F4FA;
   background-repeat: no-repeat;
 }
 
@@ -3710,6 +3731,7 @@ header .lang svg {
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  -moz-transform: translate(50%, 0);
   border-radius: 0 0 20px 20px;
   text-align: center;
   font-size: 12px;
@@ -3855,7 +3877,7 @@ header .lang svg {
 
 .widget-btns {
   position: fixed;
-  top: 709px;
+  top: 500px;
   right: 0;
   -webkit-box-shadow: 0px 1px 6px 0px #D9D9D9;
           box-shadow: 0px 1px 6px 0px #D9D9D9;
@@ -3943,7 +3965,7 @@ header .lang svg {
 }
 
 footer {
-  background-color: #1A1E1C;
+  background-color: #272C49;
   padding: 1.5rem 0;
 }
 
