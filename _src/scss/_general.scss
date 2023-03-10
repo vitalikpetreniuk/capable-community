@@ -173,6 +173,10 @@ body{
 
     .bg-limon-rotate{
         border-radius:  0% 70% 0% 70%;
+        
+        @include media-for (null, $sm){
+            border-radius:  70% 0% 70% 0%;
+        }
     }
 
 

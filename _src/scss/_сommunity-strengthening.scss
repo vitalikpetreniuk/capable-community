@@ -1,14 +1,22 @@
 .сommunity-strengthening{
-    @include media-for (null, $sm){
-        display: none;
-    }
     padding: 184px 0 200px;
     height: 905px;
     background: url(../img/сommunity-strengthening.png) 0% 100%/40%, url(../img/bg-dots-two.png) 73% 52%/44% ,  $bg-gray;
     background-repeat: no-repeat;
 
+    @include media-for (null, $sm){
+        padding: 40px 0 0;
+        height: 862px;
+        background: url(../img/сommunity-strengthening.png) 0% 116%/112%, url(../img/bg-dots-two.png) 100% 40%/150%,  $bg-gray;
+        background-repeat: no-repeat;
+    }
+
     h3{
         font-size: 54px;
+
+        @include media-for (null, $sm){
+            font-size: 17px;
+        }
     }
 
     p{
@@ -40,6 +48,11 @@
             
             img{
                 margin-right: 1rem;
+
+                @include media-for (null, $sm){
+                    width: 31px;
+                    height: 31px;
+                }
             }
         }
     }

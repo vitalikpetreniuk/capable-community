@@ -1,8 +1,6 @@
 .statistics{
     padding: 3rem 0;
-    @include media-for (null, $sm){
-        display: none;
-    }
+
     .statistics-card{
         color: $accent;
         padding: 0 1.3rem; 
@@ -10,16 +8,29 @@
         border-right: 1px solid #D9D9D9;
         height: 130px;
 
+        @include media-for (null, $sm){
+            border: none;
+        }
+
         .numb{
             font-size: 60px;
-            text-shadow: 1px 0px 0px $green-shadow;
+            text-shadow: 3px 0px 0px $green-shadow;
+
+            @include media-for (null, $sm){
+                font-size: 40px;
+            }
         }
 
         .text{
             font-size: 17px;
+
+            @include media-for (null, $sm){
+                font-size: 13px;
+            }
         }
     }
     .statistics-card-last{
         border-right: none;
+
     }
 }

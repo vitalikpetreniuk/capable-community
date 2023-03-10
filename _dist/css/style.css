@@ -3692,7 +3692,7 @@ header .lang svg {
 
 .statistics .statistics-card .numb {
   font-size: 60px;
-  text-shadow: 1px 0px 0px #007793;
+  text-shadow: 3px 0px 0px #007793;
 }
 
 .statistics .statistics-card .text {
@@ -8896,12 +8896,6 @@ footer img {
   }
 }
 
-@media (max-width: 821px) {
-  .why_us {
-    display: none;
-  }
-}
-
 @media (max-width: 767.98px) {
   .modal-fullscreen-md-down {
     width: 100vw;
@@ -9016,6 +9010,10 @@ footer img {
     height: 30px;
   }
 
+  body .bg-limon-rotate {
+    border-radius: 70% 0% 70% 0%;
+  }
+
   .modal-video .modal-content .close {
     right: -6%;
     top: -12%;
@@ -9109,7 +9107,7 @@ footer img {
   }
 
   .child-population .card {
-    padding: 30px 10px;
+    padding: 30px 17px;
     background: url(../img/bg-dots.png);
     background-repeat: no-repeat;
     background-position: 85% -22%;
@@ -9126,15 +9124,65 @@ footer img {
   }
 
   .сommunity-strengthening {
-    display: none;
+    padding: 40px 0 0;
+    height: 862px;
+    background: url(../img/сommunity-strengthening.png) 0% 116%/112%, url(../img/bg-dots-two.png) 100% 40%/150%, #F5F4FA;
+    background-repeat: no-repeat;
+  }
+
+  .сommunity-strengthening h3 {
+    font-size: 17px;
+  }
+
+  .сommunity-strengthening ul li img {
+    width: 31px;
+    height: 31px;
   }
 
   .why_us {
-    display: none;
+    height: auto;
+    padding: 50px 0 60px;
+    background: url(../img/bg-whu-us-mb.png) 0% 100%/100%, #3C79F5;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
   }
 
-  .statistics {
-    display: none;
+  .why_us h4 {
+    font-size: 14px;
+  }
+
+  .why_us p {
+    font-size: 13px;
+  }
+
+  .why_us ul li {
+    margin-bottom: 24px;
+    min-height: auto;
+  }
+
+  .why_us ul li div {
+    margin-left: 0.5rem;
+  }
+
+  .why_us .bg-limon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .why_us .bg-limon img {
+    width: 70%;
+  }
+
+  .statistics .statistics-card {
+    border: none;
+  }
+
+  .statistics .statistics-card .numb {
+    font-size: 40px;
+  }
+
+  .statistics .statistics-card .text {
+    font-size: 13px;
   }
 
   .reviews-section {
