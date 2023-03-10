@@ -3197,6 +3197,14 @@ body .slides-items .description P {
   display: block;
 }
 
+.swiper-pagination-bullet {
+  background-color: #D9D9D9;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #3C79F5;
+}
+
 header {
   position: fixed;
   top: 0;
