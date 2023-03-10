@@ -1,4 +1,7 @@
 .сommunity-strengthening{
+    @include media-for (null, $sm){
+        display: none;
+    }
     padding: 184px 0 200px;
     height: 905px;
     background: url(../img/сommunity-strengthening.png) 0% 100%/40%, url(../img/bg-dots-two.png) 73% 52%/44% ,  $bg-gray;

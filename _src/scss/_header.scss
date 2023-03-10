@@ -10,18 +10,23 @@ header{
     .logo{
         width: 68px;
         height: 74px;
+        display: block;
+        @include media-for (null, $sm){
+            width: 38px;
+            height: 40px;
+        }
 
-        a{
-            display: block;
-
-            img{
-                width: 100%;
-                height: 100%;
-            }
+        img{
+            width: 100%;
+            height: 100%;
         }
     }
     
     nav{
+        width: 90%;
+        margin-right: 0;
+        margin-left: auto;
+
         ul{
             display: flex;
             align-items: center;

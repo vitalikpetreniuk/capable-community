@@ -9,6 +9,9 @@
     @include media-for(null, $tablet){
         display: none;
     }
+    @include media-for (null, $sm){
+        display: none;
+    }
 
     h3{
         color: $text-white;

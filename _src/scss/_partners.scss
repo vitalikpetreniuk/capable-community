@@ -1,6 +1,8 @@
 .partners{
     padding: 2rem 0;
-
+    @include media-for (null, $sm){
+        display: none;
+    }
     .parnter{
         height: 111px;
         

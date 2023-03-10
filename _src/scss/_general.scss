@@ -3,7 +3,9 @@
 body{
     font-family: 'Montserrat', sans-serif;
     color: rgba($color: #000000, $alpha: .7);
+    position: relative;
     overflow-x: hidden;
+
     &::-webkit-scrollbar {
         width: 0;
     }
@@ -19,12 +21,20 @@ body{
         color: $textcolor;
         font-size: 14px;
         margin: 0;
+ 
+        @include media-for (null, $sm){
+            font-size: 13px;
+            font-weight: 300;
+        }
     }
     
     h3{
         font-size: 30px;
         font-weight: 700;
         color: $text-black;
+        @include media-for (null, $sm){
+            font-size: 17px;
+        }
     }
     
     
@@ -59,6 +69,13 @@ body{
         align-items: center;
         justify-content: space-between;
         border-radius: 50px;
+
+        @include media-for (null, $sm){
+           padding: 0;
+           justify-content: start;
+           background-color: rgba($color: #000000, $alpha: .0);
+           margin-bottom: 40px;
+        }
     }
 
     .btn-link{
@@ -72,6 +89,24 @@ body{
         height: 37px;
         font-size: 16px; 
         color: $text-gray;
+
+        @include media-for (null, $sm){
+            width: 2rem;
+            height: 2rem;
+            padding: 0;
+            margin-right: 1rem;
+            background: rgba($color: #000000, $alpha: .0);
+
+            span{
+                display: none;
+            }
+            svg{
+                margin-right: 0rem;
+                path{
+                    fill: $bg-yellow;
+                }
+           }
+        }
         
         svg{
              margin-right: .5rem;
@@ -85,10 +120,33 @@ body{
     .btn-link-active{
         background: $bg-yellow;
         color: $text-white;
-        
+
+        @include media-for (null, $sm){
+            background: $bg-yellow !important;
+            width: auto;
+            height: 2rem;
+            padding: 5px 10px;
+            margin-right: 1rem;
+            background: rgba($color: #000000, $alpha: .0);
+
+            span{
+                display: block;
+                font-size: 14px;
+            }
+            svg{
+                margin-right: .5rem;
+                path{
+                    fill: $text-white;
+                }
+           }
+           
+            
+        }
+
         &:hover{
             color: $text-white;;
         }
+
         svg{
             path{
                 fill: white;
@@ -106,6 +164,11 @@ body{
         align-items: center;
         justify-content: center;
         color: $text-white;
+
+        @include media-for (null, $sm){
+            width: 30px;
+            height: 30px;
+        }
     }
 
     .bg-limon-rotate{
@@ -153,6 +216,11 @@ body{
 }
 
 
+.overflow{
+    overflow: hidden;
+}
+
+
 //modal video
 
 .modal-video{
@@ -168,6 +236,10 @@ body{
             width: 40px;
             height: 40px;
             cursor: pointer;
+            @include media-for (null, $sm){
+                right: -6%;
+                top: -12%;
+             }
 
             &::before{
                 position: absolute;

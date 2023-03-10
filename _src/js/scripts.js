@@ -1,10 +1,11 @@
-// $('.burger').on('click', function () {
-// 	$(this).toggleClass('_active');
-// 	$('.menu').toggleClass('_active');
-// 	$('body').toggleClass('_lock');
-// })
-// import Swiper, { Pagination } from 'swiper';
 
+//burger
+
+$('.burger').on('click', function () {
+	$(this).toggleClass('burger-active');
+	$('.menu').toggleClass('menu-active');
+	$('body').toggleClass('overflow');
+})
 
 
 

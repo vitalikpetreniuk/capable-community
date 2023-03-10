@@ -3,9 +3,11 @@
 @use 'sass:color';
 
 @import 'config';
-@import 'general';
 @import 'media';
+@import 'general';
 
+@import 'burger';
+@import 'menu-mob';
 @import 'header';
 
 
