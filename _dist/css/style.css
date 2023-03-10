@@ -9110,6 +9110,10 @@ footer img {
 
   .child-population .card {
     padding: 30px 10px;
+    background: url(../img/bg-dots.png);
+    background-repeat: no-repeat;
+    background-position: 85% -22%;
+    background-size: 31%;
   }
 
   .child-population .card h3 {
@@ -9118,7 +9122,7 @@ footer img {
 
   .child-population .card .bg-limon {
     margin-bottom: 8px;
-    margin-top: 30px;
+    margin-top: 25px;
   }
 
   .сommunity-strengthening {
