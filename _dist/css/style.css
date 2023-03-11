@@ -3813,10 +3813,10 @@ header .lang svg {
   background-color: #1A1E1C;
   left: 50%;
   top: 0;
-  -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
-  -moz-transform: translate(50%, 0);
+  transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   border-radius: 0 0 20px 20px;
   text-align: center;
   font-size: 12px;
