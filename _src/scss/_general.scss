@@ -173,7 +173,7 @@ body{
 
     .bg-limon-rotate{
         border-radius:  0% 70% 0% 70%;
-        
+
         @include media-for (null, $sm){
             border-radius:  70% 0% 70% 0%;
         }
@@ -240,10 +240,11 @@ body{
             width: 40px;
             height: 40px;
             cursor: pointer;
+            
             @include media-for (null, $sm){
-                right: -6%;
-                top: -12%;
-             }
+                right: -4%;
+                top: -21%;
+            }
 
             &::before{
                 position: absolute;
@@ -262,7 +263,19 @@ body{
                 height: 100%;
                 transform: rotate(135deg);
             }
+
+
         }
+
+        
+        #video-container{
+            iframe{
+                @include media-for (null, $sm){
+                    height: 14rem !important;
+                }
+            }
+        }
+
     }
    
     
@@ -339,6 +352,12 @@ body{
 
 .swiper-pagination-bullet-active{
     background-color: $accent;
+}
+
+.swiper{
+    @include media-for (null, $sm){
+       overflow: visible !important;
+    }
 }
 
 

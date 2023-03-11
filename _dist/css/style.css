@@ -3794,6 +3794,11 @@ header .lang svg {
   border-radius: 30px;
 }
 
+.news-section .swiper-slide h4 {
+  height: 1.2rem;
+  overflow: hidden;
+}
+
 .news-section .swiper-slide p {
   height: 2.7rem;
   overflow: hidden;
@@ -3899,6 +3904,10 @@ header .lang svg {
   margin-top: 32px;
 }
 
+.blog-section .blogs-blocks .description .information .name {
+  margin-left: 0;
+}
+
 .blog-section .blogs-blocks .description .information .name a {
   font-size: 16px;
   font-weight: 500;
@@ -3907,7 +3916,6 @@ header .lang svg {
 .blog-section .blogs-blocks .description .information span {
   display: inline-block;
   margin-left: 1rem;
-  height: 2.1rem;
 }
 
 .blog-section .blogs-blocks .description .information span a {
@@ -3922,14 +3930,6 @@ header .lang svg {
 
 .blog-section .blogs-blocks .description .information span:hover svg path {
   fill: rgba(0, 0, 0, 0.7);
-}
-
-.blog-section .blogs-blocks .description .information .dislike {
-  position: relative;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-  margin-bottom: 0.4rem;
 }
 
 .blog-section .blogs-blocks .description .information .like {
@@ -3964,6 +3964,7 @@ header .lang svg {
   height: auto;
   border-radius: 30px 0% 0% 30px;
   background-color: rgba(0, 0, 0, 0);
+  z-index: 100;
 }
 
 .widget-btns .widget-btn {
@@ -9015,8 +9016,16 @@ footer img {
   }
 
   .modal-video .modal-content .close {
-    right: -6%;
-    top: -12%;
+    right: -4%;
+    top: -21%;
+  }
+
+  .modal-video .modal-content #video-container iframe {
+    height: 14rem !important;
+  }
+
+  .swiper {
+    overflow: visible !important;
   }
 
   .burger {
@@ -9170,7 +9179,7 @@ footer img {
   }
 
   .why_us .bg-limon img {
-    width: 70%;
+    width: 60%;
   }
 
   .statistics .statistics-card {
@@ -9190,23 +9199,72 @@ footer img {
   }
 
   .news-section {
-    display: none;
+    overflow: hidden;
+    padding: 30px 0 40px;
+  }
+
+  .news-section .swiper {
+    padding: 1rem 0.2rem 38px;
+  }
+
+  .news-section .swiper-slide h4 {
+    height: 2.5rem;
+    margin: 0;
   }
 
   .blog-section {
+    overflow: hidden;
+    background: #3C79F5;
+    height: auto;
+    padding: 30px 0 40px;
+  }
+
+  .blog-section .swiper {
+    padding: 1rem 0.2rem 50px;
+  }
+
+  .blog-section .blogs-blocks .description {
+    padding: 13px;
+  }
+
+  .blog-section .blogs-blocks .description .title a {
+    display: block;
+    font-size: 15px;
+    height: 1.5rem;
+    overflow: hidden;
+  }
+
+  .blog-section .blogs-blocks .description P {
     display: none;
   }
 
+  .blog-section .blogs-blocks .description .information {
+    margin-top: 15px;
+  }
+
+  .blog-section .blogs-blocks .description .information .name a {
+    font-size: 14px;
+  }
+
+  .blog-section .blogs-blocks .description .information span a {
+    font-size: 13px;
+  }
+
   .partners {
-    display: none;
+    padding: 1.5rem 0;
+  }
+
+  .partners .parnter {
+    height: auto;
   }
 
   .widget-btns {
     top: 400px;
   }
 
-  footer {
-    display: none;
+  .widget-btns .widget-btn {
+    width: 41px;
+    height: 41px;
   }
 }
 

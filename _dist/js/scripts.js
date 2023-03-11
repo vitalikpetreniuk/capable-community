@@ -37,71 +37,120 @@ $('.btns-wrap > .btn-link').hover(
 
 
 
-//sslider review
+//slider review
 
 var swiperReviews = new Swiper(".swiperReviews", {
     loop: true,
     speed: 1200,
-		slidesPerView: 1.7,
-		spaceBetween: 30,
-		breakpoints: {
+	slidesPerView: 1.7,
+	spaceBetween: 30,
+	breakpoints: {
             
-            // 320: {
-            //   slidesPerView: 2.05,
-            //   spaceBetween: 10,
-            // },
-          
-            // 480: {
-            //   slidesPerView: 2.03,
-            //   spaceBetween: 10,
-            // },
-    
-            // 760: {
-            //   slidesPerView: 2,
-            //   spaceBetween: 30,
-            // },
+		// 320: {
+		//   slidesPerView: 2.05,
+		//   spaceBetween: 10,
+		// },
+	  
+		// 480: {
+		//   slidesPerView: 2.03,
+		//   spaceBetween: 10,
+		// },
 
-            // 1100: {
-            //   slidesPerView: 3,
-            //   spaceBetween: 30,
-            // },
+		// 760: {
+		//   slidesPerView: 2,
+		//   spaceBetween: 30,
+		// },
+
+		// 1100: {
+		//   slidesPerView: 3,
+		//   spaceBetween: 30,
+		// },
 
 
 
-        }
+	}
+
 });
 
 
-//sslider News
+//slider News
 
 var swiperNews = new Swiper(".swiperNews", {
 	loop: true,
 	speed: 1200,
-		slidesPerView: 4,
-		spaceBetween: 30,
-		pagination: {
-		  el: ".swiper-pagination-news",
-		  clickable: true,
-		  
+	slidesPerView: 4,
+	spaceBetween: 30,
+	pagination: {
+	  el: ".swiper-pagination-news",
+	  clickable: true,
+	  
+	},
+	breakpoints: {
+            
+		320: {
+		  slidesPerView: 1.7,
+		  spaceBetween: 20,
 		},
+	  
+		480: {
+		  slidesPerView: 1.7,
+		  spaceBetween: 20,
+		},
+
+		760: {
+		  slidesPerView: 3,
+		  spaceBetween: 30,
+		},
+
+		1100: {
+		  slidesPerView: 4,
+		  spaceBetween: 30,
+		},
+
+
+
+	}
 
 });
 
 
 
 
-//sslider Blogs
+//slider Blogs
 
 var swiperBlogs = new Swiper(".swiperBlogs", {
 	loop: true,
 	speed: 1200,
-		slidesPerView: 3,
-		spaceBetween: 30,
-		pagination: {
-		  el: ".swiper-pagination-blogs",
-		  clickable: true,
+	slidesPerView: 3,
+	spaceBetween: 30,
+	pagination: {
+	  el: ".swiper-pagination-blogs",
+	  clickable: true,
 		  
+	},
+	breakpoints: {
+        
+		320: {
+		  slidesPerView: 1.25,
+		  spaceBetween: 20,
 		},
+	  
+		480: {
+		  slidesPerView: 1.25,
+		  spaceBetween: 20,
+		},
+	
+		760: {
+		  slidesPerView: 2,
+		  spaceBetween: 30,
+		},
+	
+		1100: {
+		  slidesPerView: 3,
+		  spaceBetween: 30,
+		},
+	
+	}
 
 });
 

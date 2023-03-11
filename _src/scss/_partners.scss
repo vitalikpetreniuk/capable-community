@@ -1,11 +1,17 @@
 .partners{
     padding: 2rem 0;
+
     @include media-for (null, $sm){
-        display: none;
+        padding: 1.5rem 0;
     }
+
     .parnter{
         height: 111px;
-        
+
+        @include media-for (null, $sm){
+            height: auto;
+        }
+
         img{
             width: 100%;
             height: 100%;
@@ -13,3 +19,5 @@
         }
     }
 }
+
+
