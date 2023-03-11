@@ -9212,6 +9212,11 @@ footer img {
     margin: 0;
   }
 
+  .news-section .data-span {
+    width: auto;
+    font-size: 10px;
+  }
+
   .blog-section {
     overflow: hidden;
     background: #3C79F5;

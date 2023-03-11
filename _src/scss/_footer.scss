@@ -2,10 +2,6 @@ footer{
     background-color: #272C49;
     padding: 1.5rem 0;
 
-    @include media-for (null, $sm){
-        
-    }
-
     img{
         display: block;
         text-align: center;
