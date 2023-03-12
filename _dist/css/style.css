@@ -9401,11 +9401,11 @@ footer img {
   .news-section .news-blocks .data-span {
     width: auto;
     font-size: 10px;
-    -webkit-transform: translate(50%, 0);
-        -ms-transform: translate(50%, 0);
-            transform: translate(50%, 0);
+    -webkit-transform: translate(70%, 0);
+        -ms-transform: translate(70%, 0);
+            transform: translate(70%, 0);
     top: 0.5px;
-    left: -50%;
+    left: 0%;
   }
 
   .news-section .swiper-slide h4 {
