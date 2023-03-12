@@ -7,6 +7,17 @@
     padding-top: 188px;
     color: $text-white;
 
+    @include media-for (null, $mid-desktop){
+        background-size: 85%;
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    @include media-for (null, $tablet){
+        padding-top: 105px;
+    }
+
+
     @include media-for (null, $sm){
         background: url(../img/bg-secton-top-mobile.png);
         background-repeat: no-repeat;
@@ -19,10 +30,15 @@
         font-size: 54px;
         margin-bottom: 35px;
 
-        @include media-for (null, $sm){
+        @include media-for (null, $tablet){
             font-size: 24px;
             margin-bottom: 16px;
         }
+
+        // @include media-for (null, $sm){
+        //     font-size: 24px;
+        //     margin-bottom: 16px;
+        // }
     }
 
     p{
@@ -50,12 +66,19 @@
         font-size: 12px;
         text-align: center;
 
-        @include media-for (null, $sm){
+        @include media-for (null, $tablet){
             width: 310px;
             font-size: 10px;
             padding: 0.6rem .7rem;
             margin-bottom: 10px;
         }
+
+        // @include media-for (null, $sm){
+        //     width: 310px;
+        //     font-size: 10px;
+        //     padding: 0.6rem .7rem;
+        //     margin-bottom: 10px;
+        // }
     }
 
     .img-top{
@@ -72,6 +95,10 @@
             width: 90px;
             height: 90px;
             cursor: pointer;
+
+            @include media-for (null, $tablet){
+                left: -19px;
+            }
             
             @include media-for (null, $sm){
                 left: -2%;

@@ -6,8 +6,12 @@
     background-position: 0% 0%;
     background-repeat: no-repeat;
 
+    @include media-for (null, $tablet){
+        height: auto;
+        padding: 2rem 0;
+     }
+
     @include media-for (null, $sm){
-       height: auto;
        padding: 50px 0 60px;
        background: url(../img/bg-whu-us-mb.png) 0% 100%/100%, $accent;
        background-repeat: no-repeat;
@@ -45,10 +49,12 @@
             margin-bottom: 2rem;
             min-height: 8rem;
 
-            @include media-for (null, $sm){
+            @include media-for (null, $tablet){
                 margin-bottom: 24px;
                 min-height: auto;
+                
             }
+
             div{
                 width: 89%;
                 margin-left: 1.2rem;
@@ -63,6 +69,7 @@
     .bg-limon{
         width: 65px;
         height: 65px;
+        
         @include media-for (null, $sm){
             width: 35px;
             height: 35px;

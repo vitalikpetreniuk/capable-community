@@ -20,7 +20,7 @@
             font-size: 60px;
             text-shadow: 3px 0px 0px $green-shadow;
 
-            @include media-for (null, $sm){
+            @include media-for (null, $tablet){
                 font-size: 40px;
             }
         }

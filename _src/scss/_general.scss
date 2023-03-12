@@ -89,6 +89,12 @@ body{
         height: 37px;
         font-size: 16px; 
         color: $text-gray;
+        white-space: nowrap;
+
+        @include media-for (null, $tablet){
+            width: auto;
+            font-size: 14px;
+        }
 
         @include media-for (null, $sm){
             width: 2rem;
@@ -355,7 +361,7 @@ body{
 }
 
 .swiper{
-    @include media-for (null, $sm){
+    @include media-for (null, $tablet){
        overflow: visible !important;
     }
 }

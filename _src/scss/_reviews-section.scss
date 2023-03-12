@@ -1,7 +1,7 @@
 .reviews-section{
     padding: 48px 0 80px;
 
-    @include media-for (null, $sm){
+    @include media-for (null, $tablet){
         padding: 1rem 0 0;
         overflow: hidden;
     }
@@ -21,7 +21,7 @@
         box-shadow: 0px 1px 6px 0px #D9D9D9;
         border-radius: 25px;
 
-        @include media-for (null, $sm){
+        @include media-for (null, $tablet){
             overflow: hidden;          
         }
 
@@ -31,10 +31,14 @@
             align-items: center;
             padding-left: 237px;
 
-            @include media-for (null, $sm){
+            @include media-for (null, $tablet){
                 flex-direction: column-reverse;
-                padding-bottom: 163px;
+                padding-bottom: 220px;
                 padding-left: 0;
+            }
+
+            @include media-for (null, $sm){
+                padding-bottom: 163px;
             }
         
 
@@ -42,7 +46,7 @@
                 display: block;
                 margin: 22px 0 22px;
 
-                @include media-for (null, $sm){
+                @include media-for (null, $tablet){
                     width: 30px;
                     height: 30px;
                     display: flex;
@@ -61,7 +65,7 @@
                 // height: 5rem;
                 overflow: hidden;
 
-                @include media-for (null, $sm){
+                @include media-for (null, $tablet){
                     margin-bottom: 16px;
                 }
             }
@@ -77,7 +81,8 @@
             h5{
                 font-size: 12px;
                 margin-bottom: 56px;
-                @include media-for (null, $sm){
+
+                @include media-for (null, $tablet){
                     margin-bottom: 16px;
                 }
             }
@@ -90,13 +95,17 @@
                 position: absolute;
                 transform: translateX(-100%);
 
-                @include media-for (null, $sm){
+                @include media-for (null, $tablet){
                     height: 241px;
-                    width: 241px;
+                    width: 100%;
                     border-radius: 50% 50% 10% 10%;
                     overflow: hidden;
                     position: absolute;
                     transform: translate(0%, 100%);
+                }
+
+                @include media-for (null, $sm){
+                    width: 241px;
                 }
 
                 img{
@@ -111,7 +120,7 @@
                 width: 90%;
                 padding-left: 1rem;
 
-                @include media-for (null, $sm){
+                @include media-for (null, $tablet){
                     padding: 0;
                     width: 90%;
                     

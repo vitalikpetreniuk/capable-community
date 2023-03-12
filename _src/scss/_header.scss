@@ -11,6 +11,7 @@ header{
         width: 68px;
         height: 74px;
         display: block;
+
         @include media-for (null, $sm){
             width: 38px;
             height: 40px;
@@ -27,6 +28,12 @@ header{
         margin-right: 0;
         margin-left: auto;
 
+        @include media-for (null, $tablet){
+            width: auto;
+            margin-right: auto;
+            margin-left: 0;
+        }
+        
         ul{
             display: flex;
             align-items: center;
@@ -50,6 +57,11 @@ header{
     }
 
     .btn-link{
+
+        @include media-for (null, $tablet){
+           width: auto;
+        }
+
         &:hover{
             background-color: $accent;
         }

@@ -2,9 +2,10 @@
     color: $text-white;
     padding: 70px 0 124px;
 
-    @include media-for (null, $sm){
-        padding: 42px 0 84px;
+    @include media-for (null,  $mid-desktop){
+        padding: 0px 0 40px;
     }
+
 
     .child-population-wrapper{
         background: url(../img/ua-kids-bg.png);
@@ -14,10 +15,17 @@
         height: 600px;
         margin-bottom: 110px;
 
-        @include media-for (null, $sm){
+        @include media-for (null,  $mid-desktop){
             height: auto;
-            padding-top: 254px;
+        }
+
+        @include media-for (null,  $tablet){
+            padding-top: 310px;
             background-size: 100%;
+        }
+
+        @include media-for (null, $sm){
+            padding-top: 254px;
             margin-bottom: 35px;
         }
     }
@@ -29,11 +37,20 @@
         height: 110px;
         margin-top: 6rem;
 
+        @include media-for (null, $mid-desktop){
+            width: auto;
+        }
+
+        @include media-for (null,  $tablet){
+            background-size: 74%;
+        }
+
         @include media-for (null, $sm){
             width: auto;
             height: auto;
             margin-top: 0;
             padding-top: 15px !important;
+            background-size: 96%;
         }
     }
 
@@ -44,6 +61,10 @@
         height: 175px;
         margin-top: -2rem;
         margin-left: 3rem;
+
+        @include media-for (null, $mid-desktop){
+            width: auto;
+        }
 
         @include media-for (null, $sm){
             width: auto;
@@ -117,6 +138,10 @@
         margin-left: auto;
         margin-right: 0;
 
+        @include media-for (null, $tablet){
+            max-width: 100%;
+        }
+
         @include media-for (null, $sm){
            margin-top: 14px;
            padding: 0 2.5rem;
@@ -163,6 +188,14 @@
         margin-top: 3rem;
         padding: 0;
         background-color: none;
+
+        @include media-for (null, $tablet){
+            margin: 2rem 0;
+        }
+
+        @include media-for (null, $sm){
+            margin: 2rem 0 0;
+        }
     }
 
     .card{
@@ -170,6 +203,9 @@
         padding: 40px 60px;
         border-radius: 25px;
         
+        @include media-for (null, $mid-desktop){
+            padding: 20px 25px;
+        }
 
         @include media-for (null, $sm){
             padding: 30px 17px;
