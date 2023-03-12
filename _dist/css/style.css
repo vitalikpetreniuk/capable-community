@@ -3807,6 +3807,7 @@ header .lang svg {
 
 .news-section .news-blocks {
   position: relative;
+  display: block;
 }
 
 .news-section .news-blocks .data-span {
