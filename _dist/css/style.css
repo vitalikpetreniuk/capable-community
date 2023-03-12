@@ -3733,6 +3733,7 @@ header .lang svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 237px;
 }
 
 .reviews-section .swiper-slide .review-blocks span {
@@ -3743,9 +3744,12 @@ header .lang svg {
 .reviews-section .swiper-slide .review-blocks p {
   font-size: 14px;
   font-weight: 300;
-  margin-bottom: 6px;
-  height: 5rem;
+  margin: 40px 0 50px;
   overflow: hidden;
+}
+
+.reviews-section .swiper-slide .review-blocks small {
+  display: none;
 }
 
 .reviews-section .swiper-slide .review-blocks h4 {
@@ -3754,20 +3758,32 @@ header .lang svg {
 
 .reviews-section .swiper-slide .review-blocks h5 {
   font-size: 12px;
+  margin-bottom: 56px;
 }
 
 .reviews-section .swiper-slide .review-blocks .img-wrap {
-  width: 40%;
+  height: 100%;
+  width: 241px;
+  border-radius: 10% 50% 50% 10%;
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .reviews-section .swiper-slide .review-blocks .img-wrap img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 .reviews-section .swiper-slide .review-blocks .col-right {
-  width: 56%;
-  padding-right: 1rem;
+  width: 90%;
+  padding-left: 1rem;
 }
 
 .news-section {
@@ -3816,7 +3832,6 @@ header .lang svg {
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
   border-radius: 0 0 20px 20px;
   text-align: center;
   font-size: 12px;
@@ -3870,6 +3885,9 @@ header .lang svg {
   font-size: 24px;
   color: #1A1E1C;
   font-weight: 700;
+  display: block;
+  height: 2.3rem;
+  overflow: hidden;
 }
 
 .blog-section .blogs-blocks .description P {
@@ -9182,6 +9200,10 @@ footer img {
     width: 60%;
   }
 
+  .statistics {
+    padding: 1.5rem 0;
+  }
+
   .statistics .statistics-card {
     border: none;
   }
@@ -9195,7 +9217,57 @@ footer img {
   }
 
   .reviews-section {
-    display: none;
+    padding: 1rem 0 0;
+    overflow: hidden;
+  }
+
+  .reviews-section .swiper-slide {
+    overflow: hidden;
+  }
+
+  .reviews-section .swiper-slide .review-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 163px;
+    padding-left: 0;
+  }
+
+  .reviews-section .swiper-slide .review-blocks span {
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .reviews-section .swiper-slide .review-blocks span img {
+    width: 100%;
+  }
+
+  .reviews-section .swiper-slide .review-blocks p {
+    margin-bottom: 16px;
+  }
+
+  .reviews-section .swiper-slide .review-blocks h5 {
+    margin-bottom: 16px;
+  }
+
+  .reviews-section .swiper-slide .review-blocks .img-wrap {
+    height: 241px;
+    width: 241px;
+    border-radius: 50% 50% 10% 10%;
+    overflow: hidden;
+    position: absolute;
+    -webkit-transform: translate(0%, 100%);
+        -ms-transform: translate(0%, 100%);
+            transform: translate(0%, 100%);
+  }
+
+  .reviews-section .swiper-slide .review-blocks .col-right {
+    padding: 0;
+    width: 90%;
   }
 
   .news-section {
@@ -9233,10 +9305,8 @@ footer img {
   }
 
   .blog-section .blogs-blocks .description .title a {
-    display: block;
     font-size: 15px;
     height: 1.5rem;
-    overflow: hidden;
   }
 
   .blog-section .blogs-blocks .description P {

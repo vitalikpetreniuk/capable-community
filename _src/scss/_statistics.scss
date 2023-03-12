@@ -1,6 +1,10 @@
 .statistics{
     padding: 3rem 0;
 
+    @include media-for (null, $sm){
+        padding: 1.5rem 0;
+    }
+
     .statistics-card{
         color: $accent;
         padding: 0 1.3rem; 

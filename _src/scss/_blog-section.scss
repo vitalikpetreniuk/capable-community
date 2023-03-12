@@ -64,12 +64,13 @@
                     font-size: 24px;
                     color: $text-black;
                     font-weight: 700;
+                    display: block;
+                    height: 2.3rem;
+                    overflow: hidden; 
 
                     @include media-for (null, $sm){
-                        display: block;
                         font-size: 15px;
                         height: 1.5rem;
-                        overflow: hidden; 
                     }
                 }
             }

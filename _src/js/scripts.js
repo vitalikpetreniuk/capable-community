@@ -45,29 +45,27 @@ var swiperReviews = new Swiper(".swiperReviews", {
 	slidesPerView: 1.7,
 	spaceBetween: 30,
 	breakpoints: {
-            
-		// 320: {
-		//   slidesPerView: 2.05,
-		//   spaceBetween: 10,
-		// },
+        
+		320: {
+		  slidesPerView: 1.4,
+		  spaceBetween: 20,
+		},
 	  
-		// 480: {
-		//   slidesPerView: 2.03,
-		//   spaceBetween: 10,
-		// },
-
-		// 760: {
-		//   slidesPerView: 2,
-		//   spaceBetween: 30,
-		// },
-
-		// 1100: {
-		//   slidesPerView: 3,
-		//   spaceBetween: 30,
-		// },
-
-
-
+		480: {
+		  slidesPerView: 1.4,
+		  spaceBetween: 20,
+		},
+	
+		760: {
+		  slidesPerView: 1.7,
+		  spaceBetween: 30,
+		},
+	
+		1100: {
+		  slidesPerView: 1.7,
+		  spaceBetween: 30,
+		},
+	
 	}
 
 });
