@@ -234,9 +234,9 @@ $('.lang-desctop').on('click', function () {
 })
 
 $('.lang-list a').on('click', function () {	
-	$(".lang-desctop-wrap").empty();
-	$(this).clone().appendTo('.lang-desctop-wrap');
-
+	const lang = $(this).data("lang");
+	$(".lang-desctop-wrap a").removeClass("active");
+	$(`.lang-desctop-wrap a[data-lang="${lang}"]`).addClass("active");
 })
 
 

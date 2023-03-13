@@ -96,8 +96,16 @@ header{
             padding: .2rem .3rem;
         }
 
+        .lang-opener{
+            display: none;
+        }
+
         .lang-desctop-wrap{
             width: 70%;
+            .active{
+                display: block;
+            }
+
         }
 
         .arrow-wrap{

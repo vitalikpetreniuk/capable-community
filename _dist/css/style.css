@@ -3656,8 +3656,16 @@ header .lang-desctop a {
   padding: 0.2rem 0.3rem;
 }
 
+header .lang-desctop .lang-opener {
+  display: none;
+}
+
 header .lang-desctop .lang-desctop-wrap {
   width: 70%;
+}
+
+header .lang-desctop .lang-desctop-wrap .active {
+  display: block;
 }
 
 header .lang-desctop .arrow-wrap {
