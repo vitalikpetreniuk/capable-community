@@ -3495,6 +3495,10 @@ body .slides-items .description P {
   top: -12px;
 }
 
+.btn-about-project-active {
+  display: block;
+}
+
 .btn-about-project-active svg {
   position: relative;
   -webkit-transform: rotate(180deg);

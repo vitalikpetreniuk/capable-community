@@ -172,6 +172,7 @@
 }
 
 .btn-about-project-active{
+    display: block;
     svg{
         position: relative;
         transform: rotate(180deg);
