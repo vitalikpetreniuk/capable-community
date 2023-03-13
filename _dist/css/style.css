@@ -3662,6 +3662,7 @@ header .lang-desctop .lang-opener {
 
 header .lang-desctop .lang-desctop-wrap {
   width: 70%;
+  height: 2.3rem;
 }
 
 header .lang-desctop .lang-desctop-wrap .active {
@@ -4581,9 +4582,64 @@ header .selector__list li.selected a {
   height: 5rem;
 }
 
+.map-section {
+  height: 691px;
+  padding: 6rem 0;
+  background: url(../img/bg-dots-map.png) 15% 18%/7%, #F3F3F8;
+  background-repeat: no-repeat;
+}
+
+.map-section h3 {
+  font-size: 54px;
+  margin-bottom: 27px;
+}
+
+.map-section .wrap-position {
+  position: relative;
+  height: 100%;
+}
+
+.map-section .wrap-position .text-wrap {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+}
+
+.map-section .map-wrap svg {
+  width: 100%;
+}
+
+.map-section .map-wrap svg path {
+  -webkit-transition: all 0.2 ease-in-out;
+  -o-transition: all 0.2 ease-in-out;
+  transition: all 0.2 ease-in-out;
+  cursor: pointer;
+}
+
+.map-section .map-wrap svg path:hover {
+  fill: #969696;
+}
+
 footer {
   background-color: #272C49;
   padding: 1.5rem 0;
+}
+
+footer .flex-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .flex-wrap a {
+  display: block;
 }
 
 footer img {

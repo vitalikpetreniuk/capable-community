@@ -1,3 +1,36 @@
 .map-section{
+    height: 691px;
+    padding: 6rem 0;
+    background: url(../img/bg-dots-map.png)  15% 18%/7%, #F3F3F8;
+    background-repeat: no-repeat;
     
+    h3{
+        font-size: 54px;
+        margin-bottom: 27px;
+    }
+
+    .wrap-position{
+        position: relative;
+        height: 100%;
+        .text-wrap{
+            position: absolute;
+            width: 100%;
+            height: auto;
+            bottom: 0;
+        }
+    }
+
+    .map-wrap{
+        svg{
+            width: 100%;
+            path{
+
+                transition: all .2 ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    fill: $text-gray;
+                }
+            }
+        }
+    }
 }

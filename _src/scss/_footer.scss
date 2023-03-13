@@ -2,6 +2,16 @@ footer{
     background-color: #272C49;
     padding: 1.5rem 0;
 
+    .flex-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        a{
+            display: block;
+        }
+    }
+
     img{
         display: block;
         text-align: center;
