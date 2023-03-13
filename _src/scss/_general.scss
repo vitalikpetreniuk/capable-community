@@ -381,4 +381,26 @@ body{
     }
 }
 
+//btn-more in sliders
+
+.btn-more{
+    position: absolute;
+    color: $text-white;
+    bottom: 32px;
+    text-decoration: underline !important;
+    right: 0px;
+    left: auto;
+    font-size: 16px;
+    font-weight: 500;
+    
+    @include media-for (null, $mid-desktop){
+        
+    }
+
+    @include media-for (null, $tablet){
+        display: none;
+    }
+}
+
+
 

@@ -3259,6 +3259,17 @@ body .slides-items .description P {
   color: #ffff;
 }
 
+.btn-more {
+  position: absolute;
+  color: #ffff;
+  bottom: 32px;
+  text-decoration: underline !important;
+  right: 0px;
+  left: auto;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .burger {
   position: fixed;
   right: 0;
@@ -4086,7 +4097,12 @@ header .lang svg {
 }
 
 .news-section {
+  position: relative;
   padding: 0 0 4rem;
+}
+
+.news-section .btn-more {
+  color: #FDA43B;
 }
 
 .news-section h3 {
@@ -4143,6 +4159,7 @@ header .lang svg {
 }
 
 .blog-section {
+  position: relative;
   background: url("../img/bg-blogs.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -9334,6 +9351,10 @@ footer img {
 
   .swiper {
     overflow: visible !important;
+  }
+
+  .btn-more {
+    display: none;
   }
 
   header nav {
