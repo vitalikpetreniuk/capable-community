@@ -1,10 +1,14 @@
 
 //burger
 
-$('.burger').on('click', function () {
-	$(this).toggleClass('burger-active');
-	$('#menu').toggleClass('overlay');
-	$('body').toggleClass('overflow');
+$('.burger').on('click', function () {	
+	$('#menu').addClass('overlay');
+	$('body').addClass('overflow');
+})
+
+$('.burger-active').on('click', function () {
+	$('#menu').removeClass('overlay');
+	$('body').removeClass('overflow');
 })
 
 
