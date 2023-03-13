@@ -36,6 +36,7 @@
     p{
         font-size: 14px;
         color: $text-white;
+        font-family: 'Montserrat', sans-serif;
 
         @include media-for (null, $sm){
             font-size: 13px;

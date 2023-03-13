@@ -2926,7 +2926,7 @@ button.swiper-pagination-bullet {
 
 @font-face {
   font-family: "KyivTypeSans";
-  src: url(../font/KyivTypeSans-Bold.ttf) format("truetype"), url(../font/KyivTypeSans-Bold.woff) format("woff"), url(../font/KyivTypeSans-Bold.woff2) format("woff2");
+  src: url(../fonts/KyivTypeSans-Bold.ttf) format("truetype"), url(../fonts/KyivTypeSans-Bold.woff) format("woff"), url(../fonts/KyivTypeSans-Bold.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -2934,7 +2934,7 @@ button.swiper-pagination-bullet {
 
 @font-face {
   font-family: "KyivTypeSans";
-  src: url(../font/KyivTypeSans-Medium.ttf) format("truetype"), url(../font/KyivTypeSans-Medium.woff) format("woff"), url(../font/KyivTypeSans-Medium.woff2) format("woff2");
+  src: url(../fonts/KyivTypeSans-Medium.ttf) format("truetype"), url(../fonts/KyivTypeSans-Medium.woff) format("woff"), url(../fonts/KyivTypeSans-Medium.woff2) format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -2942,7 +2942,7 @@ button.swiper-pagination-bullet {
 
 @font-face {
   font-family: "KyivTypeSans";
-  src: url(../font/KyivTypeSans-Regular.ttf) format("truetype"), url(../font/KyivTypeSans-Regular.woff) format("woff"), url(../font/KyivTypeSans-Regular.woff2) format("woff2");
+  src: url(../fonts/KyivTypeSans-Regular.ttf) format("truetype"), url(../fonts/KyivTypeSans-Regular.woff) format("woff"), url(../fonts/KyivTypeSans-Regular.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2950,7 +2950,7 @@ button.swiper-pagination-bullet {
 
 @font-face {
   font-family: "KyivTypeSans";
-  src: url(../font/KyivTypeSans-Light.ttf) format("truetype"), url(../font/KyivTypeSans-Light.woff) format("woff"), url(../font/KyivTypeSans-Light.woff2) format("woff2");
+  src: url(../fonts/KyivTypeSans-Light.ttf) format("truetype"), url(../fonts/KyivTypeSans-Light.woff) format("woff"), url(../fonts/KyivTypeSans-Light.woff2) format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -3363,6 +3363,7 @@ body .slides-items .description P {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 #menu ul li a svg {
@@ -3576,6 +3577,7 @@ header nav ul li a {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 header nav ul li a:hover {
@@ -3652,11 +3654,13 @@ header .lang svg {
 .section-top h1 {
   font-size: 54px;
   margin-bottom: 35px;
+  font-family: "KyivTypeSans", sans-serif;
 }
 
 .section-top p {
   color: #ffff;
   margin-bottom: 35px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .section-top strong {
@@ -3766,6 +3770,7 @@ header .lang svg {
   color: #ffff;
   font-weight: 700;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .child-population .bg-blue h3 {
@@ -3789,6 +3794,7 @@ header .lang svg {
   font-size: 10px;
   font-weight: 300;
   margin-left: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .child-population .prosent-block div {
@@ -3843,6 +3849,7 @@ header .lang svg {
 .child-population .card p {
   font-weight: 300;
   font-size: 14px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .сommunity-strengthening {
@@ -3859,6 +3866,7 @@ header .lang svg {
 .сommunity-strengthening p {
   font-weight: 300;
   font-size: 14px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .сommunity-strengthening .btns-wrap {
@@ -3916,6 +3924,7 @@ header .lang svg {
 .why_us p {
   font-size: 14px;
   color: #ffff;
+  font-family: "Montserrat", sans-serif;
 }
 
 .why_us ul li {
@@ -3958,6 +3967,7 @@ header .lang svg {
 
 .statistics .statistics-card .text {
   font-size: 17px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .statistics .statistics-card-last {
@@ -4006,6 +4016,7 @@ header .lang svg {
   font-size: 14px;
   font-weight: 300;
   margin: 40px 0 50px;
+  font-family: "Montserrat", sans-serif;
   overflow: hidden;
 }
 
@@ -4068,6 +4079,7 @@ header .lang svg {
 .news-section .news-blocks {
   position: relative;
   display: block;
+  font-family: "Montserrat", sans-serif;
 }
 
 .news-section .news-blocks .data-span {
@@ -4110,6 +4122,7 @@ header .lang svg {
   background-position: 50% 50%;
   padding: 5rem 0 3rem;
   height: 720px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .blog-section h3 {

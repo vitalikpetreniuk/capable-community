@@ -42,9 +42,9 @@ $gutter: $grid-gutter-width;
 
 @font-face {
     font-family: "KyivTypeSans";
-    src: url(../font/KyivTypeSans-Bold.ttf) format("truetype"),
-        url(../font/KyivTypeSans-Bold.woff) format("woff"),
-        url(../font/KyivTypeSans-Bold.woff2) format("woff2");
+    src: url(../fonts/KyivTypeSans-Bold.ttf) format("truetype"),
+        url(../fonts/KyivTypeSans-Bold.woff) format("woff"),
+        url(../fonts/KyivTypeSans-Bold.woff2) format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -52,9 +52,9 @@ $gutter: $grid-gutter-width;
 
 @font-face {
     font-family: "KyivTypeSans";
-    src: url(../font/KyivTypeSans-Medium.ttf) format("truetype"),
-        url(../font/KyivTypeSans-Medium.woff) format("woff"),
-        url(../font/KyivTypeSans-Medium.woff2) format("woff2");
+    src: url(../fonts/KyivTypeSans-Medium.ttf) format("truetype"),
+        url(../fonts/KyivTypeSans-Medium.woff) format("woff"),
+        url(../fonts/KyivTypeSans-Medium.woff2) format("woff2");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -62,9 +62,9 @@ $gutter: $grid-gutter-width;
 
 @font-face {
     font-family: "KyivTypeSans";
-    src: url(../font/KyivTypeSans-Regular.ttf) format("truetype"),
-        url(../font/KyivTypeSans-Regular.woff) format("woff"),
-        url(../font/KyivTypeSans-Regular.woff2) format("woff2");
+    src: url(../fonts/KyivTypeSans-Regular.ttf) format("truetype"),
+        url(../fonts/KyivTypeSans-Regular.woff) format("woff"),
+        url(../fonts/KyivTypeSans-Regular.woff2) format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -72,9 +72,9 @@ $gutter: $grid-gutter-width;
 
 @font-face {
     font-family: "KyivTypeSans";
-    src: url(../font/KyivTypeSans-Light.ttf) format("truetype"),
-        url(../font/KyivTypeSans-Light.woff) format("woff"),
-        url(../font/KyivTypeSans-Light.woff2) format("woff2");
+    src: url(../fonts/KyivTypeSans-Light.ttf) format("truetype"),
+        url(../fonts/KyivTypeSans-Light.woff) format("woff"),
+        url(../fonts/KyivTypeSans-Light.woff2) format("woff2");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
