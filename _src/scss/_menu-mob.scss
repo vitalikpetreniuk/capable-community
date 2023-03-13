@@ -1,8 +1,8 @@
 #menu{
-    z-index: -1;
     min-width:100%;
     min-height:100%;
     position: fixed;
+    z-index: 70;
     top:0;
     left: 0;
     padding-top:100px;
@@ -15,6 +15,11 @@
     background: url(../img/bg-dots.png) 99% 104%/33%,  #F5F5F5;
     background-repeat: no-repeat;
     padding-bottom: 4rem;
+    display: none;
+
+    @include media-for (null, $sm){
+        display: block;
+    }
     
 
 
@@ -38,6 +43,7 @@
                 font-weight: 500;
                 width: 100%;
                 text-align: left;
+                padding-left: 40px;
 
                 &:hover{
                     color: $accent;
@@ -45,11 +51,25 @@
                     transform: scale(1);
                 }
             }
+
+            button{
+                padding-left: 40px;
+            }
         }
+    }
+
+    .logo{
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        width: 38px;
+        height: 41px;
+        padding-left: 0;
     }
 
     .lang{
         display: flex;
+        padding-left: 40px;
         a{
             margin-left: .4rem;
         }
