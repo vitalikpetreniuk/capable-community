@@ -78,34 +78,154 @@ header{
         }
     }
 
-    .lang{
+
+    .lang-desctop{
         position: relative;
-        transition: 0.7s;
         padding: .2rem .3rem;
         cursor: pointer;
-        display: flex;
-        align-items: center;
+        border: 1px solid rgba($color: #000000, $alpha: .0);
+        border-radius: 25px;
+
+        &:hover{
+            border: 1px solid $accent;
+
+        }
 
         a{
             display: block;
-            border: 1px solid rgba($color: #000000, $alpha: .0);
-            border-radius: 5px;
             padding: .2rem .3rem;
+        }
 
-            &:hover{
-                border: 1px solid $accent;
+        .lang-desctop-wrap{
+            width: 70%;
+        }
+
+        .arrow-wrap{
+            width: 30%;
+            transition: all .2s ease-in-out;
+            
+            svg{
+                width: 100% !important;
+                display: block;
+                transition: all .2s ease-in-out;
             }
         }
 
+        .lang-list{
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .2s ease-in-out;
+            transform: translate(15%, -200%);
+        }
+    }
 
+    .lang-desctop-active{
+        .lang-list{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: translate(15%,100%);
+            visibility: visible;
+            opacity: 1;
+        }
 
-        svg{
-            transition: 0.7s;
-            margin-left: .3rem;
+        .arrow-wrap{
+            transform: rotate(180deg);
+        }
+    }
+
+    .selector {
+        position: relative;
+        display: block;
+        text-align: left;
+        margin-bottom: 2.4em;
+    }
+    
+    .selector__toggle {
+        display: block;
+        background-color: #7090cd;
+        padding: 1em;
+        color: white;
+        text-decoration: none;
+        box-shadow: 0 0px 0px rgba(0,0,0,0.3);
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+        
+        i {
+            float: right;
+            position: relative;
+        top: 0.2em;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            
+            .open & {
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+        }
+        
+        &:hover,
+        &:focus {
+            background-color: #8eaeeb;
+            -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            color: white;
+        }
+    }
+    
+    .selector__list {
+        display: none;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: #7090cd;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        
+        .open & {
+            display: block;
+        }
+        
+        li {
+            a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                padding: 1em;
+                border-top: 1px solid #8eaeeb;
+                background-color: #4a5f87;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-transition: all 0.2s linear;
+                -moz-transition: all 0.2s linear;
+                -o-transition: all 0.2s linear;
+                transition: all 0.2s linear;
+            }
+        
+            &:hover,
+            &:focus,
+            &.selected {
+                a {
+                    background-color: #56c022;
+                }
+            }
         }
     }
 
 }
+
+
 
 .header-fixed{
     background-color: rgba($color: #2F37A4, $alpha: .8);

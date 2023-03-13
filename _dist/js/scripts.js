@@ -218,12 +218,31 @@ $('.btn-about-project').on('click', function () {
 })
 
 
+//lang in mob menu
+
+$('.lang-menu a').on('click', function () {	
+	$('.lang-menu a').removeClass('active-lang');
+	$(this).addClass('active-lang');
+})
+
+
+///custom-select-language descctop
+
+$('.lang-desctop').on('click', function () {	
+	$(this).toggleClass('lang-desctop-active');
+
+})
+
+$('.lang-list a').on('click', function () {	
+	$(".lang-desctop-wrap").empty();
+	$(this).clone().appendTo('.lang-desctop-wrap');
+
+})
 
 
 
 
-
-
+// $(".lang-desctop-wrap")
 
 
 
