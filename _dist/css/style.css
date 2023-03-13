@@ -3356,8 +3356,14 @@ body .slides-items .description P {
 }
 
 #menu .lang a {
-  margin-right: 1.5rem;
-  padding-left: 0;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  padding: 0.2rem 0.3rem;
+}
+
+#menu .lang a:hover {
+  border: 1px solid #3C79F5;
 }
 
 #menu .btn-link-active {
@@ -3440,6 +3446,38 @@ body .slides-items .description P {
   top: -12px;
 }
 
+.btn-about-project-active svg {
+  position: relative;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.btn-about-project-active svg path {
+  fill: #3C79F5;
+}
+
+.about-project-navigatiob {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(217, 217, 217, 0.1);
+}
+
+.about-project-navigatiob a {
+  display: block !important;
+  padding-left: 63px !important;
+  margin-bottom: 0.5rem;
+  color: #1A1E1C !important;
+  text-align: left;
+}
+
+.about-project-navigatiob-active {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -3514,6 +3552,23 @@ header .lang {
   transition: 0.7s;
   padding: 0.2rem 0.3rem;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .lang a {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  padding: 0.2rem 0.3rem;
+}
+
+header .lang a:hover {
+  border: 1px solid #3C79F5;
 }
 
 header .lang svg {
@@ -3745,7 +3800,7 @@ header .lang svg {
 .сommunity-strengthening {
   padding: 184px 0 200px;
   height: 905px;
-  background: url(../img/сommunity-strengthening.png) 0% 100%/40%, url(../img/bg-dots-two.png) 73% 52%/44%, #F5F4FA;
+  background: url(../img/сommunity-strengthening.png) 0% 100%/43%, url(../img/bg-dots-two.png) 73% 52%/44%, #F5F4FA;
   background-repeat: no-repeat;
 }
 

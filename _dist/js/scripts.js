@@ -30,9 +30,23 @@ $(window).on("scroll",function() {
 
 //hover efect
 
-$('.btns-wrap > .btn-link').hover(
+$('.btns-wrap-section-top > .btn-link').hover(
 	function() {
-		$('.btns-wrap > .btn-link').removeClass('btn-link-active');
+		$('.btns-wrap-section-top > .btn-link').removeClass('btn-link-active');
+		$(this).addClass('btn-link-active');
+	}
+);
+
+$('.btns-wrap-child-population > .btn-link').hover(
+	function() {
+		$('.btns-wrap-child-population > .btn-link').removeClass('btn-link-active');
+		$(this).addClass('btn-link-active');
+	}
+);
+
+$('.btns-wrap-сommunity-strengthening > .btn-link').hover(
+	function() {
+		$('.btns-wrap-сommunity-strengthening > .btn-link').removeClass('btn-link-active');
 		$(this).addClass('btn-link-active');
 	}
 );
@@ -188,6 +202,14 @@ $(document).on("click",".expand_testimonial",function () {
     $(this).parent().hide();    
     
   })
+
+
+//menu
+
+$('.btn-about-project').on('click', function () {	
+	$('.about-project-navigatiob').toggleClass("about-project-navigatiob-active");
+	$(this).toggleClass('btn-about-project-active');
+})
 
 
 
