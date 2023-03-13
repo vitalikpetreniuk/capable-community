@@ -3116,8 +3116,8 @@ body .slides-items .img-wrap img {
 
 body .slides-items .description {
   background-color: #ffff;
-  -webkit-box-shadow: 0px 1px 6px 0px #D9D9D9;
-          box-shadow: 0px 1px 6px 0px #D9D9D9;
+  -webkit-box-shadow: 0px 1px 6px 0px #0000;
+          box-shadow: 0px 1px 6px 0px #0000;
   padding: 20px 21px;
   border-radius: 30px;
   margin-top: -17%;
@@ -3325,7 +3325,7 @@ body .slides-items .description P {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: url(../img/bg-dots.png) 99% 104%/33%, #F5F5F5;
+  background: url(../img/bg-dots.png) 99% 92%/33%, #F5F4FA;
   background-repeat: no-repeat;
   padding-bottom: 4rem;
   display: none;
@@ -3427,6 +3427,7 @@ body .slides-items .description P {
 #menu .btn-link-active span {
   display: block;
   color: #ffff;
+  font-size: 16px;
 }
 
 #menu p {
@@ -3473,6 +3474,7 @@ body .slides-items .description P {
   -o-transition: 0.2s all ease-in;
   transition: 0.2s all ease-in;
   margin-bottom: 4px;
+  margin-left: 0.5rem;
 }
 
 #menu .burger-active span:first-child {
@@ -3495,8 +3497,21 @@ body .slides-items .description P {
   top: -12px;
 }
 
-.btn-about-project-active {
+.btn-about-project {
   display: block;
+  padding-left: 40px !important;
+  -webkit-transition: 0.2s all ease-in;
+  -o-transition: 0.2s all ease-in;
+  transition: 0.2s all ease-in;
+  padding: 1rem 0;
+}
+
+.btn-about-project:hover {
+  color: #3C79F5;
+  font-weight: 700;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 .btn-about-project-active svg {
@@ -3511,6 +3526,7 @@ body .slides-items .description P {
 }
 
 .about-project-navigatiob {
+  padding: 1rem 0;
   height: 0;
   opacity: 0;
   visibility: hidden;
@@ -3523,6 +3539,8 @@ body .slides-items .description P {
   margin-bottom: 0.5rem;
   color: #1A1E1C !important;
   text-align: left;
+  margin-bottom: 0.3rem;
+  font-size: 14px;
 }
 
 .about-project-navigatiob-active {
@@ -3852,14 +3870,19 @@ header .lang svg {
 
 .child-population .card p {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 13px;
   font-family: "Montserrat", sans-serif;
+}
+
+.child-population .bg-limon {
+  font-size: 30px !important;
+  font-weight: 700;
 }
 
 .сommunity-strengthening {
   padding: 184px 0 200px;
   height: 905px;
-  background: url(../img/сommunity-strengthening.png) 0% 100%/43%, url(../img/bg-dots-two.png) 73% 52%/44%, #F5F4FA;
+  background: url(../img/сommunity-strengthening.png) 0% 100%/43%, url(../img/bg-dots-two.png) 84% 67%/51%, #F5F4FA;
   background-repeat: no-repeat;
 }
 
@@ -4092,7 +4115,7 @@ header .lang svg {
   width: 145px;
   padding: 0.2rem 1rem;
   color: #ffff;
-  background-color: #1A1E1C;
+  background-color: #272C49;
   left: 50%;
   top: 0;
   transform: translate(-50%, 0);
@@ -4161,7 +4184,7 @@ header .lang svg {
 .blog-section .blogs-blocks .description {
   -webkit-box-shadow: 0px 0px 0px 0px #D9D9D9;
           box-shadow: 0px 0px 0px 0px #D9D9D9;
-  padding: 20px 24px;
+  padding: 20px !important;
 }
 
 .blog-section .blogs-blocks .description .title a {
@@ -9603,8 +9626,10 @@ footer img {
   }
 
   .section-top .img-top .btn-play {
-    left: -2%;
-    top: 9%;
+    left: 3%;
+    top: 10%;
+    width: 70px;
+    height: 70px;
   }
 
   .section-top .btn-link svg path {
@@ -9672,6 +9697,10 @@ footer img {
     margin-top: 25px;
   }
 
+  .child-population .bg-limon {
+    font-size: 20px !important;
+  }
+
   .сommunity-strengthening {
     padding: 40px 0 0;
     height: 862px;
@@ -9681,6 +9710,10 @@ footer img {
 
   .сommunity-strengthening h3 {
     font-size: 17px;
+  }
+
+  .сommunity-strengthening p {
+    font-size: 13px;
   }
 
   .сommunity-strengthening ul li img {
@@ -9772,7 +9805,7 @@ footer img {
   }
 
   .blog-section .blogs-blocks .description .title a {
-    font-size: 15px;
+    font-size: 13px;
     height: 1.5rem;
   }
 
@@ -9785,11 +9818,11 @@ footer img {
   }
 
   .blog-section .blogs-blocks .description .information .name a {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .blog-section .blogs-blocks .description .information span a {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .partners {

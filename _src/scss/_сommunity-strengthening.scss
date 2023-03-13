@@ -1,7 +1,7 @@
 .сommunity-strengthening{
     padding: 184px 0 200px;
     height: 905px;
-    background: url(../img/сommunity-strengthening.png) 0% 100%/43%, url(../img/bg-dots-two.png) 73% 52%/44% ,  $bg-gray;
+    background: url(../img/сommunity-strengthening.png) 0% 100%/43%, url(../img/bg-dots-two.png) 84% 67%/51% ,  $bg-gray;
     background-repeat: no-repeat;
 
     @include media-for (null, $mid-desktop){
@@ -38,6 +38,10 @@
         font-weight: 300;
         font-size: 14px;
         font-family: 'Montserrat', sans-serif;
+
+        @include media-for (null, $sm){
+            font-size: 13px;
+        }
     }
 
     .btns-wrap{

@@ -236,11 +236,19 @@
 
         p{
             font-weight: 300;
-            font-size: 14px;
+            font-size: 13px;
             font-family: 'Montserrat', sans-serif;
         }
 
 
+    }
+
+    .bg-limon{
+        font-size: 30px !important;
+        font-weight: 700;
+        @include media-for (null, $sm){
+            font-size: 20px !important;
+        }
     }
 
     

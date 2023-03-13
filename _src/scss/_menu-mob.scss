@@ -12,7 +12,7 @@
     text-align: center;
     padding-top: 100px;
     transition: all 0.3s ease-in-out;
-    background: url(../img/bg-dots.png) 99% 104%/33%,  #F5F5F5;
+    background: url(../img/bg-dots.png) 99% 92%/33%,  #F5F4FA;
     background-repeat: no-repeat;
     padding-bottom: 4rem;
     display: none;
@@ -104,6 +104,7 @@
         span{
             display: block;
             color: $text-white;
+            font-size: 16px;
         }
     }
 
@@ -153,6 +154,7 @@
             position: relative;
             transition: .2s all ease-in;
             margin-bottom: 4px;
+            margin-left: 0.5rem;
         } 
 
         span:first-child{
@@ -171,8 +173,21 @@
     }
 }
 
-.btn-about-project-active{
+
+.btn-about-project{
     display: block;
+    padding-left: 40px !important;
+    transition: .2s all ease-in;
+    padding: 1rem 0;
+    &:hover{
+        color: $accent;
+        font-weight: 700;
+        transform: scale(1);
+    }
+}
+
+.btn-about-project-active{
+
     svg{
         position: relative;
         transform: rotate(180deg);
@@ -183,6 +198,7 @@
 }
 
 .about-project-navigatiob{
+    padding: 1rem 0;
     height: 0;
     opacity: 0;
     visibility: hidden;
@@ -193,6 +209,8 @@
         margin-bottom: .5rem;
         color: $text-black!important;
         text-align: left;
+        margin-bottom: .3rem;
+        font-size: 14px;
     }
 }
 

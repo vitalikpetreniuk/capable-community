@@ -4,11 +4,17 @@
 $('.burger').on('click', function () {	
 	$('#menu').addClass('overlay');
 	$('body').addClass('overflow');
+
+	if( $('#menu').hasClass('overlay') ){
+		$('.widget-btns').css('display', 'none');
+	}
+
 })
 
 $('.burger-active').on('click', function () {
 	$('#menu').removeClass('overlay');
 	$('body').removeClass('overflow');
+	$('.widget-btns').css('display', 'block');
 })
 
 

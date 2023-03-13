@@ -102,8 +102,10 @@
             }
             
             @include media-for (null, $sm){
-                left: -2%;
-                top: 9%;
+                left: 3%;
+                top: 10%;
+                width: 70px;
+                height: 70px;
             }
 
             img{
