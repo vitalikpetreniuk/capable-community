@@ -7,6 +7,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;
+
+500;700&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -2921,8 +2924,40 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
+@font-face {
+  font-family: "KyivTypeSans";
+  src: url(../font/KyivTypeSans-Bold.ttf) format("truetype"), url(../font/KyivTypeSans-Bold.woff) format("woff"), url(../font/KyivTypeSans-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KyivTypeSans";
+  src: url(../font/KyivTypeSans-Medium.ttf) format("truetype"), url(../font/KyivTypeSans-Medium.woff) format("woff"), url(../font/KyivTypeSans-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KyivTypeSans";
+  src: url(../font/KyivTypeSans-Regular.ttf) format("truetype"), url(../font/KyivTypeSans-Regular.woff) format("woff"), url(../font/KyivTypeSans-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KyivTypeSans";
+  src: url(../font/KyivTypeSans-Light.ttf) format("truetype"), url(../font/KyivTypeSans-Light.woff) format("woff"), url(../font/KyivTypeSans-Light.woff2) format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "KyivTypeSans", sans-serif;
   color: rgba(0, 0, 0, 0.7);
   position: relative;
   overflow-x: hidden;
@@ -3209,6 +3244,19 @@ body .slides-items .description P {
 
 .swiper-pagination-bullet-active {
   background-color: #3C79F5;
+}
+
+.breadcrumbs {
+  color: #ffff;
+  margin-bottom: 20px;
+}
+
+.breadcrumbs span {
+  color: #969696;
+}
+
+.breadcrumbs span:first-child {
+  color: #ffff;
 }
 
 .burger {
@@ -4279,6 +4327,67 @@ header .lang svg {
           box-shadow: 0px 1px 6px 0px #D9D9D9;
   right: 0;
   top: 0;
+}
+
+.about-project-section-top {
+  padding-top: 130px;
+  padding-bottom: 3rem;
+  background: url(../img/about-project-section-top-bg.png) 0% 0%/72%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;
+  background-repeat: no-repeat;
+}
+
+.about-project-section-top h2 {
+  font-size: 54px;
+  color: #ffff;
+  margin-bottom: 30px;
+}
+
+.about-project-section-top img {
+  width: 100%;
+}
+
+.about-project-section-top .btns-wrap {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  width: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 120px;
+}
+
+.about-project-section-top .btns-wrap .btn-link {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffff;
+  margin-right: 1rem;
+}
+
+.about-project-section-top .btns-wrap .btn-link-active {
+  background-color: #FDA43B;
+}
+
+.about-project-section-top p {
+  margin-bottom: 1.5rem;
+}
+
+.about-project-section-top .first-p {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-project-section-top .img-top {
+  margin-bottom: 30px;
+}
+
+.about-project-section-top .patners-wrap {
+  padding: 2rem 3rem;
+  -webkit-box-shadow: 0px 1px 6px 0px #D9D9D9;
+          box-shadow: 0px 1px 6px 0px #D9D9D9;
+  border-radius: 25px;
+}
+
+.about-project-section-top .patners-wrap .partners-item {
+  height: 5rem;
 }
 
 footer {

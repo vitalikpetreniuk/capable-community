@@ -1,7 +1,8 @@
 // GENERAL PROJECT STYLES
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Montserrat', sans-serif;
+    font-family: "KyivTypeSans", sans-serif;
     color: rgba($color: #000000, $alpha: .7);
     position: relative;
     overflow-x: hidden;
@@ -366,5 +367,18 @@ body{
     }
 }
 
+
+//breadcrumbs
+
+.breadcrumbs{
+    color: $text-white;
+    margin-bottom: 20px;
+    span{
+        color: $text-gray;
+        &:first-child{
+            color: $text-white;
+        }
+    }
+}
 
 
