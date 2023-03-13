@@ -3341,7 +3341,8 @@ body .slides-items .description P {
 }
 
 #menu .lang a {
-  margin-left: 0.4rem;
+  margin-right: 1.5rem;
+  padding-left: 0;
 }
 
 #menu .btn-link-active {
@@ -3349,6 +3350,8 @@ body .slides-items .description P {
   display: -ms-flexbox;
   display: flex;
   width: 200px;
+  padding-left: 0px;
+  margin-left: 40px;
 }
 
 #menu .btn-link-active span {
@@ -3363,6 +3366,7 @@ body .slides-items .description P {
   font-size: 300;
   margin-top: 60px;
   text-align: left;
+  padding-left: 40px;
 }
 
 #menu.overlay {

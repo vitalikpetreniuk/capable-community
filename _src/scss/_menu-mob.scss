@@ -71,7 +71,8 @@
         display: flex;
         padding-left: 40px;
         a{
-            margin-left: .4rem;
+            margin-right: 1.5rem;
+            padding-left: 0;
         }
 
 
@@ -80,6 +81,8 @@
     .btn-link-active{
         display: flex;
         width: 200px;
+        padding-left: 0px;
+        margin-left: 40px;
         span{
             display: block;
             color: $text-white;
@@ -93,6 +96,7 @@
         font-size: 300;
         margin-top: 60px;
         text-align: left;
+        padding-left: 40px;
     }
 
     &.overlay{
