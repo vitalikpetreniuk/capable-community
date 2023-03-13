@@ -3260,12 +3260,106 @@ body .slides-items .description P {
   top: -12px;
 }
 
+#menu {
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  padding-top: 100px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: url(../img/bg-dots.png) 99% 104%/33%, #F5F5F5;
+  background-repeat: no-repeat;
+  padding-bottom: 4rem;
+}
+
+#menu ul {
+  display: block;
+}
+
+#menu ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+#menu ul li:hover {
+  background-color: rgba(217, 217, 217, 0.1);
+}
+
+#menu ul li a {
+  display: block;
+  color: #1A1E1C;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+}
+
+#menu ul li a:hover {
+  color: #3C79F5;
+  font-weight: 700;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+#menu .lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#menu .lang a {
+  margin-left: 0.4rem;
+}
+
+#menu .btn-link-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+}
+
+#menu .btn-link-active span {
+  display: block;
+  color: #ffff;
+}
+
+#menu p {
+  color: #969696;
+  font-size: 12px;
+  font-style: italic;
+  font-size: 300;
+  margin-top: 60px;
+  text-align: left;
+}
+
+#menu.overlay {
+  visibility: visible;
+  opacity: 1;
+  overflow-x: hidden;
+}
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 60;
+  z-index: 150;
   -webkit-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -3323,7 +3417,7 @@ header .btn-link:hover {
   background-color: #3C79F5;
 }
 
-header .user:hover svg path {
+header .user-header:hover svg path {
   fill: #ffc107;
 }
 
@@ -3334,29 +3428,6 @@ header .lang {
   transition: 0.7s;
   padding: 0.2rem 0.3rem;
   cursor: pointer;
-}
-
-header .lang::before {
-  content: "";
-  background-color: #3C79F5;
-  width: 0;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  -webkit-transition: 0.7s;
-  -o-transition: 0.7s;
-  transition: 0.7s;
-}
-
-header .lang:hover::before {
-  width: 100%;
-  border-radius: 5px;
-}
-
-header .lang:hover svg path {
-  fill: #fff;
 }
 
 header .lang svg {
@@ -3371,7 +3442,7 @@ header .lang svg {
   padding: 7px 0;
 }
 
-.header-fixed .user svg path {
+.header-fixed .user-header svg path {
   fill: #ffff;
 }
 

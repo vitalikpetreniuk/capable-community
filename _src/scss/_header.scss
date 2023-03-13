@@ -3,7 +3,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-	z-index: 60;
+	z-index: 150;
 	transition: all .4s ease-in-out;
     padding: 20px 0;
 
@@ -67,7 +67,7 @@ header{
         }
     }
 
-    .user{
+    .user-header{
         &:hover{
             svg{
                 path{
@@ -82,29 +82,35 @@ header{
         transition: 0.7s;
         padding: .2rem .3rem;
         cursor: pointer;
-        &::before {
-            content: "";
-            background-color: $accent;
-            width: 0;
-            height: 100%;
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            left: 0;
-            transition: 0.7s;
-        }
-
-        &:hover::before {
-            width: 100%;
-            border-radius: 5px;
-        }
-
-        &:hover{
-            svg{
-                path{
-                    fill: #fff;
-                }
-            }
+        
+        a{
+            // &::before {
+            //     content: "";
+            //     background-color: $accent;
+            //     width: 0;
+            //     height: 100%;
+            //     position: absolute;
+            //     z-index: -1;
+            //     top: 0;
+            //     left: 0;
+            //     transition: 0.7s;
+            // }
+    
+            // &:hover::before {
+            //     width: 100%;
+            //     border-radius: 5px;
+            //     @include media-for (null, $sm){
+            //         width: 60%;
+            //     }
+            // }
+    
+            // &:hover{
+            //     svg{
+            //         path{
+            //             fill: #fff;
+            //         }
+            //     }
+            // }
         }
 
 
@@ -120,7 +126,7 @@ header{
 .header-fixed{
     background-color: rgba($color: #2F37A4, $alpha: .8);
     padding: 7px 0;
-    .user{
+    .user-header{
         svg{
             path{
                 fill: #ffff;

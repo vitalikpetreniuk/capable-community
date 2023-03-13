@@ -3,7 +3,7 @@
 
 $('.burger').on('click', function () {
 	$(this).toggleClass('burger-active');
-	$('.menu').toggleClass('menu-active');
+	$('#menu').toggleClass('overlay');
 	$('body').toggleClass('overflow');
 })
 

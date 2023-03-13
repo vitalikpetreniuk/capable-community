@@ -1,0 +1,83 @@
+#menu{
+    z-index: -1;
+    min-width:100%;
+    min-height:100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    padding-top:100px;
+    height:0;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    padding-top: 100px;
+    transition: all 0.3s ease-in-out;
+    background: url(../img/bg-dots.png) 99% 104%/33%,  #F5F5F5;
+    background-repeat: no-repeat;
+    padding-bottom: 4rem;
+    
+
+
+    ul{
+        display: block;
+
+        li{
+            display: flex;
+            align-items: center;
+            height: 40px;
+            margin-bottom: 20px;
+
+            &:hover{
+                background-color: rgba($color: #D9D9D9, $alpha: .1);
+            }
+
+            a{
+                display: block;
+                color: $text-black;
+                font-size: 14px;
+                font-weight: 500;
+                width: 100%;
+                text-align: left;
+
+                &:hover{
+                    color: $accent;
+                    font-weight: 700;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+
+    .lang{
+        display: flex;
+        a{
+            margin-left: .4rem;
+        }
+
+
+    }
+
+    .btn-link-active{
+        display: flex;
+        width: 200px;
+        span{
+            display: block;
+            color: $text-white;
+        }
+    }
+
+    p{
+        color: #969696;
+        font-size: 12px;
+        font-style: italic;
+        font-size: 300;
+        margin-top: 60px;
+        text-align: left;
+    }
+
+    &.overlay{
+        visibility: visible;
+        opacity: 1;
+        overflow-x: hidden;
+    }
+}
