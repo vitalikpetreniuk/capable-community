@@ -1,6 +1,6 @@
 .section-top{
     height: 895px;
-    background: url(../img/bg-section-top.png);
+    background: url(../img/bg-section-top2.png);
     background-size: 80%;
     background-position: 0% 0%;
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@
     color: $text-white;
 
     @include media-for (null, $mid-desktop){
-        background-size: 85%;
+        background-size: 87%;
         height: auto;
         padding-bottom: 3rem;
     }
@@ -31,7 +31,11 @@
         margin-bottom: 35px;
         font-family: "KyivTypeSans", sans-serif;
         font-weight: 700;
-        
+
+        @include media-for (null, 1238px){
+            font-size: 40px;
+        }
+
         @include media-for (null, $tablet){
             font-size: 24px;
             margin-bottom: 16px;
@@ -43,6 +47,8 @@
         color: $text-white; 
         margin-bottom: 35px;
         font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+
         @include media-for (null, $sm){
             margin-bottom: 18px;
         }
@@ -104,10 +110,19 @@
         }
     }
 
-    .btn-link{
-        @include media-for (null, 1400px){
-            color: $text-white;
+    .btns-wrap{
+        width: 792px;
+
+        @include media-for (null, $mid-desktop){
+            width: 690px;
         }
+        @include media-for (null, 1238px){
+            width: auto;
+        }
+    }
+
+    .btn-link{
+
         @include media-for (null, $sm){
             svg{
                 path{

@@ -2965,7 +2965,8 @@ body::-webkit-scrollbar {
 }
 
 body .container {
-  max-width: 1620px;
+  max-width: 100%;
+  padding: 0 150px;
 }
 
 body svg {
@@ -3584,6 +3585,7 @@ header {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   padding: 20px 0;
+  overflow-y: hidden;
 }
 
 header .logo {
@@ -3630,10 +3632,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  font-weight: 700;
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  text-decoration: underline !important;
 }
 
 header .btn-link:hover {
@@ -3816,7 +3815,7 @@ header .selector__list li.selected a {
 
 .section-top {
   height: 895px;
-  background: url(../img/bg-section-top.png);
+  background: url(../img/bg-section-top2.png);
   background-size: 80%;
   background-position: 0% 0%;
   background-repeat: no-repeat;
@@ -3835,6 +3834,7 @@ header .selector__list li.selected a {
   color: #ffff;
   margin-bottom: 35px;
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 .section-top strong {
@@ -3873,6 +3873,10 @@ header .selector__list li.selected a {
 
 .section-top .img-top .btn-play img {
   width: 100%;
+}
+
+.section-top .btns-wrap {
+  width: 792px;
 }
 
 .child-population {
@@ -9452,27 +9456,18 @@ footer img {
 }
 
 @media (max-width: 1399px) {
-  body .btns-wrap {
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0;
-  }
-
-  body .btn-link {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  body .btn-link-active {
-    background: #FDA43B;
+  body .container {
+    padding: 0 100px;
   }
 
   .section-top {
-    background-size: 85%;
+    background-size: 87%;
     height: auto;
     padding-bottom: 3rem;
   }
 
-  .section-top .btn-link {
-    color: #ffff;
+  .section-top .btns-wrap {
+    width: 690px;
   }
 
   .child-population {
@@ -9520,10 +9515,39 @@ footer img {
   }
 }
 
+@media (max-width: 1366px) {
+  header nav {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1313px) {
   .about-project-section-top {
     background: url(../img/about-project-section-top-bg.png) 0% 0%/95%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;
     background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 1237px) {
+  body .btns-wrap {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+  }
+
+  body .btn-link {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  body .btn-link-active {
+    background: #FDA43B;
+  }
+
+  .section-top h1 {
+    font-size: 40px;
+  }
+
+  .section-top .btns-wrap {
+    width: auto;
   }
 }
 
@@ -9548,6 +9572,12 @@ footer img {
 
   .modal-fullscreen-xl-down .modal-body {
     overflow-y: auto;
+  }
+}
+
+@media (max-width: 1199px) {
+  body .container {
+    padding: 0 50px;
   }
 }
 
