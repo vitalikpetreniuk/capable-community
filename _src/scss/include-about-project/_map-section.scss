@@ -4,9 +4,30 @@
     background: url(../img/bg-dots-map.png)  15% 18%/7%, #F3F3F8;
     background-repeat: no-repeat;
     
+
+    @include media-for (null, $tablet){
+        height: auto;
+        padding: 3rem 0;
+        overflow: hidden;
+    }
+
+    
+    .container{
+        @include media-for (null, $sm){
+            padding: 0;
+        }
+    }
+
+
+
     h3{
         font-size: 54px;
         margin-bottom: 27px;
+
+        @include media-for (null, $sm){
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
     }
 
     .wrap-position{
@@ -17,12 +38,51 @@
             width: 100%;
             height: auto;
             bottom: 0;
+
+            @include media-for (null, $tablet){
+                position: relative;
+
+            }
+
+            @include media-for (null, $sm){
+                padding-right: calc(var(--bs-gutter-x) * .5);
+                padding-left: calc(var(--bs-gutter-x) * .5);
+            }
+
+            p{
+                @include media-for (null, $sm){
+                    margin-bottom: 40px;
+                }
+            }
         }
     }
 
     .map-wrap{
+
+        @include media-for (null, $sm){
+            overflow-x: scroll;
+            scroll-padding: 3px 4px;
+            &::-webkit-scrollbar {
+                width: 15px;
+                height: 15px;
+            }
+            &::-webkit-scrollbar-track {
+                margin: 0 calc(var(--bs-gutter-x) * .5);
+                background-color: $text-white;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #DCDCDC; 
+                border-radius: 10px;
+                background-clip: padding-box;
+            }
+        }
         svg{
             width: 100%;
+
+            @include media-for (null, $sm){
+                width: auto;
+            }
         }
     }
 }

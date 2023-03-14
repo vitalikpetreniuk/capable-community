@@ -383,8 +383,19 @@ body{
 .breadcrumbs{
     color: $text-white;
     margin-bottom: 20px;
+
+    @include media-for (null, $sm){
+        margin-bottom: 10px;
+    }
+
     span{
         color: $text-gray;
+
+        @include media-for (null, $sm){
+            font-size: 13px;
+            font-weight: 500;
+        }
+
         &:first-child{
             color: $text-white;
         }

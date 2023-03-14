@@ -49,6 +49,15 @@ header{
                     text-align: center;
                     font-family: 'Montserrat', sans-serif;  
                     white-space: nowrap;
+
+                    @include media-for (null, $tablet){
+                        margin-left: .3rem;
+                    }
+
+                    @include media-for (null, $sm){
+                        margin-left: 0rem;
+                    }
+
                     &:hover{
                         font-weight: 700;
                         transform: scale(1.1);

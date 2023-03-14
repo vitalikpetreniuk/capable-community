@@ -4540,7 +4540,7 @@ header .selector__list li.selected a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 
 .about-project-section-top .btns-wrap .btn-link {
@@ -4563,10 +4563,15 @@ header .selector__list li.selected a {
   margin-bottom: 1rem;
   font-family: "KyivTypeSans", sans-serif;
   font-size: 17px;
+  color: #1A1E1C;
 }
 
 .about-project-section-top .img-top {
-  margin-bottom: 30px;
+  margin: 50px 0;
+}
+
+.about-project-section-top .img-top img {
+  width: 100%;
 }
 
 .about-project-section-top .patners-wrap {
@@ -9494,6 +9499,14 @@ footer img {
     height: auto;
     padding: 2rem 0 0rem;
   }
+
+  .about-project-section-top .btns-wrap {
+    margin-bottom: 40px;
+  }
+
+  .about-project-section-top .img-top {
+    margin: 100px 0;
+  }
 }
 
 @media (max-width: 1313px) {
@@ -9565,6 +9578,12 @@ footer img {
   }
 }
 
+@media (max-width: 990px) {
+  .why_us {
+    height: auto;
+  }
+}
+
 @media (max-width: 821px) {
   body .btn-link {
     width: auto;
@@ -9583,6 +9602,10 @@ footer img {
     width: auto;
     margin-right: auto;
     margin-left: 0;
+  }
+
+  header nav ul li a {
+    margin-left: 0.3rem;
   }
 
   header .btn-link {
@@ -9709,6 +9732,24 @@ footer img {
   .blog-section {
     overflow: hidden;
     background: #3C79F5;
+  }
+
+  .about-project-section-top .img-top {
+    margin: 30px 0;
+  }
+
+  .about-project-section-top .patners-wrap .partners-item {
+    height: 9rem;
+  }
+
+  .map-section {
+    height: auto;
+    padding: 3rem 0;
+    overflow: hidden;
+  }
+
+  .map-section .wrap-position .text-wrap {
+    position: relative;
   }
 }
 
@@ -9837,6 +9878,15 @@ footer img {
     height: 14rem !important;
   }
 
+  .breadcrumbs {
+    margin-bottom: 10px;
+  }
+
+  .breadcrumbs span {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
   .burger {
     display: block;
   }
@@ -9852,6 +9902,10 @@ footer img {
   header .logo {
     width: 38px;
     height: 40px;
+  }
+
+  header nav ul li a {
+    margin-left: 0rem;
   }
 
   .section-top {
@@ -10081,6 +10135,95 @@ footer img {
   .widget-btns .widget-btn {
     width: 41px;
     height: 41px;
+  }
+
+  .about-project-section-top {
+    background: url(../img/about-project-section-top-bg-mob.png) 0% 0%/100%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 1.5rem;
+  }
+
+  .about-project-section-top h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .about-project-section-top .btns-wrap {
+    margin-bottom: 40px;
+  }
+
+  .about-project-section-top .btns-wrap .btn-link svg path {
+    fill: white;
+  }
+
+  .about-project-section-top p {
+    margin-bottom: 1.2rem;
+  }
+
+  .about-project-section-top .first-p {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-project-section-top .img-top {
+    margin: 0px 0 30px;
+  }
+
+  .about-project-section-top .img-top img {
+    width: 95%;
+  }
+
+  .about-project-section-top .patners-wrap {
+    padding: 1.4rem 2rem 0.5rem;
+  }
+
+  .about-project-section-top .patners-wrap .partners-item {
+    height: 4rem;
+  }
+
+  .map-section .container {
+    padding: 0;
+  }
+
+  .map-section h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .map-section .wrap-position .text-wrap {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+
+  .map-section .wrap-position .text-wrap p {
+    margin-bottom: 40px;
+  }
+
+  .map-section .map-wrap {
+    overflow-x: scroll;
+    scroll-padding: 3px 4px;
+  }
+
+  .map-section .map-wrap::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+  }
+
+  .map-section .map-wrap::-webkit-scrollbar-track {
+    margin: 0 calc(var(--bs-gutter-x) * 0.5);
+    background-color: #ffff;
+    border-radius: 10px;
+  }
+
+  .map-section .map-wrap::-webkit-scrollbar-thumb {
+    background: #DCDCDC;
+    border-radius: 10px;
+    background-clip: padding-box;
+  }
+
+  .map-section .map-wrap svg {
+    width: auto;
   }
 }
 

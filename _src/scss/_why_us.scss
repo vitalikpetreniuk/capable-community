@@ -6,6 +6,11 @@
     background-position: 0% 0%;
     background-repeat: no-repeat;
 
+    @include media-for (null, 991px){
+        height: auto;
+
+    }
+
     @include media-for (null, $tablet){
         height: auto;
         padding: 2rem 0;
