@@ -23,14 +23,6 @@
     .map-wrap{
         svg{
             width: 100%;
-            path{
-
-                transition: all .2 ease-in-out;
-                cursor: pointer;
-                &:hover{
-                    fill: $text-gray;
-                }
-            }
         }
     }
 }

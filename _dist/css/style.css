@@ -3326,7 +3326,7 @@ body .slides-items .description P {
   z-index: 70;
   top: 0;
   left: 0;
-  padding-top: 100px;
+  padding-top: 80px;
   height: 0;
   opacity: 0;
   visibility: hidden;
@@ -3337,7 +3337,6 @@ body .slides-items .description P {
   transition: all 0.3s ease-in-out;
   background: url(../img/bg-dots.png) 99% 92%/33%, #F5F4FA;
   background-repeat: no-repeat;
-  padding-bottom: 4rem;
   display: none;
 }
 
@@ -3353,7 +3352,7 @@ body .slides-items .description P {
       -ms-flex-align: center;
           align-items: center;
   height: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 #menu ul li:hover {
@@ -3427,7 +3426,7 @@ body .slides-items .description P {
 
 #menu .lang-menu a {
   padding: 0.4rem 0.5rem;
-  border-radius: 13px;
+  border-radius: 17px;
   border: 1px solid rgba(0, 0, 0, 0);
   margin-right: 1rem;
 }
@@ -3455,8 +3454,8 @@ body .slides-items .description P {
   color: #969696;
   font-size: 12px;
   font-style: italic;
-  font-size: 300;
-  margin-top: 60px;
+  font-weight: 300;
+  margin-top: 50px;
   text-align: left;
   padding-left: 40px;
 }
@@ -3548,7 +3547,7 @@ body .slides-items .description P {
 }
 
 .about-project-navigatiob {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   height: 0;
   opacity: 0;
   visibility: hidden;
@@ -4293,7 +4292,7 @@ header .selector__list li.selected a {
 
 .blog-section {
   position: relative;
-  background: url("../img/bg-blogs.png");
+  background: url("../img/bg-blogs.png"), #3C79F5;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 50% 50%;
@@ -4609,17 +4608,6 @@ header .selector__list li.selected a {
 
 .map-section .map-wrap svg {
   width: 100%;
-}
-
-.map-section .map-wrap svg path {
-  -webkit-transition: all 0.2 ease-in-out;
-  -o-transition: all 0.2 ease-in-out;
-  transition: all 0.2 ease-in-out;
-  cursor: pointer;
-}
-
-.map-section .map-wrap svg path:hover {
-  fill: #969696;
 }
 
 footer {
@@ -9418,6 +9406,13 @@ footer img {
   }
 }
 
+@media (max-width: 1573px) {
+  .about-project-section-top {
+    background: url(../img/about-project-section-top-bg.png) 0% 0%/84%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;
+    background-repeat: no-repeat;
+  }
+}
+
 @media (max-width: 1399.98px) {
   .modal-fullscreen-xxl-down {
     width: 100vw;
@@ -9443,10 +9438,27 @@ footer img {
 }
 
 @media (max-width: 1399px) {
+  body .btns-wrap {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+  }
+
+  body .btn-link {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  body .btn-link-active {
+    background: #FDA43B;
+  }
+
   .section-top {
     background-size: 85%;
     height: auto;
     padding-bottom: 3rem;
+  }
+
+  .section-top .btn-link {
+    color: #ffff;
   }
 
   .child-population {
@@ -9486,6 +9498,13 @@ footer img {
   }
 }
 
+@media (max-width: 1313px) {
+  .about-project-section-top {
+    background: url(../img/about-project-section-top-bg.png) 0% 0%/95%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;
+    background-repeat: no-repeat;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .modal-fullscreen-xl-down {
     width: 100vw;
@@ -9507,6 +9526,20 @@ footer img {
 
   .modal-fullscreen-xl-down .modal-body {
     overflow-y: auto;
+  }
+}
+
+@media (max-width: 1143px) {
+  .about-project-section-top {
+    background: url(../img/about-project-section-top-bg.png) -100% 0%/100%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 1089px) {
+  .about-project-section-top {
+    background: url(../img/about-project-section-top-bg.png) 0% 0%/120%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;
+    background-repeat: no-repeat;
   }
 }
 
@@ -9744,7 +9777,6 @@ footer img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    background-color: rgba(0, 0, 0, 0);
     margin-bottom: 40px;
   }
 
@@ -9753,7 +9785,6 @@ footer img {
     height: 2rem;
     padding: 0;
     margin-right: 1rem;
-    background: rgba(0, 0, 0, 0);
   }
 
   body .btn-link span {

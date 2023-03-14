@@ -37,10 +37,6 @@
             margin-bottom: 16px;
         }
 
-        // @include media-for (null, $sm){
-        //     font-size: 24px;
-        //     margin-bottom: 16px;
-        // }
     }
 
     p{
@@ -74,13 +70,6 @@
             padding: 0.6rem .7rem;
             margin-bottom: 10px;
         }
-
-        // @include media-for (null, $sm){
-        //     width: 310px;
-        //     font-size: 10px;
-        //     padding: 0.6rem .7rem;
-        //     margin-bottom: 10px;
-        // }
     }
 
     .img-top{
@@ -116,6 +105,9 @@
     }
 
     .btn-link{
+        @include media-for (null, 1400px){
+            color: $text-white;
+        }
         @include media-for (null, $sm){
             svg{
                 path{
