@@ -2964,6 +2964,10 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
+body .container {
+  max-width: 1620px;
+}
+
 body svg {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -3594,7 +3598,7 @@ header .logo img {
 }
 
 header nav {
-  width: 88%;
+  width: 90%;
   margin-right: 0;
   margin-left: auto;
 }
