@@ -3568,7 +3568,7 @@ body .slides-items .description P {
 }
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -3791,16 +3791,15 @@ header .selector__list li.selected a {
 }
 
 .header-fixed {
-  background-color: rgba(47, 55, 164, 0.8);
-  padding: 7px 0;
+  position: fixed;
+  background-color: #ffff;
+  border-radius: 0px 0px 40px 40px;
+  -webkit-box-shadow: 0px 1px 5px 0px #F5F4FA;
+          box-shadow: 0px 1px 5px 0px #F5F4FA;
 }
 
-.header-fixed .user-header svg path {
-  fill: #ffff;
-}
-
-.header-fixed .lang svg path {
-  fill: #fff;
+.header-fixed nav ul li a {
+  color: #272C49;
 }
 
 .section-top {

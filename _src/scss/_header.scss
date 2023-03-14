@@ -1,5 +1,5 @@
 header{
-	position: fixed;
+	position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -247,20 +247,32 @@ header{
 
 
 .header-fixed{
-    background-color: rgba($color: #2F37A4, $alpha: .8);
-    padding: 7px 0;
-    .user-header{
-        svg{
-            path{
-                fill: #ffff;
+    position: fixed;
+    background-color: $text-white;
+    border-radius: 0px 0px 40px 40px;
+    box-shadow: 0px 1px 5px 0px $bg-gray;
+
+    nav{
+        ul{
+            li{
+                a{
+                    color: #272C49;
+                }
             }
         }
     }
-    .lang{
-        svg{
-            path{
-                fill: #fff;
-            }
-        }
-    }
+    // .user-header{
+    //     svg{
+    //         path{
+    //             fill: #ffff;
+    //         }
+    //     }
+    // }
+    // .lang{
+    //     svg{
+    //         path{
+    //             fill: #fff;
+    //         }
+    //     }
+    // }
 }

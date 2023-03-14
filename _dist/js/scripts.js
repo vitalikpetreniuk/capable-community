@@ -24,10 +24,12 @@ $('.burger-active').on('click', function () {
 $(window).on("scroll",function() {
 	var height = $(window).scrollTop();
 		
-	if(height > 2){			
-		$('header').addClass('header-fixed');	
+	if(height > 400){			
+		$('header').addClass('header-fixed');
+		$("header .logo img").attr("src","img/logo-menu.png")	
 	} else{				
-		$('header').removeClass('header-fixed');			
+		$('header').removeClass('header-fixed');	
+		$("header .logo img").attr("src","img/logo.png")			
 	}
 });
 
@@ -242,7 +244,7 @@ $('.lang-list a').on('click', function () {
 
 
 
-// $(".lang-desctop-wrap")
+// 
 
 
 
