@@ -14,13 +14,17 @@ body{
     .container{
         max-width: 100%;
         padding: 0 150px;
-        
+
         @include media-for (null, $mid-desktop){
             padding: 0 100px;
         }
 
         @include media-for (null, $desktop){
             padding: 0 50px;
+        }
+
+        @include media-for (null, $sm){
+            padding: 0 15px;
         }
     }
 

@@ -9843,6 +9843,10 @@ footer img {
 }
 
 @media (max-width: 575px) {
+  body .container {
+    padding: 0 15px;
+  }
+
   body p {
     font-size: 13px;
     font-weight: 300;
