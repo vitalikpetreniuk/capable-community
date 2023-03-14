@@ -3436,7 +3436,7 @@ body .slides-items .description P {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 200px;
+  width: 230px;
   padding-left: 0px;
   margin-left: 40px;
 }
@@ -3522,6 +3522,9 @@ body .slides-items .description P {
   -o-transition: 0.2s all ease-in;
   transition: 0.2s all ease-in;
   padding: 1rem 0;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
 }
 
 .btn-about-project:hover {
@@ -3591,7 +3594,7 @@ header .logo img {
 }
 
 header nav {
-  width: 90%;
+  width: 100%;
   margin-right: 0;
   margin-left: auto;
 }
