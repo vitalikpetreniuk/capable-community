@@ -1,0 +1,59 @@
+.we-believe{
+    padding: 100px 0 110px;
+    background: url(../img/we-believe-bg.png), $accent;
+    background-size: 107%;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    color: $text-white;
+
+    @include media-for (null, $tablet){
+        padding: 50px 0;
+        background: url(../img/we-believe-bg.png), $accent;
+        background-size: 132%;
+        background-position: 112% 0%;
+        background-repeat: no-repeat;
+    }
+
+    @include media-for (null, $sm){
+        padding: 40px 0 10px;
+    }
+
+
+    .bg-limon{
+        font-size: 30px !important;
+        font-weight: 700;
+        background-color: $text-white;
+        color: $accent;
+
+        @include media-for (null, $sm){
+            font-size: 20px !important;
+        }
+    }
+
+    .items{
+        @include media-for (null, $sm){
+            margin-bottom: 30px;
+        }
+
+        .bg-limon{
+            display: flex;
+            width: 87px;
+            height: 87px;
+            font-size: 46px !important;
+            margin-right: 1rem;
+        }
+        p{
+            color: $text-white;
+            width: 80%;
+            font-weight: 300;
+        }
+    }
+
+    h3{
+        color: $text-white;
+
+        @include media-for (null, $tablet){
+            margin-bottom: 30px;
+        }
+    }
+}

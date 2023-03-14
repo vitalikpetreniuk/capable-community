@@ -42,6 +42,7 @@
         font-size: 14px;
         color: $text-white;
         font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
 
         @include media-for (null, $sm){
             font-size: 13px;

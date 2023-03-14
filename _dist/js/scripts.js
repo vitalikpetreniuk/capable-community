@@ -69,7 +69,7 @@ var swiperReviews = new Swiper(".swiperReviews", {
     loop: true,
     speed: 1200,
 	slidesPerView: 1.7,
-	spaceBetween: 30,
+	spaceBetween: 50,
 	breakpoints: {
         
 		320: {
@@ -89,7 +89,7 @@ var swiperReviews = new Swiper(".swiperReviews", {
 	
 		1100: {
 		  slidesPerView: 1.7,
-		  spaceBetween: 30,
+		  spaceBetween: 50,
 		},
 	
 	}
@@ -103,7 +103,7 @@ var swiperNews = new Swiper(".swiperNews", {
 	loop: true,
 	speed: 1200,
 	slidesPerView: 4,
-	spaceBetween: 30,
+	spaceBetween: 50,
 	pagination: {
 	  el: ".swiper-pagination-news",
 	  clickable: true,
@@ -128,7 +128,7 @@ var swiperNews = new Swiper(".swiperNews", {
 
 		1100: {
 		  slidesPerView: 4,
-		  spaceBetween: 30,
+		  spaceBetween: 50,
 		},
 
 
@@ -146,7 +146,7 @@ var swiperBlogs = new Swiper(".swiperBlogs", {
 	loop: true,
 	speed: 1200,
 	slidesPerView: 3,
-	spaceBetween: 30,
+	spaceBetween: 50,
 	pagination: {
 	  el: ".swiper-pagination-blogs",
 	  clickable: true,
@@ -171,7 +171,7 @@ var swiperBlogs = new Swiper(".swiperBlogs", {
 	
 		1100: {
 		  slidesPerView: 3,
-		  spaceBetween: 30,
+		  spaceBetween: 50,
 		},
 	
 	}
