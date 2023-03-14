@@ -3594,7 +3594,7 @@ header .logo img {
 }
 
 header nav {
-  width: 100%;
+  width: 88%;
   margin-right: 0;
   margin-left: auto;
 }
@@ -3609,6 +3609,7 @@ header nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-right: 2rem;
 }
 
 header nav ul li a {

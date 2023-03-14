@@ -24,7 +24,7 @@ header{
     }
     
     nav{
-        width: 100%;
+        width: 88%;
         margin-right: 0;
         margin-left: auto;
 
@@ -38,7 +38,8 @@ header{
             display: flex;
             align-items: center;
             justify-content: space-between;
-
+            margin-right: 2rem;
+            
             li{
                 a{
                     font-size: 14px;
