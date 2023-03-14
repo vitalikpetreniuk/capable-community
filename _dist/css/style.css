@@ -3268,7 +3268,7 @@ body .slides-items .description P {
 }
 
 .burger {
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 0;
   cursor: pointer;
@@ -3800,6 +3800,10 @@ header .selector__list li.selected a {
 
 .header-fixed nav ul li a {
   color: #272C49;
+}
+
+.header-fixed .burger {
+  position: fixed;
 }
 
 .section-top {
