@@ -3585,7 +3585,6 @@ header {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   padding: 20px 0;
-  overflow-y: hidden;
 }
 
 header .logo {
