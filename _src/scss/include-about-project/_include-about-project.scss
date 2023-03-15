@@ -37,7 +37,7 @@
     h2{
         font-size: 54px;
         color: $text-white;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
 
         @include media-for (null, $sm){
             font-size: 24px;
@@ -55,7 +55,7 @@
         padding: 0;
         width: auto;
         justify-content: start;
-        margin-bottom: 100px;
+        margin-bottom: 150px;
 
         @include media-for (null, 1400px){
             margin-bottom: 40px;
@@ -105,7 +105,7 @@
     }
 
     .img-top{
-        margin: 50px 0;
+        margin: 35px 0;
 
         @include media-for (null, 1400px){
             margin: 100px 0;
@@ -130,6 +130,7 @@
         padding: 2rem 3rem;
         box-shadow: 0px 1px 6px 0px #D9D9D9;
         border-radius: 25px;
+        background-color: $text-white;
 
         @include media-for (null, $sm){
             padding: 1.4rem 2rem .5rem;

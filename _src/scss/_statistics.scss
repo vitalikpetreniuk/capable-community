@@ -7,14 +7,26 @@
 
     .statistics-card{
         color: $accent;
-        padding: 0 1.3rem; 
+        padding: 0 4.3rem; 
         font-weight: 700;
         border-right: 1px solid #D9D9D9;
         height: 130px;
 
+        @include media-for (null, 1640px){
+            padding: 0 2.5rem;
+        }
+
+        @include media-for (null, 1313px){
+            padding: 0 2rem;
+        }
+
+        
+
         @include media-for (null, $sm){
             border: none;
+            padding: 0 1rem;
         }
+
 
         .numb{
             font-size: 60px;

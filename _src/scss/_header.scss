@@ -24,7 +24,7 @@ header{
     }
     
     nav{
-        width: 90%;
+        width: 85%;
         margin-right: 0;
         margin-left: auto;
 
@@ -46,14 +46,31 @@ header{
 
             li{
                 a{
+                    position: relative;
                     font-size: 14px;
                     font-weight: 500;
                     display: block;
-                    width: 5rem;
                     transition: all .2s ease-in;
                     text-align: center;
                     font-family: 'Montserrat', sans-serif;  
                     white-space: nowrap;
+                    &::after {    
+                        background: none repeat scroll 0 0 transparent;
+                        bottom: 0;
+                        content: "";
+                        display: block;
+                        height: 2px;
+                        left: 50%;
+                        position: absolute;
+                        background: #fff;
+                        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                        width: 0;
+                    }
+
+                    &:hover::after { 
+                        width: 100%; 
+                        left: 0; 
+                      }
 
                     @include media-for (null, $tablet){
                         margin-left: .3rem;
@@ -63,9 +80,7 @@ header{
                         margin-left: 0rem;
                     }
 
-                    &:hover{
-                        text-decoration: underline !important;
-                    }
+                    
                 }
             }
         }

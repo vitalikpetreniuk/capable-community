@@ -3600,7 +3600,7 @@ header .logo img {
 }
 
 header nav {
-  width: 90%;
+  width: 85%;
   margin-right: 0;
   margin-left: auto;
 }
@@ -3619,10 +3619,10 @@ header nav ul {
 }
 
 header nav ul li a {
+  position: relative;
   font-size: 14px;
   font-weight: 500;
   display: block;
-  width: 5rem;
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -3631,8 +3631,24 @@ header nav ul li a {
   white-space: nowrap;
 }
 
-header nav ul li a:hover {
-  text-decoration: underline !important;
+header nav ul li a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+header nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 header .btn-link:hover {
@@ -4154,7 +4170,7 @@ header .selector__list li.selected a {
 
 .statistics .statistics-card {
   color: #3C79F5;
-  padding: 0 1.3rem;
+  padding: 0 4.3rem;
   font-weight: 700;
   border-right: 1px solid #D9D9D9;
   height: 130px;
@@ -4558,7 +4574,7 @@ header .selector__list li.selected a {
 .about-project-section-top h2 {
   font-size: 54px;
   color: #ffff;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .about-project-section-top img {
@@ -4572,7 +4588,7 @@ header .selector__list li.selected a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .about-project-section-top .btns-wrap .btn-link {
@@ -4599,7 +4615,7 @@ header .selector__list li.selected a {
 }
 
 .about-project-section-top .img-top {
-  margin: 50px 0;
+  margin: 35px 0;
 }
 
 .about-project-section-top .img-top img {
@@ -4611,6 +4627,7 @@ header .selector__list li.selected a {
   -webkit-box-shadow: 0px 1px 6px 0px #D9D9D9;
           box-shadow: 0px 1px 6px 0px #D9D9D9;
   border-radius: 25px;
+  background-color: #ffff;
 }
 
 .about-project-section-top .patners-wrap .partners-item {
@@ -4620,7 +4637,7 @@ header .selector__list li.selected a {
 .map-section {
   height: 691px;
   padding: 6rem 0;
-  background: url(../img/bg-dots-map.png) 15% 18%/7%, #F3F3F8;
+  background: #F3F3F8;
   background-repeat: no-repeat;
 }
 
@@ -9441,6 +9458,12 @@ footer img {
   }
 }
 
+@media (max-width: 1639px) {
+  .statistics .statistics-card {
+    padding: 0 2.5rem;
+  }
+}
+
 @media (max-width: 1573px) {
   .about-project-section-top {
     background: url(../img/about-project-section-top-bg.png) 0% 0%/84%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;
@@ -9542,6 +9565,12 @@ footer img {
   .about-project-section-top {
     background: url(../img/about-project-section-top-bg.png) 0% 0%/95%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;
     background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 1312px) {
+  .statistics .statistics-card {
+    padding: 0 2rem;
   }
 }
 
@@ -10119,6 +10148,7 @@ footer img {
 
   .statistics .statistics-card {
     border: none;
+    padding: 0 1rem;
   }
 
   .statistics .statistics-card .text {
