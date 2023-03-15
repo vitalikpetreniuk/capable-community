@@ -2991,6 +2991,14 @@ body h3 {
   font-size: 30px;
   font-weight: 700;
   color: #1A1E1C;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+body h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1A1E1C;
+  font-family: "KyivTypeSans", sans-serif;
 }
 
 body ul {
@@ -4073,7 +4081,7 @@ header .selector__list li.selected a {
   background-repeat: no-repeat;
 }
 
-.сommunity-strengthening h3 {
+.сommunity-strengthening h2 {
   font-size: 54px;
 }
 
@@ -4660,12 +4668,49 @@ header .selector__list li.selected a {
 .expetrsts-section-top {
   padding-top: 130px;
   padding-bottom: 3rem;
-  background: url(../img/about-project-section-top-bg.png) 0% 0%/72%, #ffff;
+  background: url(../img/about-project-section-top-bg.png) 0% 0%/76%, #ffff;
   background-repeat: no-repeat;
 }
 
 .expetrsts-section-top h1 {
   margin-bottom: 40px;
+}
+
+.expetrsts-section-top .btns-wrap {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  width: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 150px;
+}
+
+.expetrsts-section-top .btns-wrap .btn-link {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffff;
+  margin-right: 1rem;
+}
+
+.expetrsts-section-top .btns-wrap .btn-link-active {
+  background-color: #FDA43B;
+}
+
+.experts-develop h3 {
+  text-align: center;
+}
+
+.experts-develop .card-experts h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #272C49;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.experts-develop .card-experts p {
+  font-size: 12px;
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif;
 }
 
 footer {
@@ -9558,6 +9603,10 @@ footer img {
   .about-project-section-top .img-top {
     margin: 100px 0;
   }
+
+  .expetrsts-section-top .btns-wrap {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 1366px) {
@@ -9757,7 +9806,7 @@ footer img {
     padding: 20px 0;
   }
 
-  .сommunity-strengthening h3 {
+  .сommunity-strengthening h2 {
     font-size: 27px;
   }
 
@@ -9916,6 +9965,10 @@ footer img {
   }
 
   body h3 {
+    font-size: 17px;
+  }
+
+  body h2 {
     font-size: 17px;
   }
 
@@ -10106,7 +10159,7 @@ footer img {
     background-repeat: no-repeat;
   }
 
-  .сommunity-strengthening h3 {
+  .сommunity-strengthening h2 {
     font-size: 17px;
   }
 
@@ -10323,6 +10376,14 @@ footer img {
 
   .map-section .map-wrap svg {
     width: auto;
+  }
+
+  .expetrsts-section-top .btns-wrap {
+    margin-bottom: 40px;
+  }
+
+  .expetrsts-section-top .btns-wrap .btn-link svg path {
+    fill: white;
   }
 }
 
