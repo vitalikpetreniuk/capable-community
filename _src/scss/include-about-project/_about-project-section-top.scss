@@ -25,7 +25,10 @@
     }
 
 
-
+    @include media-for (null, $tablet){
+        background: url(../img/about-project-section-top-bg.png) -0% 0%/130%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22% ,  $text-white;
+        background-repeat: no-repeat;
+    }
 
     @include media-for (null, $sm){
         background: url(../img/about-project-section-top-bg-mob.png) 0% 0%/100%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22% ,  $text-white;

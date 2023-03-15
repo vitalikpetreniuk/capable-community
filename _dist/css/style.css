@@ -9644,6 +9644,11 @@ footer img {
     margin: 100px 0;
   }
 
+  .expetrsts-section-top {
+    background: url(../img/about-project-section-top-bg.png) 0% 0%/85%, #ffff;
+    background-repeat: no-repeat;
+  }
+
   .expetrsts-section-top .btns-wrap {
     margin-bottom: 40px;
   }
@@ -9791,7 +9796,7 @@ footer img {
   }
 
   header nav ul li a {
-    margin-left: 0.3rem;
+    margin-left: 1rem;
   }
 
   header .btn-link {
@@ -9927,6 +9932,11 @@ footer img {
     background: #3C79F5;
   }
 
+  .about-project-section-top {
+    background: url(../img/about-project-section-top-bg.png) 0% 0%/130%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;
+    background-repeat: no-repeat;
+  }
+
   .about-project-section-top .img-top {
     margin: 30px 0;
   }
@@ -9943,6 +9953,19 @@ footer img {
 
   .map-section .wrap-position .text-wrap {
     position: relative;
+  }
+
+  .expetrsts-section-top {
+    background: url(../img/about-project-section-top-bg.png) 0% 0%/130%, #ffff;
+    background-repeat: no-repeat;
+  }
+
+  .experts-develop {
+    padding-bottom: 0;
+  }
+
+  .experts-coach {
+    padding-bottom: 0;
   }
 }
 
@@ -10418,12 +10441,36 @@ footer img {
     width: auto;
   }
 
+  .expetrsts-section-top {
+    background: url(../img/about-project-section-top-bg-mob.png) 0% 0%/100%, #ffff;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+  }
+
   .expetrsts-section-top .btns-wrap {
     margin-bottom: 40px;
   }
 
   .expetrsts-section-top .btns-wrap .btn-link svg path {
     fill: white;
+  }
+
+  .experts-develop h3 {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .experts-develop {
+    padding: 1rem 0 0;
+  }
+
+  .experts-coach h3 {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .card-experts {
+    margin-bottom: 25px;
   }
 
   .card-experts h4 {

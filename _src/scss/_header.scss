@@ -72,7 +72,7 @@ header{
                       }
 
                     @include media-for (null, $tablet){
-                        margin-left: .3rem;
+                        margin-left: 1rem;
                     }
 
                     @include media-for (null, $sm){
@@ -283,18 +283,4 @@ header{
     .burger{
         position: fixed;
     }
-    // .user-header{
-    //     svg{
-    //         path{
-    //             fill: #ffff;
-    //         }
-    //     }
-    // }
-    // .lang{
-    //     svg{
-    //         path{
-    //             fill: #fff;
-    //         }
-    //     }
-    // }
 }
