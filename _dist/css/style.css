@@ -4667,7 +4667,6 @@ header .selector__list li.selected a {
 
 .expetrsts-section-top {
   padding-top: 130px;
-  padding-bottom: 3rem;
   background: url(../img/about-project-section-top-bg.png) 0% 0%/76%, #ffff;
   background-repeat: no-repeat;
 }
@@ -4696,21 +4695,56 @@ header .selector__list li.selected a {
   background-color: #FDA43B;
 }
 
-.experts-develop h3 {
-  text-align: center;
+.experts-develop {
+  padding: 2rem 0;
 }
 
-.experts-develop .card-experts h4 {
+.experts-develop h3 {
+  text-align: center;
+  margin-bottom: 55px;
+  text-transform: uppercase;
+}
+
+.experts-coach {
+  padding: 2rem 0;
+}
+
+.card-experts {
+  margin-bottom: 35px;
+}
+
+.card-experts .img-wrap {
+  height: 305px;
+  margin-bottom: 16px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.card-experts .img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-experts h4 {
   font-size: 24px;
   font-weight: 700;
   color: #272C49;
   font-family: "Montserrat", sans-serif !important;
+  margin-bottom: 7px;
 }
 
-.experts-develop .card-experts p {
+.card-experts p {
   font-size: 12px;
   font-weight: 200;
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 17px;
+}
+
+.card-experts .social-wrap a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.4rem;
 }
 
 footer {
@@ -10384,6 +10418,14 @@ footer img {
 
   .expetrsts-section-top .btns-wrap .btn-link svg path {
     fill: white;
+  }
+
+  .card-experts h4 {
+    font-size: 17px;
+  }
+
+  .card-experts p {
+    display: none;
   }
 }
 
