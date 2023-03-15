@@ -3020,6 +3020,14 @@ body a:hover {
   color: #ffff;
 }
 
+body h1 {
+  font-size: 48px;
+  margin-bottom: 35px;
+  font-family: "KyivTypeSans", sans-serif;
+  font-weight: 700;
+  color: #ffff;
+}
+
 body .btns-wrap {
   padding: 20px 40px;
   background-color: #ffff;
@@ -3837,13 +3845,6 @@ header .selector__list li.selected a {
   color: #ffff;
 }
 
-.section-top h1 {
-  font-size: 54px;
-  margin-bottom: 35px;
-  font-family: "KyivTypeSans", sans-serif;
-  font-weight: 700;
-}
-
 .section-top p {
   color: #ffff;
   margin-bottom: 35px;
@@ -4567,9 +4568,7 @@ header .selector__list li.selected a {
   background-repeat: no-repeat;
 }
 
-.about-project-section-top h2 {
-  font-size: 54px;
-  color: #ffff;
+.about-project-section-top h1 {
   margin-bottom: 40px;
 }
 
@@ -4656,6 +4655,17 @@ header .selector__list li.selected a {
 
 .map-section .map-wrap svg {
   width: 100%;
+}
+
+.expetrsts-section-top {
+  padding-top: 130px;
+  padding-bottom: 3rem;
+  background: url(../img/about-project-section-top-bg.png) 0% 0%/72%, #ffff;
+  background-repeat: no-repeat;
+}
+
+.expetrsts-section-top h1 {
+  margin-bottom: 40px;
 }
 
 footer {
@@ -9570,6 +9580,10 @@ footer img {
 }
 
 @media (max-width: 1237px) {
+  body h1 {
+    font-size: 40px;
+  }
+
   body .btns-wrap {
     background-color: rgba(0, 0, 0, 0);
     padding: 0;
@@ -9581,10 +9595,6 @@ footer img {
 
   body .btn-link-active {
     background: #FDA43B;
-  }
-
-  .section-top h1 {
-    font-size: 40px;
   }
 
   .section-top .btns-wrap {
@@ -9667,6 +9677,11 @@ footer img {
 }
 
 @media (max-width: 821px) {
+  body h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
   body .btn-link {
     width: auto;
     font-size: 14px;
@@ -9696,11 +9711,6 @@ footer img {
 
   .section-top {
     padding-top: 105px;
-  }
-
-  .section-top h1 {
-    font-size: 24px;
-    margin-bottom: 16px;
   }
 
   .section-top .bg-blue {
@@ -10236,11 +10246,6 @@ footer img {
     background-repeat: no-repeat;
     padding-top: 80px;
     padding-bottom: 1.5rem;
-  }
-
-  .about-project-section-top h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
   }
 
   .about-project-section-top .btns-wrap {

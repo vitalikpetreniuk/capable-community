@@ -34,15 +34,9 @@
         padding-bottom: 1.5rem;
     }
 
-    h2{
-        font-size: 54px;
-        color: $text-white;
-        margin-bottom: 40px;
 
-        @include media-for (null, $sm){
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
+    h1{
+        margin-bottom: 40px;
     }
 
     img{
