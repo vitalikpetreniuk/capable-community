@@ -3294,6 +3294,10 @@ body .slides-items .description P {
   background-repeat: no-repeat;
 }
 
+.section-top-inner-pages h1 {
+  margin-bottom: 40px;
+}
+
 .section-top-inner-pages .btns-wrap {
   background-color: rgba(0, 0, 0, 0);
   padding: 0;
@@ -4601,10 +4605,6 @@ header .selector__list li.selected a {
   background-repeat: no-repeat;
 }
 
-.about-project-section-top h1 {
-  margin-bottom: 40px;
-}
-
 .about-project-section-top img {
   width: 100%;
 }
@@ -4668,10 +4668,6 @@ header .selector__list li.selected a {
 
 .map-section .map-wrap svg {
   width: 100%;
-}
-
-.expetrsts-section-top h1 {
-  margin-bottom: 40px;
 }
 
 .experts-develop {
