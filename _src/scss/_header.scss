@@ -268,7 +268,7 @@ header{
     position: fixed;
     background-color: $text-white;
     border-radius: 0px 0px 40px 40px;
-    box-shadow: 0px 1px 5px 0px $bg-gray;
+    border-bottom: 1px solid $bg-gray;
 
     nav{
         ul{
