@@ -8,23 +8,22 @@
 
 @import 'burger';
 @import 'menu-mob';
-@import 'custom-select-language';
 @import 'header';
+@import 'widget-btns';
 
 
 //include main
 
-@import 'section-top';
-@import 'child-population';
-@import 'we-believe';
-@import 'сommunity-strengthening';
-@import 'why_us';
-@import 'statistics';
-@import 'reviews-section';
-@import 'news-section';   
-@import 'blog-section';
-@import 'partners';
-@import 'widget-btns';
+@import 'include-for-main/section-top';
+@import 'include-for-main/child-population';
+@import 'include-for-main/we-believe';
+@import 'include-for-main/сommunity-strengthening';
+@import 'include-for-main/why_us';
+@import 'include-for-main/statistics';
+@import 'include-for-main/reviews-section';
+@import 'include-for-main/news-section';   
+@import 'include-for-main/blog-section';
+@import 'include-for-main/partners';
 
 
 
@@ -36,8 +35,12 @@
 
 //include expetrsts
 
-@import 'includes-for-expetrs/_experts-section-top';
-@import 'includes-for-expetrs/_experts-develop';
+@import 'include-for-expetrs/_experts-section-top';
+@import 'include-for-expetrs/_experts-develop';
+
+//actual-courses  
+
+@import 'include-actual-courses/_actual-courses-section-top';
 
 
 
