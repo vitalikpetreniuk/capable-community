@@ -499,6 +499,10 @@ body{
 
     h1{
         margin-bottom: 40px;
+
+        @include media-for (null, $sm){
+            margin-bottom: 10px;
+        }
     }
 
     .btns-wrap{

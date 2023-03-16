@@ -27,6 +27,7 @@
         margin-bottom: 1.5rem;
         text-transform: uppercase;
         color: $text-white;
+        font-family: "KyivTypeSans", sans-serif !important;
     }
     
     .swiper{
@@ -75,6 +76,7 @@
                     display: block;
                     height: 2.3rem;
                     overflow: hidden; 
+                    font-family: 'Montserrat', sans-serif;
 
                     @include media-for (null, $sm){
                         font-size: 13px;
@@ -118,7 +120,8 @@
                     a{
                         font-size: 16px;
                         font-weight: 500;
-
+                        font-family: "KyivTypeSans", sans-serif;
+                        
                         @include media-for (null, $sm){
                             font-size: 10px;
                         }

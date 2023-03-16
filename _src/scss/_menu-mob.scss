@@ -192,21 +192,20 @@
     padding-left: 40px !important;
     transition: .2s all ease-in;
     padding: 1rem 0;
+    color: #272C49;
     font-size: 14px;
     font-weight: 500;
-    font-family: Montserrat,sans-serif;
-    &:hover{
-        color: $accent;
-        font-weight: 700;
-        transform: scale(1);
-    }
+    font-family: 'Montserrat', sans-serif ;
+
 }
 
 .btn-about-project-active{
-
+    color: $accent;
+    font-weight: bold;
     svg{
         position: relative;
         transform: rotate(180deg);
+        margin-bottom: .3rem;
         path{
             fill: $accent;
         }
@@ -228,6 +227,7 @@
         text-align: left;
         margin-bottom: .3rem;
         font-size: 14px;
+        font-family: 'Montserrat', sans-serif ;
     }
 }
 

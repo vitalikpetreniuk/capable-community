@@ -1,4 +1,8 @@
 .expetrsts-section-top{
 
+    @include media-for (null, $sm){
+        background: url(../img/about-project-section-top-bg-mob.png) 0 100%/100% no-repeat,no-repeat #ffff;
+        padding-bottom: 1rem;
+    }
 
 }

@@ -16,6 +16,10 @@
 
     @include media-for (null, $sm){
         padding: 40px 0 10px;
+        background: url(../img/we-believe-bg.png), $accent;
+        background-size: 143%;
+        background-position: 92% 0%;
+        background-repeat: no-repeat;
     }
 
 
@@ -41,6 +45,12 @@
             height: 87px;
             font-size: 46px !important;
             margin-right: 1rem;
+
+            @include media-for (null, $sm){
+                width: 50px;
+                height: 50px;
+                font-size: 35px !important;
+            }
         }
         p{
             color: $text-white;

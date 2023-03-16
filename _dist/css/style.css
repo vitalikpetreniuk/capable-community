@@ -3576,17 +3576,15 @@ body .slides-items .description P {
   -o-transition: 0.2s all ease-in;
   transition: 0.2s all ease-in;
   padding: 1rem 0;
+  color: #272C49;
   font-size: 14px;
   font-weight: 500;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.btn-about-project:hover {
+.btn-about-project-active {
   color: #3C79F5;
-  font-weight: 700;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  font-weight: bold;
 }
 
 .btn-about-project-active svg {
@@ -3594,6 +3592,7 @@ body .slides-items .description P {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+  margin-bottom: 0.3rem;
 }
 
 .btn-about-project-active svg path {
@@ -3616,6 +3615,7 @@ body .slides-items .description P {
   text-align: left;
   margin-bottom: 0.3rem;
   font-size: 14px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .about-project-navigatiob-active {
@@ -4236,6 +4236,7 @@ header .lang-desctop-active .arrow-wrap {
 .statistics .statistics-card .text {
   font-size: 17px;
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 
 .statistics .statistics-card-last {
@@ -4250,6 +4251,7 @@ header .lang-desctop-active .arrow-wrap {
   text-align: center;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
+  font-family: "KyivTypeSans", sans-serif !important;
 }
 
 .reviews-section .swiper {
@@ -4293,12 +4295,13 @@ header .lang-desctop-active .arrow-wrap {
 }
 
 .reviews-section .swiper-slide .review-blocks h4 {
-  color: #1A1E1C;
+  color: #272C49;
 }
 
 .reviews-section .swiper-slide .review-blocks h5 {
-  font-size: 12px;
+  font-size: 13px;
   margin-bottom: 56px;
+  color: #969696;
 }
 
 .reviews-section .swiper-slide .review-blocks .img-wrap {
@@ -4339,6 +4342,7 @@ header .lang-desctop-active .arrow-wrap {
   text-align: center;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
+  font-family: "KyivTypeSans", sans-serif !important;
 }
 
 .news-section .swiper {
@@ -4404,6 +4408,7 @@ header .lang-desctop-active .arrow-wrap {
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   color: #ffff;
+  font-family: "KyivTypeSans", sans-serif !important;
 }
 
 .blog-section .swiper {
@@ -4441,6 +4446,7 @@ header .lang-desctop-active .arrow-wrap {
   display: block;
   height: 2.3rem;
   overflow: hidden;
+  font-family: "Montserrat", sans-serif;
 }
 
 .blog-section .blogs-blocks .description P {
@@ -4482,6 +4488,7 @@ header .lang-desctop-active .arrow-wrap {
 .blog-section .blogs-blocks .description .information .name a {
   font-size: 16px;
   font-weight: 500;
+  font-family: "KyivTypeSans", sans-serif;
 }
 
 .blog-section .blogs-blocks .description .information span {
@@ -10007,6 +10014,7 @@ footer img {
 
   .statistics .statistics-card .numb {
     font-size: 40px;
+    line-height: 1.1;
   }
 
   .reviews-section {
@@ -10278,6 +10286,10 @@ footer img {
     padding-top: 80px;
   }
 
+  .section-top-inner-pages h1 {
+    margin-bottom: 10px;
+  }
+
   .section-top-inner-pages .btns-wrap {
     margin-bottom: 40px;
   }
@@ -10389,6 +10401,10 @@ footer img {
 
   .we-believe {
     padding: 40px 0 10px;
+    background: url(../img/we-believe-bg.png), #3C79F5;
+    background-size: 143%;
+    background-position: 92% 0%;
+    background-repeat: no-repeat;
   }
 
   .we-believe .bg-limon {
@@ -10397,6 +10413,12 @@ footer img {
 
   .we-believe .items {
     margin-bottom: 30px;
+  }
+
+  .we-believe .items .bg-limon {
+    width: 50px;
+    height: 50px;
+    font-size: 35px !important;
   }
 
   .сommunity-strengthening {
@@ -10462,6 +10484,10 @@ footer img {
 
   .reviews-section .swiper-slide .review-blocks {
     padding-bottom: 163px;
+  }
+
+  .reviews-section .swiper-slide .review-blocks h4 {
+    font-size: 13px;
   }
 
   .reviews-section .swiper-slide .review-blocks .img-wrap {
@@ -10604,6 +10630,11 @@ footer img {
 
   .map-section .map-wrap svg {
     width: auto;
+  }
+
+  .expetrsts-section-top {
+    background: url(../img/about-project-section-top-bg-mob.png) 0 100%/100% no-repeat, no-repeat #ffff;
+    padding-bottom: 1rem;
   }
 
   .experts-develop h3 {

@@ -34,12 +34,14 @@
 
             @include media-for (null, $tablet){
                 font-size: 40px;
+                line-height: 1.1;
             }
         }
 
         .text{
             font-size: 17px;
             font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
 
             @include media-for (null, $sm){
                 font-size: 13px;

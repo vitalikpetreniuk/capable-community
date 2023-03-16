@@ -186,6 +186,9 @@ header{
     border-radius: 0px 0px 40px 40px;
     border-bottom: 1px solid $bg-gray;
 
+    // @include media-for (null, $sm){
+    //     display: none;
+    // }
     nav{
         ul{
             li{
