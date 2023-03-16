@@ -118,9 +118,9 @@
                     transform: translate(0%, 100%);
                 }
 
-                @include media-for (null, $sm){
-                    width: 241px;
-                }
+                // @include media-for (null, $sm){
+                //     width: 241px;
+                // }
 
                 img{
                     width: 100%;

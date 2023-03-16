@@ -230,12 +230,14 @@ $('.lang-menu a').on('click', function () {
 
 ///custom-select-language descctop
 
-$('.lang-desctop').on('click', function () {	
+$('.lang-desctop').on('click', function (e) {	
+	e.preventDefault();
 	$(this).toggleClass('lang-desctop-active');
 
 })
 
-$('.lang-list a').on('click', function () {	
+$('.lang-list a').on('click', function (e) {	
+	e.preventDefault();
 	const lang = $(this).data("lang");
 	$(".lang-desctop-wrap a").removeClass("active");
 	$(`.lang-desctop-wrap a[data-lang="${lang}"]`).addClass("active");

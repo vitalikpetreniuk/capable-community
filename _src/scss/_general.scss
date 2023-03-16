@@ -462,9 +462,6 @@ body{
     font-weight: 500;
     font-family: "KyivTypeSans", sans-serif;
     
-    @include media-for (null, $mid-desktop){
-        
-    }
 
     @include media-for (null, $tablet){
         display: none;
@@ -476,14 +473,40 @@ body{
     background: url(../img/about-project-section-top-bg.png) 0% 0%/76%,  $text-white;
     background-repeat: no-repeat;
 
-    @include media-for (null, $mid-desktop){
-        background: url(../img/about-project-section-top-bg.png) 0% 0%/85%,  $text-white;
+    @include media-for (null, 1445px){
+        background: url(../img/about-project-section-top-bg.png) -40% 0/87%,  $text-white;
         background-repeat: no-repeat;
 
     }
 
+    @include media-for (null, 1367px){
+        background: url(../img/about-project-section-top-bg.png) 0% 0/90%,  $text-white;
+        background-repeat: no-repeat;
+    }
+
+    @include media-for (null, 1240px){
+        background: url(../img/about-project-section-top-bg.png) 100% 0/100%,  $text-white;
+        background-repeat: no-repeat;
+    }
+
+    @include media-for (null, 1108px){
+        background: url(../img/about-project-section-top-bg.png) 100% 0/115%,  $text-white;
+        background-repeat: no-repeat;
+    }
+
+    @include media-for (null, 952px){
+        background: url(../img/about-project-section-top-bg.png) 100% 0/130%,  $text-white;
+        background-repeat: no-repeat;
+    }
+
+    // @include media-for (null, $mid-desktop){
+    //     background: url(../img/about-project-section-top-bg.png) 0% 0%/85%,  $text-white;
+    //     background-repeat: no-repeat;
+
+    // }
+
     @include media-for (null, $tablet){
-        background: url(../img/about-project-section-top-bg.png) 0% 0%/130%,  $text-white;
+        background: url(../img/about-project-section-top-bg.png) 100% 0/138%,  $text-white;
         background-repeat: no-repeat;
     }
 
