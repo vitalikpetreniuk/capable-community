@@ -50,6 +50,9 @@
         background-color: rgba($color: #F5F4FA, $alpha: .0);
         justify-content: start;
 
+        @include media-for (null, $sm){
+            margin-top: 2rem;
+        }
         .btn-link{
             background-color: rgba($color: #F5F4FA, $alpha: .0);  
             margin-right: 1rem;

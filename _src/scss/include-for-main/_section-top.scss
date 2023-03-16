@@ -1,20 +1,25 @@
 .section-top{
     height: 895px;
     background: url(../img/bg-section-top2.png);
-    background-size: 80%;
+    background-size: 84%;
     background-position: 0% 0%;
     background-repeat: no-repeat;
     padding-top: 188px;
     color: $text-white;
 
+
     @include media-for (null, $mid-desktop){
         background-size: 89%;
-        
         padding-bottom: 3rem;
+    }
+
+    @include media-for (null, 1000px){
+        height: auto;
     }
 
     @include media-for (null, $tablet){
         padding-top: 105px;
+        background-size: 93%;
     }
 
 
@@ -95,13 +100,8 @@
     }
 
     .btns-wrap{
-        width: 792px;
-
-        @include media-for (null, $mid-desktop){
-            width: 690px;
-        }
-        @include media-for (null, 1238px){
-            width: auto;
+        @include media-for (null, 1530px){
+            padding: 8px 10px;
         }
     }
 
