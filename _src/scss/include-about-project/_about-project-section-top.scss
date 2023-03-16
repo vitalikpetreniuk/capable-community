@@ -1,6 +1,6 @@
 .about-project-section-top{
     padding-bottom: 3rem;
-    background: url(../img/about-project-section-top-bg.png) 0% 0%/77%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22% ,  $text-white;
+    background: url(../img/about-project-section-top-bg.png) 0% 0%/78%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22% ,  $text-white;
     background-repeat: no-repeat;
 
     @include media-for (null, 1574px){
@@ -39,7 +39,13 @@
         width: 100%;
     }
 
+    h2{
+        font-size: 24px;
 
+        @include media-for (null, $sm){
+            font-size: 17px;
+        }
+    }
 
 
     p{

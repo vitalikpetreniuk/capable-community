@@ -119,6 +119,7 @@ body{
         justify-content: space-between;
         border-radius: 50px;
 
+
         @include media-for (null, $sm){
            padding: 0;
            justify-content: start;
@@ -263,6 +264,10 @@ body{
             margin-top: -17%;
             position: relative;
             z-index: 60;
+
+            @include media-for (null, $sm){
+                border-radius: 20px;
+            }
 
             h4{
                 font-weight: 700;
@@ -431,7 +436,7 @@ body{
     }
 
     span{
-        color: $text-gray;
+        color: rgba($color: #ffff, $alpha: .5);
 
         @include media-for (null, $sm){
             font-size: 13px;
@@ -455,7 +460,7 @@ body{
     left: auto;
     font-size: 16px;
     font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "KyivTypeSans", sans-serif;
     
     @include media-for (null, $mid-desktop){
         

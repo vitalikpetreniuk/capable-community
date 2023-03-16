@@ -26,6 +26,12 @@
     h3{
         color: $text-white;
         margin-bottom: 3rem;
+        font-family: "KyivTypeSans", sans-serif !important;  
+        text-transform: uppercase;
+        
+        @include media-for (null, $sm){
+            margin-bottom: 15px;
+        }
     }
 
     h4{

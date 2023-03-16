@@ -23,7 +23,7 @@
     h3{
         font-size: 54px;
         margin-bottom: 27px;
-
+        font-family: 'KyivTypeSans' ,sans-serif !important;
         @include media-for (null, $sm){
             font-size: 17px;
             margin-bottom: 10px;
@@ -37,7 +37,7 @@
             position: absolute;
             width: 100%;
             height: auto;
-            bottom: 0;
+            bottom: 3rem;
 
             @include media-for (null, $tablet){
                 position: relative;
@@ -50,6 +50,8 @@
             }
 
             p{
+                font-family: 'Montserrat', sans-serif;
+
                 @include media-for (null, $sm){
                     margin-bottom: 40px;
                 }

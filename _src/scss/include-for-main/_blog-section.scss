@@ -65,13 +65,13 @@
             padding: 20px  !important;
 
             @include media-for (null, $sm){
-                padding: 13px;
+                padding: 13px !important;
             }
 
             .title{
                 a{
                     font-size: 24px;
-                    color: $text-black;
+                    color: #272C49;
                     font-weight: 700;
                     display: block;
                     height: 2.3rem;
@@ -113,7 +113,7 @@
                 margin-top: 32px;
 
                 @include media-for (null, $sm){
-                    margin-top: 15px;
+                    margin-top: 2px;
                 }
                 .name{
                     margin-left: 0;
@@ -136,9 +136,10 @@
                         color: $accent;
                         font-weight: 500;
                         font-size: 20px;
-
+                        font-family: "KyivTypeSans", sans-serif;
+                        
                         @include media-for (null, $sm){
-                            font-size: 18px;
+                            font-size: 10px;
                         }
                     }
                     

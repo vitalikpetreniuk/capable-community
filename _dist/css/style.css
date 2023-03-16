@@ -3271,7 +3271,7 @@ body .slides-items .description P {
 }
 
 .breadcrumbs span {
-  color: #969696;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .breadcrumbs span:first-child {
@@ -3287,7 +3287,7 @@ body .slides-items .description P {
   left: auto;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: "KyivTypeSans", sans-serif;
 }
 
 .section-top-inner-pages {
@@ -4176,6 +4176,8 @@ header .lang-desctop-active .arrow-wrap {
 .why_us h3 {
   color: #ffff;
   margin-bottom: 3rem;
+  font-family: "KyivTypeSans", sans-serif !important;
+  text-transform: uppercase;
 }
 
 .why_us h4 {
@@ -4292,10 +4294,11 @@ header .lang-desctop-active .arrow-wrap {
 
 .reviews-section .swiper-slide .review-blocks h4 {
   color: #272C49;
+  font-size: 24px;
 }
 
 .reviews-section .swiper-slide .review-blocks h5 {
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 56px;
   color: #969696;
 }
@@ -4437,7 +4440,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .blog-section .blogs-blocks .description .title a {
   font-size: 24px;
-  color: #1A1E1C;
+  color: #272C49;
   font-weight: 700;
   display: block;
   height: 2.3rem;
@@ -4496,6 +4499,7 @@ header .lang-desctop-active .arrow-wrap {
   color: #3C79F5;
   font-weight: 500;
   font-size: 20px;
+  font-family: "KyivTypeSans", sans-serif;
 }
 
 .blog-section .blogs-blocks .description .information span:hover a {
@@ -4531,12 +4535,16 @@ header .lang-desctop-active .arrow-wrap {
 
 .about-project-section-top {
   padding-bottom: 3rem;
-  background: url(../img/about-project-section-top-bg.png) 0% 0%/77%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;
+  background: url(../img/about-project-section-top-bg.png) 0% 0%/78%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;
   background-repeat: no-repeat;
 }
 
 .about-project-section-top img {
   width: 100%;
+}
+
+.about-project-section-top h2 {
+  font-size: 24px;
 }
 
 .about-project-section-top p {
@@ -4582,6 +4590,7 @@ header .lang-desctop-active .arrow-wrap {
 .map-section h3 {
   font-size: 54px;
   margin-bottom: 27px;
+  font-family: "KyivTypeSans", sans-serif !important;
 }
 
 .map-section .wrap-position {
@@ -4593,7 +4602,11 @@ header .lang-desctop-active .arrow-wrap {
   position: absolute;
   width: 100%;
   height: auto;
-  bottom: 0;
+  bottom: 3rem;
+}
+
+.map-section .wrap-position .text-wrap p {
+  font-family: "Montserrat", sans-serif;
 }
 
 .map-section .map-wrap svg {
@@ -4608,6 +4621,7 @@ header .lang-desctop-active .arrow-wrap {
   text-align: center;
   margin-bottom: 55px;
   text-transform: uppercase;
+  font-family: "KyivTypeSans", sans-serif !important;
 }
 
 .experts-coach {
@@ -4618,6 +4632,7 @@ header .lang-desctop-active .arrow-wrap {
   text-align: center;
   margin-bottom: 55px;
   text-transform: uppercase;
+  font-family: "KyivTypeSans", sans-serif !important;
 }
 
 .card-experts {
@@ -9802,6 +9817,24 @@ footer img {
   }
 }
 
+@media (max-width: 1347px) {
+  .section-top .btns-wrap {
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+
+  .section-top .btn-link {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffff;
+  }
+
+  .section-top .btn-link:last-child {
+    display: none;
+  }
+}
+
 @media (max-width: 1313px) {
   .about-project-section-top {
     background: url(../img/about-project-section-top-bg.png) 0% 0%/95%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;
@@ -9962,7 +9995,7 @@ footer img {
 
   .section-top {
     padding-top: 105px;
-    background-size: 93%;
+    background-size: 121%;
   }
 
   .section-top .bg-blue {
@@ -9974,6 +10007,10 @@ footer img {
 
   .section-top .img-top .btn-play {
     left: -19px;
+  }
+
+  .section-top .btn-link:last-child {
+    display: block;
   }
 
   .child-population .bg-blue-first {
@@ -10055,6 +10092,7 @@ footer img {
 
   .reviews-section .swiper-slide .review-blocks p {
     margin-bottom: 16px;
+    font-size: 13px;
   }
 
   .reviews-section .swiper-slide .review-blocks h5 {
@@ -10268,6 +10306,10 @@ footer img {
     border-radius: 70% 0% 70% 0%;
   }
 
+  body .slides-items .description {
+    border-radius: 20px;
+  }
+
   .modal-video .modal-content .close {
     right: -4%;
     top: -21%;
@@ -10323,6 +10365,12 @@ footer img {
 
   header nav ul li a {
     margin-left: 0rem;
+  }
+
+  .header-fixed {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
   }
 
   .widget-btns {
@@ -10458,6 +10506,10 @@ footer img {
     background-position: 0% 0%;
   }
 
+  .why_us h3 {
+    margin-bottom: 15px;
+  }
+
   .why_us h4 {
     font-size: 14px;
   }
@@ -10500,6 +10552,10 @@ footer img {
     font-size: 13px;
   }
 
+  .reviews-section .swiper-slide .review-blocks h5 {
+    font-size: 13px;
+  }
+
   .reviews-section .swiper-slide .review-blocks .img-wrap {
     width: 241px;
   }
@@ -10536,7 +10592,7 @@ footer img {
   }
 
   .blog-section .blogs-blocks .description {
-    padding: 13px;
+    padding: 13px !important;
   }
 
   .blog-section .blogs-blocks .description .title a {
@@ -10549,7 +10605,7 @@ footer img {
   }
 
   .blog-section .blogs-blocks .description .information {
-    margin-top: 15px;
+    margin-top: 2px;
   }
 
   .blog-section .blogs-blocks .description .information .name a {
@@ -10557,7 +10613,7 @@ footer img {
   }
 
   .blog-section .blogs-blocks .description .information span a {
-    font-size: 18px;
+    font-size: 10px;
   }
 
   .partners {
@@ -10571,6 +10627,10 @@ footer img {
   .about-project-section-top {
     padding-top: 80px;
     padding-bottom: 1.5rem;
+  }
+
+  .about-project-section-top h2 {
+    font-size: 17px;
   }
 
   .about-project-section-top p {

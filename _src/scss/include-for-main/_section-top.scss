@@ -19,7 +19,7 @@
 
     @include media-for (null, $tablet){
         padding-top: 105px;
-        background-size: 93%;
+        background-size: 121%;
     }
 
 
@@ -103,9 +103,29 @@
         @include media-for (null, 1530px){
             padding: 8px 10px;
         }
+
+        @include media-for (null, 1348px){
+            background-color: rgba($color: #000000, $alpha: .0);
+            justify-content: start;
+        }
     }
 
     .btn-link{
+
+        @include media-for (null, 1348px){
+            background-color: rgba($color: #000000, $alpha: .0);
+            color: $text-white;
+
+            &:last-child{
+                display: none;
+            }
+        }
+
+        @include media-for (null, $tablet){
+            &:last-child{
+                display: block;
+            }
+        }
 
         @include media-for (null, $sm){
             svg{
