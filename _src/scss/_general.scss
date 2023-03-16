@@ -463,6 +463,7 @@ body{
     left: auto;
     font-size: 16px;
     font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
     
     @include media-for (null, $mid-desktop){
         

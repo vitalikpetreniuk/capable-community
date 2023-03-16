@@ -3287,6 +3287,7 @@ body .slides-items .description P {
   left: auto;
   font-size: 16px;
   font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 }
 
 .section-top-inner-pages {
@@ -4069,13 +4070,15 @@ header .lang-desctop-active .arrow-wrap {
   text-align: center;
 }
 
-.child-population .down-column h3 {
+.child-population .down-column h2 {
   margin-bottom: 15px;
+  color: #272C49;
 }
 
 .child-population .down-column p {
   color: #272C49;
   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .we-believe {
@@ -4108,10 +4111,12 @@ header .lang-desctop-active .arrow-wrap {
   color: #ffff;
   width: 80%;
   font-weight: 300;
+  font-family: "Montserrat", sans-serif;
 }
 
 .we-believe h3 {
   color: #ffff;
+  font-family: "Montserrat", sans-serif;
 }
 
 .сommunity-strengthening {
@@ -10609,6 +10614,10 @@ footer img {
     padding-bottom: 2rem;
   }
 
+  .actual-courses-cards {
+    padding-bottom: 0;
+  }
+
   .actual-courses-cards .courses-cards {
     padding: 20px;
     padding-left: 147px;
@@ -10634,6 +10643,7 @@ footer img {
 
   .actual-courses-cards .courses-cards h4 {
     font-size: 13px;
+    margin-top: 0;
   }
 
   .actual-courses-cards .courses-cards .step-wrap:first-child p {

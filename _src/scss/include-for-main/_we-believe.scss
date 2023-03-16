@@ -46,12 +46,13 @@
             color: $text-white;
             width: 80%;
             font-weight: 300;
+            font-family: 'Montserrat', sans-serif;
         }
     }
 
     h3{
         color: $text-white;
-
+        font-family: 'Montserrat', sans-serif;
         @include media-for (null, $tablet){
             margin-bottom: 30px;
         }

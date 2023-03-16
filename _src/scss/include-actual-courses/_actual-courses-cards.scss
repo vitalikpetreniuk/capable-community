@@ -1,6 +1,10 @@
 .actual-courses-cards{
     padding: 1rem 0 3rem;
 
+    @include media-for (null, $sm){
+        padding-bottom: 0;
+    }
+
     .courses-cards{
         position: relative;
         display: block;
@@ -93,6 +97,7 @@
 
             @include media-for (null, $sm){
                 font-size: 13px;
+                margin-top: 0;
             }
 
         }
