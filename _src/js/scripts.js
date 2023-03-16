@@ -244,7 +244,48 @@ $('.lang-list a').on('click', function () {
 
 
 
-// 
+// togle for ask section
+
+$(".li-visability").on("click",function (event) {
+
+	const target = $(this).data("index");	 
+	
+
+	// $(this).find("img").toggleClass("img-class-active");
+
+	$(".togle-li").each(function (index, element) {
+
+		console.info(target,$(this).data("index"))
+
+	  if (target === $(this).data("index")) {
+
+		if( $(this).hasClass('togle-li-active') ){
+
+			$(this).removeClass("togle-li-active");
+		}
+		else{
+			$(".togle-li").removeClass("togle-li-active")
+			$(this).addClass("togle-li-active");
+		}
+		  
+	  } 
+	});
+
+});
+
+
+// $('.img-class').on('click', function () {	
+
+// 	if( $(this).hasClass('img-class-active') ){
+// 		$(this).removeClass('img-class-active')
+// 	}
+// 	else{
+// 		$('.img-class').removeClass('img-class-active')
+// 		$(this).addClass('img-class-active');
+// 	}
+// })
+
+
 
 
 

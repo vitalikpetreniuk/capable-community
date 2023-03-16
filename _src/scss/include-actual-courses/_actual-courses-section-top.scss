@@ -1,3 +1,5 @@
 .actual-courses-section-top{
-    
+    @include media-for (null, $sm){
+        padding-bottom: 2rem;     
+    }
 }

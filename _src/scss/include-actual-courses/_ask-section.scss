@@ -1,0 +1,118 @@
+.ask-section{
+    padding: 60px 0 100px;
+
+    @include media-for (null, $tablet){
+        padding: 30px 0 50px;
+    }
+
+    @include media-for (null, $sm){
+        padding: 30px 0 50px;
+    }
+
+    h3{
+        color: #242C8F;
+        text-align: center;
+        margin-bottom: 30px;
+
+        @include media-for (null, $sm){
+            color: #272C49;
+        }
+    }
+
+    ul{
+        padding: 0 135px;
+
+        @include media-for (null, $tablet){
+            padding: 0 40px;
+        }
+
+        @include media-for (null, $sm){
+            padding: 0;
+        }
+
+        li{
+            display: flex;
+            align-items: center;
+            padding: 1.6rem 0;
+            border-bottom: 1px solid #DCDCDC;
+            transition: all .2s ease-in-out;
+
+            h4{
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 3px;
+                color: #242C8F;
+
+                @include media-for (null, $sm){
+                    color: #272C49;
+                }
+            }
+        }
+
+        .img-class{
+            position: relative;
+            display: block;
+            width: 16px;
+            height: 10px;
+            transition: all .2s ease-in;
+            margin-right: 1.6rem;
+        }
+
+        .img-class-active{
+            transform: rotate(180deg);
+        }
+
+        .li-visability{
+            cursor: pointer;
+        }
+
+        .togle-li{
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            padding-left: 50px;
+
+            p{
+               font-size: 14px;
+               font-weight: 300;
+            
+            }
+        }
+
+        .togle-li-active{
+            position: relative;
+            height: auto;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+
+
+    .btns-wrap-section-top{
+        justify-content: end;
+        padding: 0 135px;
+        margin-top: 30px;
+
+        @include media-for (null, $tablet){
+            padding: 0 40px;
+        }
+
+        @include media-for (null, $sm){
+            padding: 0;
+            justify-content: start;
+            margin-top: 0;
+            margin-top: 1rem;
+            
+            .btn-link {
+                width: auto;
+
+                span{
+                    display: block;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}

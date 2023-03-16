@@ -140,6 +140,10 @@ header{
         .arrow-wrap{
             width: 30%;
             transition: all .2s ease-in-out;
+
+            @include media-for (null, $tablet){
+                display: none;
+            }
             
             svg{
                 width: 100% !important;
@@ -169,94 +173,6 @@ header{
 
         .arrow-wrap{
             transform: rotate(180deg);
-        }
-    }
-
-    .selector {
-        position: relative;
-        display: block;
-        text-align: left;
-        margin-bottom: 2.4em;
-    }
-    
-    .selector__toggle {
-        display: block;
-        background-color: #7090cd;
-        padding: 1em;
-        color: white;
-        text-decoration: none;
-        box-shadow: 0 0px 0px rgba(0,0,0,0.3);
-        -webkit-transition: all 0.2s linear;
-        -moz-transition: all 0.2s linear;
-        -o-transition: all 0.2s linear;
-        transition: all 0.2s linear;
-        
-        i {
-            float: right;
-            position: relative;
-        top: 0.2em;
-            -webkit-transition: all 0.2s linear;
-            -moz-transition: all 0.2s linear;
-            -o-transition: all 0.2s linear;
-            transition: all 0.2s linear;
-            
-            .open & {
-                -webkit-transform: rotate(180deg);
-                -moz-transform: rotate(180deg);
-                -ms-transform: rotate(180deg);
-                -o-transform: rotate(180deg);
-                transform: rotate(180deg);
-            }
-        }
-        
-        &:hover,
-        &:focus {
-            background-color: #8eaeeb;
-            -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-            color: white;
-        }
-    }
-    
-    .selector__list {
-        display: none;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        background-color: #7090cd;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        
-        .open & {
-            display: block;
-        }
-        
-        li {
-            a {
-                display: block;
-                color: white;
-                text-decoration: none;
-                padding: 1em;
-                border-top: 1px solid #8eaeeb;
-                background-color: #4a5f87;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-transition: all 0.2s linear;
-                -moz-transition: all 0.2s linear;
-                -o-transition: all 0.2s linear;
-                transition: all 0.2s linear;
-            }
-        
-            &:hover,
-            &:focus,
-            &.selected {
-                a {
-                    background-color: #56c022;
-                }
-            }
         }
     }
 
