@@ -8,7 +8,7 @@
     .courses-cards{
         position: relative;
         display: block;
-        padding: 30px 10px;
+        padding: 30px 20px;
         padding-left: 192px;
         border-radius: 30px;
         background-color: $text-white;
@@ -123,20 +123,27 @@
             .step{
                 display: flex;
                 margin-bottom: 15px;
+                align-items: center;
                 
                 @include media-for (null, $tablet){
                     margin-right: 1.5rem;
                 }
 
                 @include media-for (null, $sm){
-                    align-items: center;
                     margin-bottom: 7px;
                 }
 
                 img{
                     margin-right: .5rem;
+                    transition: all .2s ease-in-out;
+                    @include media-for (null, $sm){
+                        transform: rotate(90deg);
+                    }
                 }
-                p{
+
+
+                a{
+                    display: block;
                     font-size: 16px;
                     font-family: 'Montserrat', sans-serif;
                     white-space: nowrap;
@@ -146,6 +153,21 @@
                     @include media-for (null, $sm){
                         font-size: 13px;
                     }
+
+                    &:hover{
+                        color: $accent;
+                    }
+                }
+            }
+
+            .step-active{
+                img{
+                    transform: rotate(0deg) !important;
+                }
+
+                a{
+                    color: $accent;
+                    font-weight: 700;
                 }
             }
         }
