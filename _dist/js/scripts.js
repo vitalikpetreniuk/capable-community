@@ -277,7 +277,7 @@ $(".li-visability").on("click",function (event) {
 
 
 
-///
+///step 
 
 $('.step').on('click', function(){
 	
@@ -289,6 +289,20 @@ $('.step').on('click', function(){
 		$(this).addClass('step-active');
 	}
 });
+
+
+//course-page card course active
+
+$('.course-card').on('click', function(){
+	if( $(this).hasClass('course-card-active') ){
+		$(this).removeClass('course-card-active')
+	}
+	else{
+		$('.course-card').removeClass('course-card-active')
+		$(this).addClass('course-card-active');
+	}
+});
+
 
 
 

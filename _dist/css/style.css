@@ -4948,19 +4948,82 @@ header .lang-desctop-active .arrow-wrap {
   margin-right: 0.4rem;
 }
 
+.course-blocks {
+  padding: 3rem 0;
+}
+
 .course-blocks .course-card {
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border: 1px solid #3C79F5;
   border-radius: 30px;
+  padding: 30px 15px;
+  color: #3C79F5;
+  background-color: #ffff;
+}
+
+.course-blocks .course-card .img-arrow {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 25px;
+  height: 25px;
 }
 
 .course-blocks .course-card h4 {
   font-size: 30px;
   font-weight: 700;
   margin: 15px 0;
+  color: #3C79F5;
 }
 
 .course-blocks .course-card .period-course {
   margin-bottom: 25px;
+  color: #3C79F5;
+  font-weight: 300;
+}
+
+.course-blocks .course-card .btn-link {
+  background-color: #3C79F5;
+  color: #ffff;
+}
+
+.course-blocks .course-card .btn-link svg path {
+  fill: #ffff;
+}
+
+.course-blocks .course-card-active {
+  color: #ffff;
+  background-color: #3C79F5;
+}
+
+.course-blocks .course-card-active .img-arrow {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.course-blocks .course-card-active .img-arrow svg path {
+  fill: #ffff;
+}
+
+.course-blocks .course-card-active h4 {
+  color: #ffff;
+}
+
+.course-blocks .course-card-active .period-course {
+  color: #ffff;
+}
+
+.course-blocks .course-card-active .btn-link {
+  color: #3C79F5;
+  background-color: #ffff;
+}
+
+.course-blocks .course-card-active .btn-link svg path {
+  fill: #3C79F5;
 }
 
 .course-teachers {

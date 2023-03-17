@@ -1,18 +1,77 @@
 .course-blocks{
+    padding: 3rem 0;
+
     .course-card{
+        cursor: pointer;
+        transition: all .2s ease-in-out;
         border: 1px solid $accent;
         border-radius: 30px;
+        padding: 30px 15px;
+        color: $accent;
+        background-color: $text-white;
+
+        .img-arrow{
+            transition: all .2s ease-in-out;
+            width: 25px;
+            height: 25px;
+        }
 
         h4{
             font-size: 30px;
             font-weight: 700;
             margin: 15px 0;
+            color: $accent;
         }
 
         .period-course{
             margin-bottom: 25px;
+            color: $accent;
+            font-weight: 300;
         }
 
-        
+        .btn-link{
+            background-color: $accent;
+            color: $text-white;
+            svg{
+                path{
+                    fill: $text-white;
+                }
+            }
+        }
+
+    }
+
+    .course-card-active{
+        color: $text-white;
+        background-color: $accent;
+
+        .img-arrow{
+            transform: rotate(90deg);
+
+            svg{
+                path{
+                    fill: $text-white;
+                }   
+            }
+        }
+
+        h4{
+            color: $text-white;
+        }
+
+        .period-course{
+            color: $text-white;
+        }
+
+        .btn-link{
+            color: $accent;
+            background-color: $text-white;
+
+            svg{
+                path{
+                    fill: $accent;
+                }
+            }
+        }
     }
 }
