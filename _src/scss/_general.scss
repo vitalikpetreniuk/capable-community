@@ -436,15 +436,15 @@ body{
     }
 
     span{
-        color: rgba($color: #ffff, $alpha: .5);
-
+        
+        color: $text-white;
         @include media-for (null, $sm){
             font-size: 13px;
             font-weight: 500;
         }
 
-        &:first-child{
-            color: $text-white;
+        &:last-child{
+            color: rgba($color: #ffff, $alpha: .5);
         }
     }
 }

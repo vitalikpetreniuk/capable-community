@@ -1,0 +1,17 @@
+.course-teachers{
+    padding: 3rem 0;
+
+    h3{
+        color: #242C8F;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: "KyivTypeSans", sans-serif !important;
+
+        @include media-for (null, $sm){
+            margin-bottom: 30px;
+        }
+    }
+    h4{
+        color: #242C8F;
+    }
+}

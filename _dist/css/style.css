@@ -3271,11 +3271,11 @@ body .slides-items .description P {
 }
 
 .breadcrumbs span {
-  color: rgba(255, 255, 255, 0.5);
+  color: #ffff;
 }
 
-.breadcrumbs span:first-child {
-  color: #ffff;
+.breadcrumbs span:last-child {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .btn-more {
@@ -4798,7 +4798,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .actual-courses-cards .courses-cards .step-wrap .step-active a {
   color: #3C79F5;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .actual-courses-cards .courses-cards .period {
@@ -4907,6 +4907,75 @@ header .lang-desctop-active .arrow-wrap {
           justify-content: end;
   padding: 0 135px;
   margin-top: 30px;
+}
+
+.course-page-section-top .btns-wrap-section-top {
+  margin-bottom: 107px;
+}
+
+.course-page-section-top p {
+  margin-bottom: 29px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.course-page-section-top .period-course {
+  color: #2F37A4;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.course-page-section-top .social-suport-btn {
+  margin-top: 34px;
+  border: 1px solid #3C79F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 243px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 13px;
+  color: #3C79F5;
+}
+
+.course-page-section-top .social-suport-btn img {
+  margin-right: 0.4rem;
+}
+
+.course-blocks .course-card {
+  border: 1px solid #3C79F5;
+  border-radius: 30px;
+}
+
+.course-blocks .course-card h4 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.course-blocks .course-card .period-course {
+  margin-bottom: 25px;
+}
+
+.course-teachers {
+  padding: 3rem 0;
+}
+
+.course-teachers h3 {
+  color: #242C8F;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-family: "KyivTypeSans", sans-serif !important;
+}
+
+.course-teachers h4 {
+  color: #242C8F;
 }
 
 footer {
@@ -10862,6 +10931,10 @@ footer img {
   .ask-section .btns-wrap-section-top .btn-link span {
     display: block;
     margin-left: 1rem;
+  }
+
+  .course-teachers h3 {
+    margin-bottom: 30px;
   }
 }
 

@@ -1,0 +1,18 @@
+.course-blocks{
+    .course-card{
+        border: 1px solid $accent;
+        border-radius: 30px;
+
+        h4{
+            font-size: 30px;
+            font-weight: 700;
+            margin: 15px 0;
+        }
+
+        .period-course{
+            margin-bottom: 25px;
+        }
+
+        
+    }
+}

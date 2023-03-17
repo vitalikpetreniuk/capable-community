@@ -1,0 +1,35 @@
+.course-page-section-top {
+
+    .btns-wrap-section-top{
+        margin-bottom: 107px;
+    }
+
+    p{
+        margin-bottom: 29px;
+        font-family: 'Montserrat', sans-serif ;
+    }
+
+    .period-course{
+        color: $bgdark-blue;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .social-suport-btn{
+        margin-top: 34px;
+        border: 1px solid $accent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 243px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 13px;
+        color: $accent;
+        
+        img{
+            margin-right: .4rem;
+        }
+    }
+}
