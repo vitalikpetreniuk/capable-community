@@ -2,6 +2,10 @@
     padding-top: 3rem;
     padding-bottom: 220px;
 
+    @include media-for (null, $sm){
+        padding-bottom: 0;
+    }
+
     h6{
         color: #33B4FF;
         font-size: 14px;
@@ -98,6 +102,9 @@
         display: flex;
         justify-content: space-between;
 
+        @include media-for (null, $sm){
+            flex-wrap: wrap;
+        }
         ul{
 
             margin-right: 2rem;
@@ -121,10 +128,25 @@
         padding: 0;
         margin-top: 50px;
 
+        @include media-for (null, $sm){
+            flex-direction: column;
+            justify-content: center;
+        }
+
         .btn-link{
             border: 2px solid $bg-yellow;
             color: $bg-yellow;
             margin-right: 2rem;
+
+            @include media-for (null, $sm){
+                width: auto;
+                margin-right: 0;
+                margin-bottom: .5rem;
+                padding: 2px 5px;
+                span{
+                    display: block;
+                }
+            }
         }
     
         .btn-link-active{

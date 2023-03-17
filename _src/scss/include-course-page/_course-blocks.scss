@@ -1,6 +1,9 @@
 .course-blocks{
     padding: 3rem 0;
 
+    @include media-for (null, $sm){
+        padding: 1rem 0;
+    }
     .course-card{
         cursor: pointer;
         transition: all .2s ease-in-out;
@@ -9,6 +12,7 @@
         padding: 30px 15px;
         color: $accent;
         background-color: $text-white;
+        margin-bottom: 2rem;
 
         .img-arrow{
             transition: all .2s ease-in-out;
@@ -21,17 +25,30 @@
             font-weight: 700;
             margin: 15px 0;
             color: $accent;
+
+            @include media-for (null, $sm){
+                font-size: 16px;
+            }
         }
 
         .period-course{
             margin-bottom: 25px;
             color: $accent;
             font-weight: 300;
+            font-size: 14px;
+
+            @include media-for (null, $sm){
+                font-size: 12px;
+            }
         }
 
         .btn-link{
             background-color: $accent;
             color: $text-white;
+
+            @include media-for (null, $sm){
+                display: none;
+            }
             svg{
                 path{
                     fill: $text-white;

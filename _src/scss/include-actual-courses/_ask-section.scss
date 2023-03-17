@@ -116,3 +116,14 @@
         }
     }
 }
+
+.main-course-page{
+    .ask-section{
+        h3,h4{
+
+            @include media-for (null, $sm){
+                color: #242C8F;
+            }
+        }
+    }
+}

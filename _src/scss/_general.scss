@@ -436,7 +436,7 @@ body{
     }
 
     span{
-        
+        font-family: 'Montserrat', sans-serif;
         color: $text-white;
         @include media-for (null, $sm){
             font-size: 13px;

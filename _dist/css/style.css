@@ -3271,6 +3271,7 @@ body .slides-items .description P {
 }
 
 .breadcrumbs span {
+  font-family: "Montserrat", sans-serif;
   color: #ffff;
 }
 
@@ -4909,6 +4910,10 @@ header .lang-desctop-active .arrow-wrap {
   margin-top: 30px;
 }
 
+.course-page-section-top {
+  padding-bottom: 3rem;
+}
+
 .course-page-section-top .btns-wrap-section-top {
   margin-bottom: 107px;
 }
@@ -4948,6 +4953,10 @@ header .lang-desctop-active .arrow-wrap {
   margin-right: 0.4rem;
 }
 
+.course-page-section-top .img-top img {
+  width: 100%;
+}
+
 .course-blocks {
   padding: 3rem 0;
 }
@@ -4962,6 +4971,7 @@ header .lang-desctop-active .arrow-wrap {
   padding: 30px 15px;
   color: #3C79F5;
   background-color: #ffff;
+  margin-bottom: 2rem;
 }
 
 .course-blocks .course-card .img-arrow {
@@ -4983,6 +4993,7 @@ header .lang-desctop-active .arrow-wrap {
   margin-bottom: 25px;
   color: #3C79F5;
   font-weight: 300;
+  font-size: 14px;
 }
 
 .course-blocks .course-card .btn-link {
@@ -10010,6 +10021,12 @@ footer img {
   }
 }
 
+@media (max-width: 1449px) {
+  .course-page-section-top {
+    background: url(../img/about-project-section-top-bg.png) 100% 0/120% no-repeat, no-repeat #ffff !important;
+  }
+}
+
 @media (max-width: 1444px) {
   .section-top-inner-pages {
     background: url(../img/about-project-section-top-bg.png) -40% 0/87%, #ffff;
@@ -10096,6 +10113,12 @@ footer img {
   }
 }
 
+@media (max-width: 1369px) {
+  .course-page-section-top {
+    background: url(../img/about-project-section-top-bg.png) 0% 0/100% no-repeat, no-repeat #ffff !important;
+  }
+}
+
 @media (max-width: 1366px) {
   .section-top-inner-pages {
     background: url(../img/about-project-section-top-bg.png) 0% 0/90%, #ffff;
@@ -10135,6 +10158,12 @@ footer img {
 @media (max-width: 1312px) {
   .statistics .statistics-card {
     padding: 0 2rem;
+  }
+}
+
+@media (max-width: 1256px) {
+  .course-page-section-top {
+    background: url(../img/about-project-section-top-bg.png) 100% 0/126% no-repeat, no-repeat #ffff !important;
   }
 }
 
@@ -10263,6 +10292,12 @@ footer img {
 
   header .btn-link {
     display: none;
+  }
+}
+
+@media (max-width: 949px) {
+  .course-page-section-top {
+    background: url(../img/about-project-section-top-bg.png) 73% 0/145% no-repeat, no-repeat #ffff !important;
   }
 }
 
@@ -10490,6 +10525,10 @@ footer img {
 
   .ask-section .btns-wrap-section-top {
     padding: 0 40px;
+  }
+
+  .course-page-section-top .first-p {
+    margin-top: 5rem;
   }
 }
 
@@ -11144,8 +11183,81 @@ footer img {
     margin-left: 1rem;
   }
 
+  .main-course-page .ask-section h3,
+  .main-course-page .ask-section h4 {
+    color: #242C8F;
+  }
+
+  .course-page-section-top {
+    padding: 80px 0 0;
+    background: url(../img/about-project-section-top-bg-mob.png) 0% 0%/100% no-repeat, no-repeat #ffff !important;
+  }
+
+  .course-page-section-top .btns-wrap-section-top {
+    margin-bottom: 20px;
+  }
+
+  .course-page-section-top .first-p {
+    margin-top: 1rem;
+  }
+
+  .course-page-section-top .social-suport-btn {
+    display: none;
+  }
+
+  .course-page-section-top .img-top img {
+    width: 95%;
+  }
+
+  .course-blocks {
+    padding: 1rem 0;
+  }
+
+  .course-blocks .course-card h4 {
+    font-size: 16px;
+  }
+
+  .course-blocks .course-card .period-course {
+    font-size: 12px;
+  }
+
+  .course-blocks .course-card .btn-link {
+    display: none;
+  }
+
+  .course-type {
+    padding-bottom: 0;
+  }
+
+  .course-type .ul-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .course-type .btns-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .course-type .btns-wrap .btn-link {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    padding: 2px 5px;
+  }
+
+  .course-type .btns-wrap .btn-link span {
+    display: block;
+  }
+
   .course-teachers h3 {
     margin-bottom: 30px;
+    text-align: center;
   }
 }
 
