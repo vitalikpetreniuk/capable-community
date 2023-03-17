@@ -1,0 +1,136 @@
+.course-type{
+    padding-top: 3rem;
+    padding-bottom: 220px;
+
+    h6{
+        color: #33B4FF;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif ;
+        margin-bottom: 25px;
+    }
+
+    h5{
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif ;
+        color: #272C49;  
+        margin-bottom: 20px;
+    }
+
+    h3{
+        font-size: 24px;
+        color: #242C8F;
+        font-family: "KyivTypeSans", sans-serif !important;
+    }
+
+    h4{
+        font-size: 14px;
+        font-weight: 700;
+        color: #242C8F;
+        font-family: 'Montserrat', sans-serif ;    
+    }
+
+    p{
+        font-family: 'Montserrat', sans-serif ;
+        margin-bottom: 35px;
+    }
+
+    .first-latter{
+        &::first-letter {
+           color: #242C8F;
+           font-weight: 700;
+        }
+    }
+
+    .structure{
+        margin: 3rem 0;
+    }
+
+    .ol-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ol{
+        list-style-type: none; 
+        padding: 0;
+
+        li{
+            position: relative;
+            font-size: 14px;
+            color: rgba($color: #000000, $alpha: .5);
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif ;
+
+            span{
+                color: #242C8F; 
+                font-weight: 700;
+            }
+        }
+    }
+
+    .ul-top{
+        padding-left: 20px;
+
+        li{
+            position: relative;
+            font-size: 14px;
+            color: #272C49;
+            font-weight: 300;
+            font-family: 'Montserrat', sans-serif ;
+            margin-bottom: .3rem;
+
+            &::before{
+                position: absolute;
+                content: '';
+                left: -15px;
+                top: 50%;
+                width: 2px;
+                height: 2px;
+                background-color: #272C49;
+                border-radius: 100%;
+                transform: translate(0 , -50%);
+            }
+        }
+    }
+
+    .ul-wrap{
+        display: flex;
+        justify-content: space-between;
+
+        ul{
+
+            margin-right: 2rem;
+            
+            li{
+                display: flex;
+                align-items: center;
+                margin-bottom: .6rem;
+
+                img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: .4rem;
+                }
+            }
+        }
+    }
+
+    .btns-wrap{
+        justify-content: start;
+        padding: 0;
+        margin-top: 50px;
+
+        .btn-link{
+            border: 2px solid $bg-yellow;
+            color: $bg-yellow;
+            margin-right: 2rem;
+        }
+    
+        .btn-link-active{
+            color: $text-white;
+        }
+    }
+
+
+}
