@@ -1,9 +1,22 @@
 .course-blocks{
     padding: 3rem 0;
 
+    @include media-for (null, $tablet){
+        overflow: hidden;
+    }
+
     @include media-for (null, $sm){
         padding: 1rem 0;
     }
+
+    .swiper{
+        padding: 1rem .2rem 5rem;
+
+        @include media-for (null, $sm){
+            padding: 1rem .2rem 50px;
+        }
+    }
+    
     .course-card{
         cursor: pointer;
         transition: all .2s ease-in-out;

@@ -4961,6 +4961,10 @@ header .lang-desctop-active .arrow-wrap {
   padding: 3rem 0;
 }
 
+.course-blocks .swiper {
+  padding: 1rem 0.2rem 5rem;
+}
+
 .course-blocks .course-card {
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
@@ -10530,6 +10534,10 @@ footer img {
   .course-page-section-top .first-p {
     margin-top: 5rem;
   }
+
+  .course-blocks {
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -11211,6 +11219,10 @@ footer img {
 
   .course-blocks {
     padding: 1rem 0;
+  }
+
+  .course-blocks .swiper {
+    padding: 1rem 0.2rem 50px;
   }
 
   .course-blocks .course-card h4 {

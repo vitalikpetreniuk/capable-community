@@ -82,7 +82,7 @@ var swiperReviews = new Swiper(".swiperReviews", {
 		  spaceBetween: 20,
 		},
 	
-		760: {
+		820: {
 		  slidesPerView: 1.7,
 		  spaceBetween: 30,
 		},
@@ -121,7 +121,7 @@ var swiperNews = new Swiper(".swiperNews", {
 		  spaceBetween: 20,
 		},
 
-		760: {
+		820: {
 		  slidesPerView: 3,
 		  spaceBetween: 30,
 		},
@@ -164,7 +164,42 @@ var swiperBlogs = new Swiper(".swiperBlogs", {
 		  spaceBetween: 20,
 		},
 	
-		760: {
+		820: {
+		  slidesPerView: 2,
+		  spaceBetween: 30,
+		},
+	
+		1100: {
+		  slidesPerView: 3,
+		  spaceBetween: 50,
+		},
+	
+	}
+
+});
+
+
+
+//swiper Courses
+
+var swiperCourses = new Swiper(".swiperCourses", {
+	loop: true,
+	speed: 1200,
+	slidesPerView: 3,
+	spaceBetween: 50,
+	breakpoints: {
+        
+		320: {
+		  slidesPerView: 2.25,
+		  spaceBetween: 20,
+		},
+	  
+		480: {
+		  slidesPerView: 2.25,
+		  spaceBetween: 20,
+		},
+	
+		820: {
 		  slidesPerView: 2,
 		  spaceBetween: 30,
 		},
