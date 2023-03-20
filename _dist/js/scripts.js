@@ -26,10 +26,10 @@ $(window).on("scroll",function() {
 		
 	if(height > 400){			
 		$('header').addClass('header-fixed');
-		$("header .logo img").attr("src","img/logo-menu.png")	
+		// $("header .logo img").attr("src","img/logo-menu.png")	
 	} else{				
 		$('header').removeClass('header-fixed');	
-		$("header .logo img").attr("src","img/logo.png")			
+		// $("header .logo img").attr("src","img/logo.png")			
 	}
 });
 

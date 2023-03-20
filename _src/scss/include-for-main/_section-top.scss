@@ -49,21 +49,33 @@
 
     .bg-blue{
         margin-bottom: 20px;
-        background: url(../img/bg-blue1.png);
-        background-size: 96%;
-        background-position: 0% 0%;
+        background: $accent;
         background-repeat: no-repeat;
         width: 377px;
         height: 42px;
         padding: 0.8rem 1rem;
         font-size: 12px;
         text-align: center;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
 
         @include media-for (null, $tablet){
             width: 310px;
-            font-size: 10px;
-            padding: 0.6rem .7rem;
             margin-bottom: 10px;
+        }
+
+
+        @include media-for (null, $sm){
+            position: absolute;
+            left: 0;
+            width: 100%;
+            text-align: left;
+        }
+    }
+
+    h1{
+        @include media-for (null, $sm){
+            margin-top: 4rem;
         }
     }
 

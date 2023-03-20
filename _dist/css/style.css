@@ -3911,15 +3911,15 @@ header .lang-desctop-active .arrow-wrap {
 
 .section-top .bg-blue {
   margin-bottom: 20px;
-  background: url(../img/bg-blue1.png);
-  background-size: 96%;
-  background-position: 0% 0%;
+  background: #3C79F5;
   background-repeat: no-repeat;
   width: 377px;
   height: 42px;
   padding: 0.8rem 1rem;
   font-size: 12px;
   text-align: center;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 }
 
 .section-top .img-top {
@@ -3946,6 +3946,10 @@ header .lang-desctop-active .arrow-wrap {
 .child-population {
   color: #ffff;
   padding: 70px 0;
+}
+
+.child-population h3 {
+  font-family: "KyivTypeSans", sans-serif !important;
 }
 
 .child-population .child-population-wrapper {
@@ -10387,8 +10391,6 @@ footer img {
 
   .section-top .bg-blue {
     width: 310px;
-    font-size: 10px;
-    padding: 0.6rem 0.7rem;
     margin-bottom: 10px;
   }
 
@@ -10789,6 +10791,17 @@ footer img {
     margin-bottom: 18px;
   }
 
+  .section-top .bg-blue {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .section-top h1 {
+    margin-top: 4rem;
+  }
+
   .section-top .img-top .btn-play {
     left: 3%;
     top: 10%;
@@ -10873,7 +10886,7 @@ footer img {
   .сommunity-strengthening {
     padding: 40px 0 0;
     height: 862px;
-    background: url(../img/сommunity-strengthening.png) 0 116%/112%, url(../img/bg-comunity2.png) 4% 66%/100%, #F5F4FA;
+    background: url(../img/сommunity-strengthening.png) 0 116%/112%, #F5F4FA;
     background-repeat: no-repeat;
   }
 
@@ -11000,11 +11013,13 @@ footer img {
   }
 
   .blog-section .blogs-blocks .description .information .name a {
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 600;
   }
 
   .blog-section .blogs-blocks .description .information span a {
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 600;
   }
 
   .partners {

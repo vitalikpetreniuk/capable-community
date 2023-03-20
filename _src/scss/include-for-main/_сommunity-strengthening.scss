@@ -18,7 +18,7 @@
     @include media-for (null, $sm){
         padding: 40px 0 0;
         height: 862px;
-        background: url(../img/сommunity-strengthening.png) 0 116%/112% ,url(../img/bg-comunity2.png) 4% 66%/100% , $bg-gray;
+        background: url(../img/сommunity-strengthening.png) 0 116%/112% , $bg-gray;
         background-repeat: no-repeat;
     }
 
