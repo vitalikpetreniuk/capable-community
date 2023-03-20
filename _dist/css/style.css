@@ -3678,6 +3678,7 @@ header nav ul li a {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
 header nav ul li a::after {
@@ -4553,6 +4554,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .about-project-section-top h2 {
   font-size: 24px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .about-project-section-top p {
@@ -4563,9 +4565,11 @@ header .lang-desctop-active .arrow-wrap {
 .about-project-section-top .first-p {
   font-weight: 700;
   margin-bottom: 1rem;
-  font-family: "KyivTypeSans", sans-serif;
   font-size: 17px;
-  color: #1A1E1C;
+  color: #ffff;
+  background-color: #3C79F5;
+  display: inline-block;
+  padding: 0.3rem 0.3rem;
 }
 
 .about-project-section-top .img-top {
@@ -4787,7 +4791,7 @@ header .lang-desctop-active .arrow-wrap {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   white-space: nowrap;
-  color: #1A1E1C;
+  color: rgba(0, 0, 0, 0.7);
   font-weight: 500;
 }
 
@@ -4810,6 +4814,7 @@ header .lang-desctop-active .arrow-wrap {
   color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
   margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .actual-courses-cards .courses-cards .partners-courses .row {
@@ -4838,6 +4843,7 @@ header .lang-desctop-active .arrow-wrap {
   color: #242C8F;
   text-align: center;
   margin-bottom: 30px;
+  font-family: "KyivTypeSans", sans-serif !important;
 }
 
 .ask-section ul {
@@ -4897,6 +4903,7 @@ header .lang-desctop-active .arrow-wrap {
 .ask-section ul .togle-li p {
   font-size: 14px;
   font-weight: 300;
+  font-family: "Montserrat", sans-serif;
 }
 
 .ask-section ul .togle-li-active {
@@ -10276,6 +10283,12 @@ footer img {
   }
 }
 
+@media (max-width: 1024px) {
+  .about-project-section-top h2 {
+    margin-top: 4rem;
+  }
+}
+
 @media (max-width: 999px) {
   .section-top {
     height: auto;
@@ -10374,6 +10387,11 @@ footer img {
     width: auto;
     margin-right: auto;
     margin-left: 0;
+  }
+
+  header nav ul {
+    margin-right: 0;
+    margin-left: 1rem;
   }
 
   header nav ul li a {
@@ -10516,6 +10534,10 @@ footer img {
   .about-project-section-top {
     background: url(../img/about-project-section-top-bg.png) 0% 0%/130%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;
     background-repeat: no-repeat;
+  }
+
+  .about-project-section-top h2 {
+    margin-top: 0;
   }
 
   .about-project-section-top .img-top {
@@ -11225,6 +11247,10 @@ footer img {
     color: #272C49;
   }
 
+  .ask-section ul .togle-li p {
+    font-size: 13px;
+  }
+
   .ask-section .btns-wrap-section-top {
     padding: 0;
     -webkit-box-pack: start;
@@ -11236,6 +11262,7 @@ footer img {
 
   .ask-section .btns-wrap-section-top .btn-link {
     width: auto;
+    font-size: 16px;
   }
 
   .ask-section .btns-wrap-section-top .btn-link span {

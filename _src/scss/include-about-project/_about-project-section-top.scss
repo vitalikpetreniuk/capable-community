@@ -41,6 +41,15 @@
 
     h2{
         font-size: 24px;
+        font-family: 'Montserrat',sans-serif;
+
+        @include media-for (null, 1025px){
+            margin-top: 4rem;
+        }
+
+        @include media-for (null, $tablet){
+            margin-top: 0;
+        }
 
         @include media-for (null, $sm){
             font-size: 17px;
@@ -60,9 +69,11 @@
     .first-p{
         font-weight: 700;
         margin-bottom: 1rem;
-        font-family: "KyivTypeSans", sans-serif;
         font-size: 17px;
-        color: $text-black;
+        color: $text-white;
+        background-color: $accent;
+        display: inline-block;
+        padding: .3rem .3rem;
 
         @include media-for (null, $sm){
             font-size: 16px;

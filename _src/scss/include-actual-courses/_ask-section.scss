@@ -13,6 +13,7 @@
         color: #242C8F;
         text-align: center;
         margin-bottom: 30px;
+        font-family: "KyivTypeSans", sans-serif !important;
 
         @include media-for (null, $sm){
             color: #272C49;
@@ -76,7 +77,11 @@
             p{
                font-size: 14px;
                font-weight: 300;
-            
+               font-family: 'Montserrat', sans-serif;
+
+               @include media-for (null, $sm){
+                font-size: 13px;
+            }
             }
         }
 
@@ -107,7 +112,7 @@
             
             .btn-link {
                 width: auto;
-
+                font-size: 16px;
                 span{
                     display: block;
                     margin-left: 1rem;
