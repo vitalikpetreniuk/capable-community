@@ -5250,6 +5250,138 @@ header .lang-desctop-active .arrow-wrap {
   color: #21150B;
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 7px;
+}
+
+.contacts .email-text {
+  text-decoration: underline;
+  color: #3C79F5;
+  font-weight: 700;
+}
+
+.contacts .btns-wrap-contacts {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts .btns-wrap-contacts .copy-btn {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.contacts form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts form input,
+.contacts form textarea {
+  width: 100%;
+  border: 1px solid #D9D9D9;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+  padding: 15px 20px;
+  padding-left: 42px;
+  outline: none;
+}
+
+.contacts form input::-webkit-input-placeholder, .contacts form textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.36);
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "KyivTypeSans", sans-serif;
+}
+
+.contacts form input::-moz-placeholder, .contacts form textarea::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.36);
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "KyivTypeSans", sans-serif;
+}
+
+.contacts form input:-ms-input-placeholder, .contacts form textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.36);
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "KyivTypeSans", sans-serif;
+}
+
+.contacts form input::-ms-input-placeholder, .contacts form textarea::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.36);
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "KyivTypeSans", sans-serif;
+}
+
+.contacts form input::placeholder,
+.contacts form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.36);
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "KyivTypeSans", sans-serif;
+}
+
+.contacts form input:hover,
+.contacts form textarea:hover {
+  border: 1px solid #3C79F5;
+}
+
+.contacts form textarea {
+  border-radius: 34px;
+  resize: none;
+}
+
+.contacts form .input-container {
+  position: relative;
+  margin-bottom: 17px;
+}
+
+.contacts form .input-container::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: url(../img/person.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: 20px;
+  left: 15px;
+}
+
+.contacts form .input-container-tel::before {
+  background: url(../img/call-yellow.svg);
+}
+
+.contacts form .textarea-container::before {
+  background: url(../img/pen.svg);
+}
+
+.contacts form button {
+  font-family: "KyivTypeSans", sans-serif;
+  font-weight: 500;
+  background: #FDA43B;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 115px;
+  color: #ffff;
+  height: 35px;
 }
 
 footer {

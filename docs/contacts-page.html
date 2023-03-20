@@ -64,7 +64,7 @@
 						</li>
 
 						<li>
-							<a href="#">
+							<a href="/capable-community/contacts-page.html">
 								Контакти
 							</a>
 						</li>
@@ -216,7 +216,7 @@
 			</li>
 
 			<li>
-				<a href="#">
+				<a href="/capable-community/contacts-page.html">
 					КОНТАКТИ
 				</a>
 			</li>
@@ -265,7 +265,8 @@
 
 		<section class="contacts">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
+
             <div class="col-12">
                 <div class="breadcrumbs">
                     <span>Головна </span>\ <span>Експерти</span>
@@ -281,12 +282,12 @@
                     Адреса головного офісу
                 </h4>
 
-                <p>
+                <p id="adress-copy">
                     м. Київ., вул. Хрещатик, 19. 
                 </p>
 
-                <div class="btns-wrap">
-                    <div class="copy-btn">
+                <div class="btns-wrap-contacts">
+                    <div class="copy-btn copy-btn-adress">
                         <img src="img/copy-btn.svg" alt="copy">
                     </div>
                 </div>
@@ -295,49 +296,59 @@
                     Телефон
                 </h4>
 
-                <p>
+                <p id="telephon-copy">
                     (+380) 66-869-86-09
                 </p>
 
-                <div class="btns-wrap">
-                    <div class="copy-btn">
+                <div class="btns-wrap-contacts">
+                    <div class="copy-btn copy-btn-telephone">
                         <img src="img/copy-btn.svg" alt="copy">
                     </div>
 
                     <a href="tel:+380668698609">
-
+                        <img src="img/call-btn-blue.svg" alt="telephone">
                     </a>
                 </div>
 
                 <h4>
-                    Телефон
+                    Email
                 </h4>
 
-                <p class="email">
+                <p class="email-text" id="email-copy">
                     gromada@gmail.com
                 </p>
 
-                <div class="btns-wrap">
-                    <div class="copy-btn">
+                <div class="btns-wrap-contacts">
+                    <div class="copy-btn copy-btn-email">
                         <img src="img/copy-btn.svg" alt="copy">
                     </div>
                 </div>
 
             </div>
 
-            <div class="col-9">
-                <h4>
+            <div class="col-6 pe-md-5">
+                <h4 class="mb-4">
                     Поставити запитання
                 </h4>
 
                 <form action="">
-                    <input type="text" placeholder="Ім'я">
+                    <div class="input-container">
+                        <input type="text" placeholder="Ім'я">
+                    </div>
 
-                    <input type="number" placeholder="(+380) __-___-__-__">
+                    <div class="input-container input-container-tel">
+                        <input type="number" placeholder="(+380) __-___-__-__">
+                    </div>
+                    
 
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Пишіть тут...">
-                        
-                    </textarea>
+                    <div class="input-container textarea-container">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Пишіть тут..."></textarea>
+                    </div>
+
+
+                    <button type="submit">
+                        Надіслати
+                    </button>
                 </form>
             </div>
         </div>

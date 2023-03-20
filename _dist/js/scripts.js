@@ -340,6 +340,48 @@ $('.course-card').on('click', function(){
 
 
 
+///btns copy
+
+
+///btn copy adress
+$('.copy-btn-adress').on('click', function(){
+	console.time('time1');
+	var temp = $("<input>");
+
+  	$("body").append(temp);
+	temp.val($('#adress-copy').text()).select();
+	document.execCommand("copy");
+	temp.remove();
+	alert('Текст скопіовано')
+});
+
+///btn copy telephone
+$('.copy-btn-telephone').on('click', function(){
+	console.time('time1');
+	var temp = $("<input>");
+
+  	$("body").append(temp);
+	temp.val($('#telephon-copy').text()).select();
+	document.execCommand("copy");
+	temp.remove();
+	alert('Текст скопіовано')
+});
+
+///btn copy email
+$('.copy-btn-email').on('click', function(){
+	console.time('time1');
+	var temp = $("<input>");
+
+  	$("body").append(temp);
+	temp.val($('#email-copy').text()).select();
+	document.execCommand("copy");
+	temp.remove();
+	alert('Текст скопіовано')
+});
+
+
+
+
 
 
 
