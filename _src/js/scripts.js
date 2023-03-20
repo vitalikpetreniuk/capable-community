@@ -381,6 +381,12 @@ $('.copy-btn-email').on('click', function(){
 
 
 
+///
+if(window.location.toString().indexOf('contacts-page.html')>0){
+	$('header nav ul li a').addClass("nav-black")
+}
+
+
 
 
 

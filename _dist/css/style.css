@@ -3701,6 +3701,14 @@ header nav ul li a:hover::after {
   left: 0;
 }
 
+header nav ul li .nav-black {
+  color: #272C49;
+}
+
+header nav ul li .nav-black::after {
+  background: #272C49;
+}
+
 header .btn-link:hover {
   background-color: #3C79F5;
 }

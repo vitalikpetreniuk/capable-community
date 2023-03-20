@@ -88,6 +88,12 @@ header{
 
                     
                 }
+                .nav-black{
+                    color: #272C49;
+                    &::after {    
+                        background: #272C49;
+                    }
+                }
             }
         }
     }
