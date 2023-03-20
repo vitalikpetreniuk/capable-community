@@ -1,6 +1,6 @@
 .contacts{
     padding: 130px 0 50px;
-    background: url(../img/bg-contacts.png) 0% 0%/100%,  $text-white;
+    background: url(../img/bg-contacts.png) 100% 100%/100%,  $text-white;
     background-repeat: no-repeat;
 
     @include media-for (null, 1025px){
@@ -28,6 +28,7 @@
         font-weight: 700;
         color: #272C49; 
         margin-bottom: 94px;
+        font-size: 54px;
 
         @include media-for (null, $tablet){
             margin-bottom: 50px;
@@ -36,6 +37,7 @@
 
         @include media-for (null, $sm){
             margin-bottom: 30px;
+            font-size: 24px;
         }
     }
 
@@ -52,6 +54,7 @@
     }
 
     p{
+        font-size: 14px;
         color: #21150B;
         font-weight: 300;
         font-family: 'Montserrat', sans-serif;
@@ -84,12 +87,10 @@
 
         input,textarea{
             width: 100%;
-            border: 1px solid #D9D9D9;
+            border: none;
             transition: all .2s ease-in-out;
-            border-radius: 25px;
-            padding: 15px 20px;
-            padding-left: 42px;
             outline: none;
+            background: none;
 
             @include media-for (null, $sm){
                 border-radius: 16px;
@@ -101,10 +102,6 @@
                 font-weight: 300;
                 font-family: "KyivTypeSans", sans-serif;
             }
-
-            &:hover{
-                border: 1px solid $accent;
-            }
         }
 
         textarea{
@@ -115,6 +112,10 @@
         .input-container{
             position: relative;
             margin-bottom: 17px;
+            border: 1px solid #D9D9D9;
+            border-radius: 25px;
+            padding: 15px 20px;
+            padding-left: 42px;
 
             &::before{
                 position: absolute;
@@ -136,9 +137,14 @@
         }
 
         .textarea-container{
+            border-radius: 34px;
             &::before{
                 background: url(../img/pen.svg);
             }
+        }
+
+        .input-container-active{
+            border: 1px solid $accent;
         }
 
         button{

@@ -5225,7 +5225,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .contacts {
   padding: 130px 0 50px;
-  background: url(../img/bg-contacts.png) 0% 0%/100%, #ffff;
+  background: url(../img/bg-contacts.png) 100% 100%/100%, #ffff;
   background-repeat: no-repeat;
 }
 
@@ -5245,6 +5245,7 @@ header .lang-desctop-active .arrow-wrap {
   font-weight: 700;
   color: #272C49;
   margin-bottom: 94px;
+  font-size: 54px;
 }
 
 .contacts h4 {
@@ -5254,6 +5255,7 @@ header .lang-desctop-active .arrow-wrap {
 }
 
 .contacts p {
+  font-size: 14px;
   color: #21150B;
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
@@ -5291,14 +5293,12 @@ header .lang-desctop-active .arrow-wrap {
 .contacts form input,
 .contacts form textarea {
   width: 100%;
-  border: 1px solid #D9D9D9;
+  border: none;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  border-radius: 25px;
-  padding: 15px 20px;
-  padding-left: 42px;
   outline: none;
+  background: none;
 }
 
 .contacts form input::-webkit-input-placeholder, .contacts form textarea::-webkit-input-placeholder {
@@ -5337,11 +5337,6 @@ header .lang-desctop-active .arrow-wrap {
   font-family: "KyivTypeSans", sans-serif;
 }
 
-.contacts form input:hover,
-.contacts form textarea:hover {
-  border: 1px solid #3C79F5;
-}
-
 .contacts form textarea {
   border-radius: 34px;
   resize: none;
@@ -5350,6 +5345,10 @@ header .lang-desctop-active .arrow-wrap {
 .contacts form .input-container {
   position: relative;
   margin-bottom: 17px;
+  border: 1px solid #D9D9D9;
+  border-radius: 25px;
+  padding: 15px 20px;
+  padding-left: 42px;
 }
 
 .contacts form .input-container::before {
@@ -5368,8 +5367,16 @@ header .lang-desctop-active .arrow-wrap {
   background: url(../img/call-yellow.svg);
 }
 
+.contacts form .textarea-container {
+  border-radius: 34px;
+}
+
 .contacts form .textarea-container::before {
   background: url(../img/pen.svg);
+}
+
+.contacts form .input-container-active {
+  border: 1px solid #3C79F5;
 }
 
 .contacts form button {
@@ -11506,6 +11513,7 @@ footer img {
 
   .contacts h1 {
     margin-bottom: 30px;
+    font-size: 24px;
   }
 
   .contacts h4 {

@@ -388,6 +388,17 @@ if(window.location.toString().indexOf('contacts-page.html')>0){
 
 
 
+///input contact
+$('.input-container').on('click', function(){
+	if( $(this).hasClass('input-container-active') ){
+		$(this).removeClass('')
+	}
+	else{
+		$('.input-container').removeClass('input-container-active')
+		$(this).addClass('input-container-active');
+	}
+});
+
 
 
 
