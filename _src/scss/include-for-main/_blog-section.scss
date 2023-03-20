@@ -129,6 +129,14 @@
                     }
                 }
 
+                .quenty{
+                    a{
+                        @include media-for (null, $sm){
+                            font-size: 14px;
+                        }
+                    }
+                }
+
                 span{
                     display: inline-block;
                     margin-left: 1rem;

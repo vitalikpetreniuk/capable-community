@@ -1,5 +1,13 @@
 .course-page-section-top {
     padding-bottom: 3rem;
+
+    @include media-for (null, 1710px){
+        background: url(../img/about-project-section-top-bg.png) 0 0/89% no-repeat,no-repeat #ffff !important;
+    }
+
+    @include media-for (null, 1590px){
+        background: url(../img/about-project-section-top-bg.png) 0 0/100% no-repeat,no-repeat #ffff !important;
+    }
     
     @include media-for (null, 1450){
         background: url(../img/about-project-section-top-bg.png) 100% 0/120% no-repeat,no-repeat #ffff !important;
@@ -40,6 +48,14 @@
     }
 
     .first-p{
+
+        @include media-for (null, 1400px){
+            margin-top: 7rem;
+        }
+        @include media-for (null, 1360px){
+            margin-top: 2rem;
+        }
+
         @include media-for (null, $tablet){
             margin-top: 5rem;
         }

@@ -3952,6 +3952,10 @@ header .lang-desctop-active .arrow-wrap {
   width: 100%;
 }
 
+.section-top .btns-wrap {
+  width: 700px;
+}
+
 .child-population {
   color: #ffff;
   padding: 70px 0;
@@ -4906,6 +4910,9 @@ header .lang-desctop-active .arrow-wrap {
   visibility: hidden;
   position: absolute;
   padding-left: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .ask-section ul .togle-li p {
@@ -4992,17 +4999,27 @@ header .lang-desctop-active .arrow-wrap {
   border: 1px solid #3C79F5;
   border-radius: 30px;
   padding: 30px 15px;
+  padding-left: 40px;
   color: #3C79F5;
   background-color: #ffff;
   margin-bottom: 2rem;
 }
 
 .course-blocks .course-card .img-arrow {
+  position: relative;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 25px;
   height: 25px;
+}
+
+.course-blocks .course-card .img-arrow svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .course-blocks .course-card h4 {
@@ -5182,6 +5199,8 @@ header .lang-desctop-active .arrow-wrap {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0.6rem;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .course-type .ul-wrap ul li img {
@@ -10200,9 +10219,27 @@ footer img {
   }
 }
 
+@media (max-width: 1771px) {
+  .actual-courses-cards .courses-cards h4 {
+    margin-top: 1.4rem;
+  }
+}
+
+@media (max-width: 1709px) {
+  .course-page-section-top {
+    background: url(../img/about-project-section-top-bg.png) 0 0/89% no-repeat, no-repeat #ffff !important;
+  }
+}
+
 @media (max-width: 1639px) {
   .statistics .statistics-card {
     padding: 0 2.5rem;
+  }
+}
+
+@media (max-width: 1589px) {
+  .course-page-section-top {
+    background: url(../img/about-project-section-top-bg.png) 0 0/100% no-repeat, no-repeat #ffff !important;
   }
 }
 
@@ -10270,6 +10307,10 @@ footer img {
     padding-bottom: 3rem;
   }
 
+  .section-top .btns-wrap {
+    width: auto;
+  }
+
   .child-population {
     padding: 0px 0 40px;
   }
@@ -10309,6 +10350,10 @@ footer img {
   .about-project-section-top .img-top {
     margin: 100px 0;
   }
+
+  .course-page-section-top .first-p {
+    margin-top: 7rem;
+  }
 }
 
 @media (max-width: 1369px) {
@@ -10325,6 +10370,12 @@ footer img {
 
   header nav {
     width: 100%;
+  }
+}
+
+@media (max-width: 1359px) {
+  .course-page-section-top .first-p {
+    margin-top: 2rem;
   }
 }
 
@@ -10717,10 +10768,6 @@ footer img {
     padding-bottom: 0;
   }
 
-  .actual-courses-cards .courses-cards h4 {
-    margin-top: 1.4rem;
-  }
-
   .actual-courses-cards .courses-cards .step-wrap {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -10748,6 +10795,12 @@ footer img {
   }
 
   .course-blocks {
+    overflow: hidden;
+  }
+
+  .course-blocks .course-card h4 {
+    font-size: 27px;
+    height: 4rem;
     overflow: hidden;
   }
 
@@ -11194,6 +11247,10 @@ footer img {
     font-weight: 600;
   }
 
+  .blog-section .blogs-blocks .description .information .quenty a {
+    font-size: 14px;
+  }
+
   .blog-section .blogs-blocks .description .information span a {
     font-size: 12px;
     font-weight: 600;
@@ -11456,15 +11513,28 @@ footer img {
   }
 
   .course-blocks .swiper {
-    padding: 1rem 0.2rem 50px;
+    padding: 1rem 0.2rem 0px;
+  }
+
+  .course-blocks .course-card {
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .course-blocks .course-card .img-arrow {
+    width: 14px;
+    height: 14px;
   }
 
   .course-blocks .course-card h4 {
     font-size: 16px;
+    height: 2.5rem;
+    margin: 0;
   }
 
   .course-blocks .course-card .period-course {
     font-size: 12px;
+    margin-bottom: 0;
   }
 
   .course-blocks .course-card .btn-link {
@@ -11472,12 +11542,24 @@ footer img {
   }
 
   .course-type {
-    padding-bottom: 0;
+    padding: 0;
+  }
+
+  .course-type h3 {
+    font-size: 17px;
+  }
+
+  .course-type ol li {
+    font-size: 13px;
   }
 
   .course-type .ul-wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+
+  .course-type .ul-wrap ul li {
+    font-size: 13px;
   }
 
   .course-type .btns-wrap {

@@ -112,8 +112,14 @@
     }
 
     .btns-wrap{
+        width: 700px;
+
         @include media-for (null, 1530px){
             padding: 8px 10px;
+        }
+
+        @include media-for (null, 1400px){
+            width: auto;
         }
 
         @include media-for (null, 1348px){

@@ -190,13 +190,13 @@ var swiperCourses = new Swiper(".swiperCourses", {
 	breakpoints: {
         
 		320: {
-		  slidesPerView: 2.25,
-		  spaceBetween: 20,
+		  slidesPerView: 2.15,
+		  spaceBetween: 18,
 		},
 	  
 		480: {
-		  slidesPerView: 2.25,
-		  spaceBetween: 20,
+		  slidesPerView: 2.15,
+		  spaceBetween: 18,
 		},
 	
 		820: {
