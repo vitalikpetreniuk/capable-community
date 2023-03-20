@@ -5216,10 +5216,9 @@ header .lang-desctop-active .arrow-wrap {
 }
 
 .contacts {
-  padding-top: 130px;
+  padding: 130px 0 50px;
   background: url(../img/bg-contacts.png) 0% 0%/100%, #ffff;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 .contacts .breadcrumbs {
@@ -10416,8 +10415,17 @@ footer img {
 }
 
 @media (max-width: 1024px) {
+  header .btn-link {
+    display: none;
+  }
+
   .about-project-section-top h2 {
     margin-top: 4rem;
+  }
+
+  .contacts {
+    background: #ffff;
+    height: 100vh;
   }
 }
 
@@ -10478,10 +10486,6 @@ footer img {
   .section-top-inner-pages {
     background: url(../img/about-project-section-top-bg.png) 100% 0/130%, #ffff;
     background-repeat: no-repeat;
-  }
-
-  header .btn-link {
-    display: none;
   }
 }
 
@@ -10730,6 +10734,10 @@ footer img {
 
   .course-blocks {
     overflow: hidden;
+  }
+
+  .contacts h1 {
+    margin-bottom: 50px;
   }
 }
 
@@ -11481,6 +11489,28 @@ footer img {
   .course-teachers h3 {
     margin-bottom: 30px;
     text-align: center;
+  }
+
+  .contacts {
+    height: auto;
+    padding: 80px 0 30px;
+  }
+
+  .contacts h1 {
+    margin-bottom: 30px;
+  }
+
+  .contacts h4 {
+    font-size: 16px;
+  }
+
+  .contacts .btns-wrap-contacts {
+    margin-bottom: 25px;
+  }
+
+  .contacts form input,
+  .contacts form textarea {
+    border-radius: 16px;
   }
 }
 

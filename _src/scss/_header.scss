@@ -94,7 +94,7 @@ header{
 
     .btn-link{
 
-        @include media-for (null, 952px){
+        @include media-for (null, 1025px){
            display: none;
         }
 
