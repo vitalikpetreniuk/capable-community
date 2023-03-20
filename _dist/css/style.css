@@ -5204,6 +5204,43 @@ header .lang-desctop-active .arrow-wrap {
   color: #242C8F;
 }
 
+.contacts {
+  padding-top: 130px;
+  background: url(../img/bg-contacts.png) 0% 0%/100%, #ffff;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.contacts .breadcrumbs {
+  color: #272c49;
+}
+
+.contacts .breadcrumbs span {
+  color: #272c49;
+}
+
+.contacts .breadcrumbs span:last-child {
+  color: rgba(39, 44, 73, 0.5);
+}
+
+.contacts h1 {
+  font-weight: 700;
+  color: #272C49;
+  margin-bottom: 94px;
+}
+
+.contacts h4 {
+  font-weight: 700;
+  color: #272C49;
+  font-size: 20px;
+}
+
+.contacts p {
+  color: #21150B;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+
 footer {
   background-color: #272C49;
   padding: 1.5rem 0;
