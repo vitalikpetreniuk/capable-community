@@ -5424,6 +5424,10 @@ header .lang-desctop-active .arrow-wrap {
   padding: 130px 0 50px;
 }
 
+.blog-articles .breadcrumbs {
+  color: #272c49;
+}
+
 .blog-articles .breadcrumbs span {
   color: #272C49;
 }
@@ -5432,8 +5436,12 @@ header .lang-desctop-active .arrow-wrap {
   color: rgba(0, 119, 147, 0.5);
 }
 
-.blog-articles .img-top {
-  margin-bottom: 34px;
+.blog-articles .swiper {
+  padding: 1rem 0.2rem 5rem;
+}
+
+.blog-articles .swiper-pagination {
+  bottom: 1rem;
 }
 
 .blog-articles h1 {
@@ -5449,6 +5457,7 @@ header .lang-desctop-active .arrow-wrap {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   margin: 35px 0 43px;
+  text-transform: uppercase;
 }
 
 .blog-articles h3 {
@@ -5469,6 +5478,7 @@ header .lang-desctop-active .arrow-wrap {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
+  margin-bottom: 34px;
 }
 
 .blog-articles .img-top::before {
@@ -5507,6 +5517,9 @@ header .lang-desctop-active .arrow-wrap {
 .blog-articles ul li {
   position: relative;
   font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 300;
 }
 
 .blog-articles ul li::before {
@@ -5516,7 +5529,7 @@ header .lang-desctop-active .arrow-wrap {
   top: 50%;
   width: 2px;
   height: 2px;
-  background-color: #272C49;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 100%;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
@@ -5618,6 +5631,10 @@ header .lang-desctop-active .arrow-wrap {
   font-weight: 700;
   font-weight: 20px;
   height: 110px;
+}
+
+.blog-articles .btn-link svg {
+  margin-right: 1rem;
 }
 
 .blog-articles .btn-link svg path {
@@ -11046,6 +11063,14 @@ footer img {
   .contacts h1 {
     margin-bottom: 50px;
   }
+
+  .blog-articles {
+    overflow: hidden;
+  }
+
+  .blog-articles h5 {
+    margin: 35px 0 30px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -11850,6 +11875,34 @@ footer img {
     border-radius: 16px;
   }
 
+  .blog-articles {
+    padding: 80px 0 30px;
+  }
+
+  .blog-articles .swiper {
+    padding: 1rem 0.2rem 31px;
+  }
+
+  .blog-articles h1 {
+    font-size: 24px;
+  }
+
+  .blog-articles h3 {
+    font-size: 16px;
+  }
+
+  .blog-articles h4 {
+    margin-top: 1rem;
+  }
+
+  .blog-articles .img-top {
+    border-radius: 15px;
+  }
+
+  .blog-articles .information-wrap {
+    margin: 20px 0 45px;
+  }
+
   .blog-articles .blogs-blocks .title a {
     font-size: 13px;
     height: 1.5rem;
@@ -11857,6 +11910,11 @@ footer img {
 
   .blog-articles .blogs-blocks P {
     display: none;
+  }
+
+  .blog-articles .btn-link {
+    height: 67px;
+    border-radius: 18px;
   }
 }
 
