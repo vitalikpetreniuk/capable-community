@@ -5645,9 +5645,9 @@ header .lang-desctop-active .arrow-wrap {
   height: 100%;
   z-index: 10;
   border-radius: 30px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(182, 237, 200, 0)), to(white));
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 30%, rgba(182, 237, 200, 0) 50%, white 100%);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(182, 237, 200, 0) 50%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(255, 255, 255, 0)), color-stop(70%, rgba(182, 237, 200, 0)), color-stop(103%, white));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 30%, rgba(182, 237, 200, 0) 70%, white 103%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(182, 237, 200, 0) 70%, white 103%);
 }
 
 .blog-articles .btn-link-yelow {
