@@ -5444,6 +5444,17 @@ header .lang-desctop-active .arrow-wrap {
 
 .blog-articles h3 {
   color: #272C49;
+  font-size: 30px;
+}
+
+.blog-articles h4 {
+  color: #272C49;
+  font-size: 16px;
+}
+
+.blog-articles p a {
+  color: #3C79F5;
+  font-weight: 500;
 }
 
 footer {
