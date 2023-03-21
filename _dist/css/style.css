@@ -5379,6 +5379,7 @@ header .lang-desctop-active .arrow-wrap {
 .contacts form textarea {
   border-radius: 34px;
   resize: none;
+  padding-left: 7px;
 }
 
 .contacts form .input-container {
@@ -5408,6 +5409,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .contacts form .textarea-container {
   border-radius: 34px;
+  padding-left: 35px;
 }
 
 .contacts form .textarea-container::before {

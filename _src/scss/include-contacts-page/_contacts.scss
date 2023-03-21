@@ -107,6 +107,7 @@
         textarea{
             border-radius: 34px;
             resize: none;
+            padding-left: 7px;
         }
 
         .input-container{
@@ -138,6 +139,7 @@
 
         .textarea-container{
             border-radius: 34px;
+            padding-left: 35px;
             &::before{
                 background: url(../img/pen.svg);
             }
