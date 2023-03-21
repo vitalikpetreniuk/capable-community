@@ -5418,6 +5418,34 @@ header .lang-desctop-active .arrow-wrap {
   height: 35px;
 }
 
+.blog-articles {
+  padding-top: 130px;
+}
+
+.blog-articles .breadcrumbs span {
+  color: #272C49;
+}
+
+.blog-articles .breadcrumbs span:last-child {
+  color: rgba(0, 119, 147, 0.5);
+}
+
+.blog-articles h1 {
+  font-size: 54px;
+  color: #272C49;
+}
+
+.blog-articles h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+
+.blog-articles h3 {
+  color: #272C49;
+}
+
 footer {
   background-color: #272C49;
   padding: 1.5rem 0;
