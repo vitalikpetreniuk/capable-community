@@ -1,5 +1,5 @@
 .blog-articles{
-    padding-top: 130px;
+    padding: 130px 0 50px;
     
     .breadcrumbs{
        span{
@@ -11,9 +11,14 @@
        } 
     }
  
+    .img-top{
+        margin-bottom: 34px;
+    }
+
     h1{
         font-size: 54px;
         color: #272C49;
+        font-family: "KyivTypeSans", sans-serif;
     }
 
     h5{
@@ -21,26 +26,211 @@
         font-weight: 600;
         color: rgba($color: #000000, $alpha: .5);
         text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif ;
+        margin: 35px 0 43px;
     }
 
     h3{
         color: #272C49;
-        font-size: 30px  ;
+        font-size: 30px ;
+        font-family: "KyivTypeSans", sans-serif !important;
     }
 
     h4{
+        margin-top: 3rem;
         color: #272C49;
         font-size: 16px;
+        font-weight: 700;
+        font-family: "KyivTypeSans", sans-serif;
     }
-    
-    p{
-        a{
-            color: $accent;
-            font-weight: 500;
+
+    .img-top{
+        position: relative;
+        border-radius: 30px;
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #000000, $alpha: .3);
+            z-index: 10;
+        }
+        img{
+            width: 100%;
         }
     }
 
-     
+    p{
+        font-family: 'Montserrat', sans-serif ;
+        a{
+            color: $accent;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+        span{
+            font-weight: 700;
+        }
+    }
+
+    ul{
+        padding-left: 1.5rem;
+
+        li{
+            position: relative;
+            font-family: 'Montserrat', sans-serif ;
+            &::before{
+                position: absolute;
+                content: '';
+                left: -15px;
+                top: 50%;
+                width: 2px;
+                height: 2px;
+                background-color: #272C49;
+                border-radius: 100%;
+                transform: translate(0 , -50%);
+            }
+        }
+    }
+
+    .images-grid{
+        padding-bottom: 1.5rem;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .information-wrap{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #DCDCDC;
+        margin: 43px 0 112px ;
+        padding-top: 25px;
+
+        a{
+            color: $accent;
+        }
+
+        span{
+            margin-left: 24px;
+            a{
+                display: block;
+            }
+        }
+
+        .name{
+            a{
+                color: #272C49;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+
+        .quenty{
+            a{
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .blogs-blocks{
+        margin-bottom: 33px;
+        z-index: -1;
+        .title{
+            a{
+                font-size: 24px;
+                color: #272C49;
+                font-weight: 700;
+                display: block;
+                height: 2.3rem;
+                overflow: hidden; 
+                font-family: 'Montserrat', sans-serif;
+
+                @include media-for (null, $sm){
+                    font-size: 13px;
+                    height: 1.5rem;
+                }
+            }
+        }
+
+        P{
+           height: 4rem;
+           overflow: hidden; 
+           position: relative;
+           &::before{
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(180deg,rgba(249, 255, 254, 0), rgb(255, 255, 255));
+            }
+
+            @include media-for (null, $sm){
+                display: none;
+            }
+            
+        }
+    }
+
+    .btn-link{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $accent;
+        background: $accent;
+        border-radius: 22px;
+        color: $text-white;
+        font-family: "KyivTypeSans", sans-serif;
+        font-weight: 700;
+        font-weight: 20px;
+        height: 110px;
+        
+        svg{
+            path{
+                fill: $text-white !important;
+            }
+        }
+
+        &:hover{
+            background-color: $text-white;
+            color: $accent;
+
+            svg{
+                path{
+                    fill: $accent!important;
+                }
+            }
+        }
+    }
+
+    .right-blogs{
+        position: relative;
+        z-index: -1;
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            border-radius: 30px;
+            background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 30%, hsla(140, 60%, 82%, 0) 50%, rgba(255, 255, 255, 1) 100%);
+
+        }
+    }
+
+    .btn-link-yelow{
+        max-width: 154px;
+    }
+
 }
 
 

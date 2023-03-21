@@ -282,6 +282,77 @@ body{
                 font-weight: 300;
             }
         }
+        .information{
+            color: $accent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 32px;
+
+            @include media-for (null, $sm){
+                margin-top: 2px;
+            }
+            .name{
+                margin-left: 0;
+                a{
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-family: "KyivTypeSans", sans-serif;
+                    
+                    @include media-for (null, $sm){
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .quenty{
+                a{
+                    @include media-for (null, $sm){
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            span{
+                display: inline-block;
+                margin-left: 1rem;
+
+                a{
+                    color: $accent;
+                    font-weight: 500;
+                    font-size: 20px;
+                    font-family: "KyivTypeSans", sans-serif;
+                    
+                    @include media-for (null, $sm){
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                }
+                
+
+                &:hover{
+
+                    a{
+                        color: $textcolor;
+                    }
+
+                    svg{
+                        path{
+                            fill: $textcolor;
+                        }
+                    }
+                }
+            }
+
+            .like{
+                margin-bottom: .4rem;
+            }
+
+            span{
+                cursor: pointer;
+            }
+        }
     }
 }
 
@@ -559,6 +630,21 @@ body{
             background-color: $bg-yellow;
         }
     }
+}
+
+
+
+.btn-link-yelow{
+    font-family: "KyivTypeSans", sans-serif; 
+    font-weight: 500;
+    background: $bg-yellow;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 115px;
+    color: $text-white;
+    height: 35px;
 }
 
 
