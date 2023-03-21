@@ -5732,6 +5732,62 @@ header .lang-desctop-active .arrow-wrap {
   grid-column: 2/4;
 }
 
+.blogs {
+  padding: 130px 0 50px;
+}
+
+.blogs .breadcrumbs {
+  color: #272c49;
+}
+
+.blogs .breadcrumbs span {
+  color: #272C49;
+}
+
+.blogs .breadcrumbs span:last-child {
+  color: rgba(0, 119, 147, 0.5);
+}
+
+.blogs .blogs-blocks {
+  margin-bottom: 50px;
+  z-index: -1;
+}
+
+.blogs .blogs-blocks .title a {
+  font-size: 24px;
+  color: #272C49;
+  font-weight: 700;
+  display: block;
+  height: 2.3rem;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.blogs .blogs-blocks P {
+  height: 4rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.blogs .blogs-blocks P::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(249, 255, 254, 0)), to(white));
+  background: -o-linear-gradient(top, rgba(249, 255, 254, 0), white);
+  background: linear-gradient(180deg, rgba(249, 255, 254, 0), white);
+}
+
+.blogs h1 {
+  font-size: 54px;
+  color: #272C49;
+  font-family: "KyivTypeSans", sans-serif;
+  margin-bottom: 55px;
+}
+
 footer {
   background-color: #272C49;
   padding: 1.5rem 0;
@@ -12000,6 +12056,28 @@ footer img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
+  }
+
+  .blogs {
+    padding: 80px 0 30px;
+  }
+
+  .blogs .blogs-blocks {
+    margin-bottom: 23px;
+  }
+
+  .blogs .blogs-blocks .title a {
+    font-size: 13px;
+    height: 1.5rem;
+  }
+
+  .blogs .blogs-blocks P {
+    display: none;
+  }
+
+  .blogs h1 {
+    font-size: 24px;
+    margin-bottom: 40px;
   }
 }
 
