@@ -5949,27 +5949,33 @@ header .lang-desctop-active .arrow-wrap {
   grid-column: 2/4;
 }
 
+.news,
 .blogs {
   padding: 130px 0 50px;
 }
 
+.news .breadcrumbs,
 .blogs .breadcrumbs {
   color: #272c49;
 }
 
+.news .breadcrumbs span,
 .blogs .breadcrumbs span {
   color: #272C49;
 }
 
+.news .breadcrumbs span:last-child,
 .blogs .breadcrumbs span:last-child {
   color: rgba(0, 119, 147, 0.5);
 }
 
+.news .blogs-blocks,
 .blogs .blogs-blocks {
   margin-bottom: 50px;
   z-index: -1;
 }
 
+.news .blogs-blocks .title a,
 .blogs .blogs-blocks .title a {
   font-size: 24px;
   color: #272C49;
@@ -5980,12 +5986,14 @@ header .lang-desctop-active .arrow-wrap {
   font-family: "Montserrat", sans-serif;
 }
 
+.news .blogs-blocks P,
 .blogs .blogs-blocks P {
   height: 4rem;
   overflow: hidden;
   position: relative;
 }
 
+.news .blogs-blocks P::before,
 .blogs .blogs-blocks P::before {
   position: absolute;
   content: "";
@@ -5998,6 +6006,40 @@ header .lang-desctop-active .arrow-wrap {
   background: linear-gradient(180deg, rgba(249, 255, 254, 0), white);
 }
 
+.news .news-blocks,
+.blogs .news-blocks {
+  position: relative;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 33px;
+}
+
+.news .news-blocks .data-span,
+.blogs .news-blocks .data-span {
+  display: block;
+  position: absolute;
+  width: 145px;
+  padding: 0.2rem 1rem;
+  color: #ffff;
+  background-color: #272C49;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.news .news-blocks h4,
+.blogs .news-blocks h4 {
+  height: 1.2rem;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.news h1,
 .blogs h1 {
   font-size: 54px;
   color: #272C49;
@@ -12342,23 +12384,45 @@ footer img {
     grid-column: 1/3;
   }
 
+  .news,
   .blogs {
     padding: 80px 0 30px;
   }
 
+  .news .blogs-blocks,
   .blogs .blogs-blocks {
     margin-bottom: 23px;
   }
 
+  .news .blogs-blocks .title a,
   .blogs .blogs-blocks .title a {
     font-size: 13px;
     height: 1.5rem;
   }
 
+  .news .blogs-blocks P,
   .blogs .blogs-blocks P {
     display: none;
   }
 
+  .news .news-blocks .data-span,
+  .blogs .news-blocks .data-span {
+    width: auto;
+    font-size: 10px;
+    -webkit-transform: translate(70%, 0);
+        -ms-transform: translate(70%, 0);
+            transform: translate(70%, 0);
+    top: 0.5px;
+    left: 0%;
+  }
+
+  .news .news-blocks h4,
+  .blogs .news-blocks h4 {
+    height: 2.5rem;
+    margin: 0;
+  }
+
+  .news h1,
   .blogs h1 {
     font-size: 24px;
     margin-bottom: 40px;
