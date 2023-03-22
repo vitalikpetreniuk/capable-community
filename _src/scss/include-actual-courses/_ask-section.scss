@@ -73,12 +73,15 @@
             visibility: hidden;
             position: absolute;
             padding-left: 50px;
-            transition: all .2s ease-in;
+            transition: all .4s ease-in;
 
             p{
                font-size: 14px;
                font-weight: 300;
                font-family: 'Montserrat', sans-serif;
+               transition: all .2s ease-in;
+                height: 0;
+                opacity: 0;
 
                @include media-for (null, $sm){
                 font-size: 13px;
@@ -87,10 +90,17 @@
         }
 
         .togle-li-active{
+            transition: all .4s ease-in;
             position: relative;
             height: auto;
             opacity: 1;
             visibility: visible;
+
+            p{
+                transition: all .4s ease-in;
+                height: auto;
+                opacity: 1;
+            }
         }
     }
 

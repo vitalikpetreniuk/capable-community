@@ -5048,22 +5048,38 @@ header .lang-desctop-active .arrow-wrap {
   visibility: hidden;
   position: absolute;
   padding-left: 50px;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .ask-section ul .togle-li p {
   font-size: 14px;
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  height: 0;
+  opacity: 0;
 }
 
 .ask-section ul .togle-li-active {
+  -webkit-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
   position: relative;
   height: auto;
   opacity: 1;
   visibility: visible;
+}
+
+.ask-section ul .togle-li-active p {
+  -webkit-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  height: auto;
+  opacity: 1;
 }
 
 .ask-section .btns-wrap-section-top {
