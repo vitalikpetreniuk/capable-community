@@ -78,7 +78,7 @@
         font-family: "KyivTypeSans", sans-serif !important;
 
         @include media-for (null, $sm){
-            font-size: 16px;
+            font-size: 20px;
 
         }
     }
@@ -86,13 +86,13 @@
     h4{
         margin-top: 3rem;
         color: #272C49;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 700;
         font-family: "KyivTypeSans", sans-serif;
 
         @include media-for (null, $sm){
             margin-top: 1rem;
-
+            font-size: 16px;
         }
     }
 
@@ -104,6 +104,7 @@
 
         @include media-for (null, $sm){
             border-radius: 15px;
+            margin-bottom: 10px;
         }
 
         &::before{
@@ -116,14 +117,68 @@
             background: rgba($color: #000000, $alpha: .3);
             z-index: 10;
         }
+
         img{
             width: 100%;
         }
+
+        .btn-back{
+            position: absolute;
+            z-index: 10;
+            top: 20px;
+            left: 20px;
+            color: $text-white;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "KyivTypeSans", sans-serif;
+
+            @include media-for (null, $sm){
+                left: 10px;
+                top: 10px;
+            }
+
+            img{
+                margin-right: .5rem;
+            }
+        }
     }
+
+    .title-top-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        @include media-for (null, $sm){
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+
+        h3{
+            margin: 0;
+        }
+        .data{
+            display: block;
+            color: #969696;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: "KyivTypeSans", sans-serif;
+
+            @include media-for (null, $sm){
+                margin-bottom: .4rem;
+            }
+        }
+    }
+
 
     p{
         font-weight: 300;
         font-family: 'Montserrat', sans-serif ;
+
+        @include media-for (null, $sm){
+            font-size: 14px;
+        }
         a{
             color: $accent;
             font-weight: 700;
@@ -256,12 +311,13 @@
         color: $text-white;
         font-family: "KyivTypeSans", sans-serif;
         font-weight: 700;
-        font-weight: 20px;
+        font-size: 20px;
         height: 110px;
 
         @include media-for (null, $sm){
             height: 67px;
             border-radius: 18px;
+            font-size: 14px;
         }
         
         svg{

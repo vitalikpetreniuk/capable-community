@@ -23,7 +23,7 @@ header{
     }
     
     nav{
-        width: 85%;
+        width: 80%;
         margin-right: 0;
         margin-left: auto;
 
@@ -88,12 +88,7 @@ header{
 
                     
                 }
-                .nav-black{
-                    color: #272C49;
-                    &::after {    
-                        background: #272C49;
-                    }
-                }
+                
             }
         }
     }
@@ -221,4 +216,25 @@ header{
     .burger{
         position: fixed;
     }
+}
+
+.nav-black{
+
+    nav{
+        ul{
+            li{
+                a{
+                    color: #272C49;
+                    &::after {    
+                        background: #272C49;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-link-active{
+        background-color: $accent !important;
+    }
+    
 }
