@@ -390,6 +390,10 @@ if(window.location.toString().indexOf('blog-articles.html')>0){
 	$('header nav ul li a').addClass("nav-black")
 }
 
+if(window.location.toString().indexOf('blogs-page.html')>0){
+	$('header nav ul li a').addClass("nav-black")
+}
+
 
 
 ///input contact

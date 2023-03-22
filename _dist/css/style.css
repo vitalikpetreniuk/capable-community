@@ -3393,6 +3393,94 @@ body .slides-items .information span {
   height: 35px;
 }
 
+.pagination-wrap {
+  margin: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 27px;
+}
+
+.pagination-wrap .btns-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #2F37A4;
+  border-radius: 20px;
+  padding: 0;
+  height: 27px;
+}
+
+.pagination-wrap .btns-wrap a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  width: 29px;
+  height: 27px;
+  border-radius: 100%;
+}
+
+.pagination-wrap .btns-wrap .duble-btns {
+  background: #3C79F5;
+}
+
+.pagination-wrap .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0.3rem;
+}
+
+.pagination-wrap .pagination li {
+  margin-right: 0.3rem;
+}
+
+.pagination-wrap .pagination li:last-child {
+  margin-right: 0;
+}
+
+.pagination-wrap .pagination li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 27px;
+  height: 27px;
+  background-color: #F0F0F0;
+  color: #A19FBB;
+  border-radius: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pagination-wrap .pagination li .current {
+  background-color: #2F37A4;
+  color: #ffff;
+  font-weight: 700;
+}
+
 .burger {
   position: absolute;
   right: 0;
@@ -4726,6 +4814,7 @@ header .lang-desctop-active .arrow-wrap {
   display: block;
   padding: 30px 20px;
   padding-left: 192px;
+  padding-top: 55px;
   border-radius: 30px;
   background-color: #ffff;
   overflow: hidden;
@@ -4845,7 +4934,7 @@ header .lang-desctop-active .arrow-wrap {
 .actual-courses-cards .courses-cards .period {
   color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -10590,12 +10679,6 @@ footer img {
   }
 }
 
-@media (max-width: 1771px) {
-  .actual-courses-cards .courses-cards h4 {
-    margin-top: 1.4rem;
-  }
-}
-
 @media (max-width: 1709px) {
   .course-page-section-top {
     background: url(../img/about-project-section-top-bg.png) 0 0/89% no-repeat, no-repeat #ffff !important;
@@ -11368,6 +11451,10 @@ footer img {
 
   .section-top-inner-pages .btns-wrap .btn-link svg path {
     fill: white;
+  }
+
+  .pagination-wrap {
+    margin-top: 40px;
   }
 
   .burger {

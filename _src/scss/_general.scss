@@ -649,3 +649,76 @@ body{
 
 
 
+///pagination
+
+.pagination-wrap{
+    margin: 70px 0;
+    display: flex;
+    justify-content: center;
+    height: 27px;
+
+    @include media-for (null, $sm){
+        margin-top: 40px;
+    }
+
+    .btns-wrap{
+        display: flex;
+        justify-content: space-between;
+        background: $bgdark-blue;
+        border-radius: 20px;
+        padding: 0;
+        height: 27px;
+
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            width: 29px;
+            height: 27px;
+            border-radius: 100%;
+            
+        }
+
+        .duble-btns{
+            background: $accent;
+        }
+    }
+
+
+    .pagination{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 .3rem;
+
+        li{
+            margin-right: .3rem;
+
+            &:last-child{
+                margin-right: 0;
+            }
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 27px;
+                height: 27px;
+                background-color: #F0F0F0;
+                color: #A19FBB;
+                border-radius: 100%;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .current{
+                background-color: $bgdark-blue;
+                color: $text-white;
+                font-weight: 700;
+            }
+
+        }
+    }
+}
+
+
