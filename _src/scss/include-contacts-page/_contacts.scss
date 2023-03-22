@@ -14,12 +14,14 @@
     
     .breadcrumbs{
         color: rgba($color: #272C49, $alpha: 1.0);
-    
-        span{
-            color: rgba($color: #272C49, $alpha: 1.0);
 
-            &:last-child{
-                color: rgba($color: #272C49, $alpha: .5);
+        li{
+            color: rgba($color: #272C49, $alpha: .5);
+            &:before {
+                background: #272C49;
+            }
+            a{
+                color: #272C49;
             }
         }
     }

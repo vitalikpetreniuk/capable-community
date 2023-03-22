@@ -5406,12 +5406,16 @@ header .lang-desctop-active .arrow-wrap {
   color: #272c49;
 }
 
-.contacts .breadcrumbs span {
-  color: #272c49;
+.contacts .breadcrumbs li {
+  color: rgba(39, 44, 73, 0.5);
 }
 
-.contacts .breadcrumbs span:last-child {
-  color: rgba(39, 44, 73, 0.5);
+.contacts .breadcrumbs li:before {
+  background: #272C49;
+}
+
+.contacts .breadcrumbs li a {
+  color: #272C49;
 }
 
 .contacts h1 {
