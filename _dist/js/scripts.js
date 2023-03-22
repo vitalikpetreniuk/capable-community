@@ -412,6 +412,18 @@ $('.input-container').on('click', function(){
 });
 
 
+//
+
+$(function($) {
+	var path = window.location.href; 
+	
+	$('header nav ul li a').each(function() {
+	  if (this.href === path) {
+		$(this).addClass('active');
+	  }
+	});
+  });
+
 
 
 
