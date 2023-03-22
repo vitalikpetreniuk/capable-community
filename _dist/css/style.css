@@ -3885,6 +3885,21 @@ header nav ul li a:hover::after {
   left: 0;
 }
 
+header nav ul li .active-nav::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
 header .btn-link:hover {
   background-color: #3C79F5;
 }
@@ -3991,6 +4006,10 @@ header .lang-desctop-active .arrow-wrap {
 }
 
 .nav-black nav ul li a::after {
+  background: #272C49;
+}
+
+.nav-black nav ul li .active-nav::after {
   background: #272C49;
 }
 

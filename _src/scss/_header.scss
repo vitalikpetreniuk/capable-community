@@ -88,6 +88,21 @@ header{
 
                     
                 }
+
+                .active-nav{
+                    &::after {    
+                        background: none repeat scroll 0 0 transparent;
+                        bottom: 0;
+                        content: "";
+                        display: block;
+                        height: 2px;
+                        left: 50%;
+                        position: absolute;
+                        background: #fff;
+                        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                        width: 0;
+                    }
+                }
                 
             }
         }
@@ -225,6 +240,12 @@ header{
             li{
                 a{
                     color: #272C49;
+                    &::after {    
+                        background: #272C49;
+                    }
+                }
+
+                .active-nav{
                     &::after {    
                         background: #272C49;
                     }

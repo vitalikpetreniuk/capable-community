@@ -412,14 +412,14 @@ $('.input-container').on('click', function(){
 });
 
 
-//
+//navigation active
 
 $(function($) {
 	var path = window.location.href; 
 	
 	$('header nav ul li a').each(function() {
 	  if (this.href === path) {
-		$(this).addClass('active');
+		$(this).addClass('active-nav');
 	  }
 	});
   });
