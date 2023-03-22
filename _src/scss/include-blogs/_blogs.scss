@@ -17,6 +17,16 @@
        } 
     }
 
+
+    .slides-items{
+        .img-wrap{
+            @include media-for (null, $sm){
+                height: 164px;
+                display: block;
+            }
+        }
+    }
+
     .blogs-blocks{
         margin-bottom: 50px;
         z-index: -1;
@@ -90,7 +100,7 @@
                 font-size: 10px;
                 transform: translate(70%, 0);
                 top: .5px;
-                left: 0%; 
+                left: 20%; 
             }
         }
 

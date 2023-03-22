@@ -12389,6 +12389,12 @@ footer img {
     padding: 80px 0 30px;
   }
 
+  .news .slides-items .img-wrap,
+  .blogs .slides-items .img-wrap {
+    height: 164px;
+    display: block;
+  }
+
   .news .blogs-blocks,
   .blogs .blogs-blocks {
     margin-bottom: 23px;
@@ -12413,7 +12419,7 @@ footer img {
         -ms-transform: translate(70%, 0);
             transform: translate(70%, 0);
     top: 0.5px;
-    left: 0%;
+    left: 20%;
   }
 
   .news .news-blocks h4,
