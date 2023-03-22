@@ -3897,7 +3897,7 @@ header nav ul li .active-nav::after {
   -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
   -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+  width: 100%;
 }
 
 header .btn-link:hover {
