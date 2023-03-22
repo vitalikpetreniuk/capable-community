@@ -21,6 +21,10 @@
         //     padding: 30px 10px 5px 163px;
         // }
 
+        @include media-for (null, 1601px){
+            padding-bottom: 20px;
+        }
+
         @include media-for (null, $sm){
             padding: 20px;
             padding-left: 147px;
@@ -177,6 +181,10 @@
             font-size: 14px;
             margin-bottom: 25px;
             font-family: 'Montserrat', sans-serif;
+
+            @include media-for (null, 1601px){
+                margin-bottom: 0;
+            }
 
             @include media-for (null, $sm){
                 display: none;

@@ -10691,6 +10691,16 @@ footer img {
   }
 }
 
+@media (max-width: 1600px) {
+  .actual-courses-cards .courses-cards {
+    padding-bottom: 20px;
+  }
+
+  .actual-courses-cards .courses-cards .period {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 1589px) {
   .course-page-section-top {
     background: url(../img/about-project-section-top-bg.png) 0 0/100% no-repeat, no-repeat #ffff !important;
