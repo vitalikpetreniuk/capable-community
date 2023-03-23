@@ -10,11 +10,8 @@
     }
 
     .swiper{
-        padding: 1rem .2rem 5rem;
+        padding: 1rem .2rem 0rem;
 
-        @include media-for (null, $sm){
-            padding: 1rem .2rem 0px;
-        }
     }
     
     .course-card{

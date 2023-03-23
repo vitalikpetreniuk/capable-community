@@ -4853,7 +4853,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .card-experts p {
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 17px;
 }
@@ -5155,7 +5155,7 @@ header .lang-desctop-active .arrow-wrap {
   max-width: 243px;
   border-radius: 20px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 13px;
   color: #3C79F5;
 }
@@ -5173,7 +5173,7 @@ header .lang-desctop-active .arrow-wrap {
 }
 
 .course-blocks .swiper {
-  padding: 1rem 0.2rem 5rem;
+  padding: 1rem 0.2rem 0rem;
 }
 
 .course-blocks .course-card {
@@ -5263,8 +5263,8 @@ header .lang-desctop-active .arrow-wrap {
 }
 
 .course-type {
-  padding-top: 3rem;
-  padding-bottom: 220px;
+  padding-top: 2rem;
+  padding-bottom: 110px;
 }
 
 .course-type h6 {
@@ -12269,10 +12269,6 @@ footer img {
 
   .course-blocks {
     padding: 1rem 0;
-  }
-
-  .course-blocks .swiper {
-    padding: 1rem 0.2rem 0px;
   }
 
   .course-blocks .course-card {
