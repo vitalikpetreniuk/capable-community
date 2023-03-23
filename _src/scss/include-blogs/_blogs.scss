@@ -82,6 +82,11 @@
         margin: 0 5px;
         margin-bottom: 33px;
 
+        @include media-for (null, $tablet){
+            margin: 0;
+            margin-bottom: 33px;
+        }
+
         .data-span{
             display: block;
             position: absolute;

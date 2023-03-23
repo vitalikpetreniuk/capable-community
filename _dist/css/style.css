@@ -4848,7 +4848,7 @@ header .lang-desctop-active .arrow-wrap {
 }
 
 .card-experts p {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 200;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 17px;
@@ -11544,6 +11544,12 @@ footer img {
   .news-articles h5,
   .blog-articles h5 {
     margin: 35px 0 30px;
+  }
+
+  .news .news-blocks,
+  .blogs .news-blocks {
+    margin: 0;
+    margin-bottom: 33px;
   }
 }
 
