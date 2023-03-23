@@ -12149,32 +12149,33 @@ footer img {
   }
 
   .actual-courses-cards .courses-cards {
-    padding: 20px;
+    padding: 55px 20px 60px;
     padding-left: 147px;
-    padding-bottom: 60px;
   }
 
   .actual-courses-cards .courses-cards .img-wrap {
-    width: 165px;
-    height: 165px;
+    width: 200px;
+    height: 200px;
     bottom: auto;
     top: 0;
-    -webkit-transform: translate(-19%, -4%);
-        -ms-transform: translate(-19%, -4%);
-            transform: translate(-19%, -4%);
+    -webkit-transform: translate(-34%, -5%);
+        -ms-transform: translate(-34%, -5%);
+            transform: translate(-34%, -5%);
   }
 
   .actual-courses-cards .courses-cards .price {
-    top: auto;
-    bottom: 0;
     font-size: 13px;
-    border-radius: 30px 0px 30px 0px;
   }
 
   .actual-courses-cards .courses-cards h4 {
     font-size: 13px;
     margin-top: 0;
     width: 100%;
+    margin-bottom: 17px;
+  }
+
+  .actual-courses-cards .courses-cards .step-wrap {
+    margin-bottom: 7px;
   }
 
   .actual-courses-cards .courses-cards .step-wrap:first-child p {
@@ -12189,21 +12190,25 @@ footer img {
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
             transform: rotate(90deg);
+    width: 20px;
+    height: 20px;
   }
 
   .actual-courses-cards .courses-cards .step-wrap .step a {
     font-size: 13px;
+    color: #3C79F5;
+    font-weight: 600;
   }
 
   .actual-courses-cards .courses-cards .period {
-    display: none;
+    font-size: 13px;
   }
 
   .actual-courses-cards .courses-cards .partners-courses {
     position: absolute;
     left: 26px;
-    width: 100%;
-    bottom: 10px;
+    width: 87%;
+    bottom: 4px;
   }
 
   .actual-courses-cards .courses-cards .partners-courses .parnter img {
