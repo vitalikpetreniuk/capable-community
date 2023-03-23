@@ -69,7 +69,7 @@ var swiperReviews = new Swiper(".swiperReviews", {
     loop: true,
     speed: 1200,
 	slidesPerView: 1.7,
-	spaceBetween: 50,
+	spaceBetween: 75,
 	breakpoints: {
         
 		320: {
@@ -89,7 +89,7 @@ var swiperReviews = new Swiper(".swiperReviews", {
 	
 		1100: {
 		  slidesPerView: 1.7,
-		  spaceBetween: 50,
+		  spaceBetween: 75,
 		},
 	
 	}

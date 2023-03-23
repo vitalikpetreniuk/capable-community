@@ -4492,6 +4492,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .reviews-section .swiper {
   padding: 1rem 0 3rem;
+  overflow: visible;
 }
 
 .reviews-section .swiper-slide {
