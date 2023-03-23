@@ -60,7 +60,7 @@
         font-family: 'Montserrat', sans-serif;
 
         @include media-for (null, $tablet){
-            width: 310px;
+            width: 100%;
             margin-bottom: 10px;
         }
 
@@ -68,7 +68,6 @@
         @include media-for (null, $sm){
             position: absolute;
             left: 0;
-            width: 100%;
             text-align: left;
         }
     }

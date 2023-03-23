@@ -11318,7 +11318,7 @@ footer img {
   }
 
   .section-top .bg-blue {
-    width: 310px;
+    width: 100%;
     margin-bottom: 10px;
   }
 
@@ -11764,7 +11764,6 @@ footer img {
   .section-top .bg-blue {
     position: absolute;
     left: 0;
-    width: 100%;
     text-align: left;
   }
 
