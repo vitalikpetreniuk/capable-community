@@ -296,32 +296,52 @@ $('.lang-list a').on('click', function (e) {
 
 // togle for ask section
 
-$(".li-visability").on("click",function (event) {
+const items = document.querySelectorAll(".accordion button");
 
-	const target = $(this).data("index");	 
-	const arrow = $(this).find("img");
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+	$(this).removeClass("img-class-active")
+	
+  }
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+	$(this).addClass("img-class-active")
+	
+  }
+}
 
-	$(".togle-li").each(function (index, element) {
+items.forEach(item => item.addEventListener('click', toggleAccordion));
 
-	  if (target === $(this).data("index")) {
+// $(".li-visability").on("click",function (event) {
 
-		if( $(this).hasClass('togle-li-active') ){
+// 	const target = $(this).data("index");	 
+// 	const arrow = $(this).find("img");
 
-			$(this).removeClass("togle-li-active");
-			arrow.removeClass("img-class-active")
-		}
-		else{
-			$(".togle-li").removeClass("togle-li-active")
+// 	$(".togle-li").each(function (index, element) {
 
-			$('.img-class').removeClass('img-class-active')
-			$(this).addClass("togle-li-active");
-			arrow.addClass("img-class-active")
-		}
+// 	  if (target === $(this).data("index")) {
+
+// 		if( $(this).hasClass('togle-li-active') ){
+
+// 			$(this).removeClass("togle-li-active");
+// 			arrow.removeClass("img-class-active")
+// 		}
+// 		else{
+// 			$(".togle-li").removeClass("togle-li-active")
+
+// 			$('.img-class').removeClass('img-class-active')
+// 			$(this).addClass("togle-li-active");
+// 			arrow.addClass("img-class-active")
+// 		}
 		  
-	  } 
-	});
+// 	  } 
+// 	});
 
-});
+// });
 
 
 
