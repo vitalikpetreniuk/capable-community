@@ -3175,7 +3175,7 @@ body .slides-items .information .name {
 
 body .slides-items .information .name a {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   font-family: "KyivTypeSans", sans-serif;
 }
 
@@ -3186,7 +3186,7 @@ body .slides-items .information span {
 
 body .slides-items .information span a {
   color: #3C79F5;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   font-family: "KyivTypeSans", sans-serif;
 }
@@ -3821,6 +3821,7 @@ header {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   padding: 20px 0;
+  border-radius: 0px 0px 40px 40px;
 }
 
 header .logo {
@@ -3872,7 +3873,7 @@ header nav ul li a::after {
   bottom: 0;
   content: "";
   display: block;
-  height: 2px;
+  height: 1px;
   left: 50%;
   position: absolute;
   background: #fff;
@@ -3892,7 +3893,7 @@ header nav ul li .active-nav::after {
   bottom: 0;
   content: "";
   display: block;
-  height: 2px;
+  height: 1px;
   left: 0;
   position: absolute;
   background: #fff;
@@ -4103,7 +4104,7 @@ header .lang-desctop-active .arrow-wrap {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  opacity: 0.93;
+  opacity: 0.98;
   right: -300px;
 }
 
@@ -4144,6 +4145,7 @@ header .lang-desctop-active .arrow-wrap {
   text-align: center;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
+  border-radius: 20px;
 }
 
 .section-top .img-top {
@@ -4251,7 +4253,7 @@ header .lang-desctop-active .arrow-wrap {
 }
 
 .child-population .prosent-block {
-  margin-top: 47px;
+  margin-top: 25px;
   max-width: 500px;
   margin-left: auto;
   margin-right: 0;
@@ -4531,6 +4533,7 @@ header .lang-desctop-active .arrow-wrap {
 .reviews-section .swiper-slide .review-blocks h4 {
   color: #272C49;
   font-size: 24px;
+  font-weight: 600;
 }
 
 .reviews-section .swiper-slide .review-blocks h5 {

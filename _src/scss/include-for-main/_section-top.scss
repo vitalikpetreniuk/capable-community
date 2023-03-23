@@ -58,7 +58,8 @@
         text-align: center;
         font-weight: 500;
         font-family: 'Montserrat', sans-serif;
-
+        border-radius: 20px;
+        
         @include media-for (null, $tablet){
             width: 100%;
             margin-bottom: 10px;

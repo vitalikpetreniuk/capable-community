@@ -80,6 +80,7 @@
             h4{
                 color: #272C49;
                 font-size: 24px;
+                font-weight: 600;
 
                 @include media-for (null, $sm){
                     font-size: 13px;

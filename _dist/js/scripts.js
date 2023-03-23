@@ -24,7 +24,7 @@ $('.burger-active').on('click', function () {
 $(window).on("scroll",function() {
 	var height = $(window).scrollTop();
 		
-	if(height > 400){			
+	if(height > 0){			
 		$('header').addClass('header-fixed');
 		// $("header .logo img").attr("src","img/logo-menu.png")	
 	} else{				
@@ -218,16 +218,29 @@ var swiperCourses = new Swiper(".swiperCourses", {
     
 //widget-btns
 
-$('.widget-btn').on('click', function(){
+// $('.widget-btn').on('click', function(){
 	
-	if( $(this).hasClass('widget-btn-active') ){
-		$(this).removeClass('widget-btn-active')
+// 	if( $(this).hasClass('widget-btn-active') ){
+// 		$(this).removeClass('widget-btn-active')
+// 	}
+// 	else{
+// 		$('.widget-btn').removeClass('widget-btn-active')
+// 		$(this).addClass('widget-btn-active');
+// 	}
+// });
+
+$('.widget-btn').hover(
+	function() {
+
+		if( $(this).hasClass('widget-btn-active') ){
+			$(this).removeClass('widget-btn-active')
+		}
+		else{
+			$('.widget-btn').removeClass('widget-btn-active')
+			$(this).addClass('widget-btn-active');
+		}
 	}
-	else{
-		$('.widget-btn').removeClass('widget-btn-active')
-		$(this).addClass('widget-btn-active');
-	}
-});
+);
 
 
 
