@@ -12174,6 +12174,7 @@ footer img {
   .actual-courses-cards .courses-cards h4 {
     font-size: 13px;
     margin-top: 0;
+    width: 100%;
   }
 
   .actual-courses-cards .courses-cards .step-wrap:first-child p {
