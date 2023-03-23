@@ -3137,7 +3137,7 @@ body .slides-items .description {
   background-color: #ffff;
   -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.03);
           box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.03);
-  padding: 20px 21px;
+  padding: 20px 25px;
   border-radius: 30px;
   margin-top: -17%;
   position: relative;
@@ -4001,6 +4001,11 @@ header .lang-desctop-active .arrow-wrap {
 
 .header-fixed .burger {
   position: fixed;
+}
+
+.nav-black {
+  border-radius: 0px 0px 40px 40px;
+  border-bottom: 1px solid #F5F4FA;
 }
 
 .nav-black nav ul li a {
@@ -6085,6 +6090,7 @@ header .lang-desctop-active .arrow-wrap {
   position: relative;
   display: block;
   font-family: "Montserrat", sans-serif;
+  margin: 0 5px;
   margin-bottom: 33px;
 }
 
