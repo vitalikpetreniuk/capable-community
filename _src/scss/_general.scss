@@ -260,7 +260,7 @@ body{
 
         .description{
             background-color: $text-white;
-            box-shadow:  0  4px 15px 0 rgba($color: #000000, $alpha: .2);
+            box-shadow:  0  4px 15px 0 rgba($color: #000000, $alpha: .1);
             padding: 20px 21px;
             border-radius: 30px;
             margin-top: -17%;
@@ -513,7 +513,14 @@ body{
         position: relative;
         color: rgba($color: #ffff, $alpha: .5);
         margin-right: 14px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "KyivTypeSans", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+
+        @include media-for (null, $sm){
+            font-size: 13px;
+            font-weight: 500;
+        }
         
         &:before {
             content: '';
@@ -526,7 +533,7 @@ body{
             height: 1px;
         }
         a{
-            font-family: 'Montserrat', sans-serif;
+            font-family: "KyivTypeSans", sans-serif;
             color: $text-white;
             font-weight: 500;
             font-size: 16px;
@@ -615,7 +622,7 @@ body{
 
 
     h1{
-        margin-bottom: 40px;
+        margin-bottom: 25px;
 
         @include media-for (null, $sm){
             margin-bottom: 10px;
