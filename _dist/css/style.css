@@ -4666,7 +4666,7 @@ header .lang-desctop-active .arrow-wrap {
 .blog-section .blogs-blocks .description {
   -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
-  padding: 20px !important;
+  padding: 20px 25px !important;
 }
 
 .blog-section .blogs-blocks .description .title a {
@@ -5749,7 +5749,6 @@ header .lang-desctop-active .arrow-wrap {
 .news-articles p a,
 .blog-articles p a {
   color: #3C79F5;
-  font-weight: 700;
   text-decoration: underline !important;
 }
 
@@ -5834,7 +5833,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .news-articles .information-wrap .quenty a,
 .blog-articles .information-wrap .quenty a {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 20px;
 }
 
@@ -5967,9 +5966,7 @@ header .lang-desctop-active .arrow-wrap {
   height: 100%;
   z-index: 10;
   border-radius: 30px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(255, 255, 255, 0)), color-stop(70%, rgba(182, 237, 200, 0)), color-stop(103%, white));
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 30%, rgba(182, 237, 200, 0) 70%, white 103%);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(182, 237, 200, 0) 70%, white 103%);
+  background: 180deg, rgba(255, 255, 255, 0) 7%, rgba(182, 237, 200, 0) 1%, #fff 113%;
 }
 
 .news-articles .btn-link-yelow,
