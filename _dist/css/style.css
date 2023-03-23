@@ -4873,8 +4873,8 @@ header .lang-desctop-active .arrow-wrap {
   position: relative;
   display: block;
   padding: 30px 20px;
-  padding-left: 192px;
-  padding-top: 55px;
+  padding-left: 260px;
+  padding-top: 30px;
   border-radius: 30px;
   background-color: #ffff;
   overflow: hidden;
@@ -4887,11 +4887,11 @@ header .lang-desctop-active .arrow-wrap {
   position: absolute;
   bottom: 0;
   left: 0;
-  -webkit-transform: translate(-31%, 11%);
-      -ms-transform: translate(-31%, 11%);
-          transform: translate(-31%, 11%);
-  width: 260px;
-  height: 260px;
+  -webkit-transform: translate(-28%, 6%);
+      -ms-transform: translate(-28%, 6%);
+          transform: translate(-28%, 6%);
+  width: 340px;
+  height: 340px;
   border-radius: 100%;
   overflow: hidden;
 }
@@ -4934,20 +4934,17 @@ header .lang-desctop-active .arrow-wrap {
   font-weight: 700;
   margin-bottom: 24px;
   color: #272C49;
+  width: 75%;
 }
 
 .actual-courses-cards .courses-cards .step-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .actual-courses-cards .courses-cards .step-wrap .step {
@@ -4996,6 +4993,13 @@ header .lang-desctop-active .arrow-wrap {
   font-size: 14px;
   margin-bottom: 25px;
   font-family: "Montserrat", sans-serif;
+}
+
+.actual-courses-cards .courses-cards .partners-courses {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  width: 76%;
 }
 
 .actual-courses-cards .courses-cards .partners-courses .row {
@@ -11059,6 +11063,18 @@ footer img {
 
   .about-project-section-top .img-top {
     margin: 100px 0 60px;
+  }
+
+  .actual-courses-cards {
+    padding-top: 2rem;
+  }
+
+  .actual-courses-cards .courses-cards .img-wrap {
+    -webkit-transform: translate(-28%, 10%);
+        -ms-transform: translate(-28%, 10%);
+            transform: translate(-28%, 10%);
+    width: 312px;
+    height: 312px;
   }
 
   .course-page-section-top .first-p {
