@@ -4557,7 +4557,12 @@ header .lang-desctop-active .arrow-wrap {
 
 .reviews-section .swiper-slide .review-blocks span {
   display: block;
+  width: 75px;
   margin: 22px 0 22px;
+}
+
+.reviews-section .swiper-slide .review-blocks span img {
+  width: 100%;
 }
 
 .reviews-section .swiper-slide .review-blocks p {
@@ -11574,15 +11579,11 @@ footer img {
   }
 
   .reviews-section .swiper-slide .review-blocks span {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-
-  .reviews-section .swiper-slide .review-blocks span img {
-    width: 100%;
   }
 
   .reviews-section .swiper-slide .review-blocks p {
@@ -11954,9 +11955,9 @@ footer img {
   }
 
   .section-top .bg-blue {
-    text-align: left;
     white-space: nowrap;
     padding: 0.8rem 0.2rem;
+    text-align: center;
   }
 
   .section-top h1 {

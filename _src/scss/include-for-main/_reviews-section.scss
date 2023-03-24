@@ -62,16 +62,15 @@
 
             span{
                 display: block;
+                width: 75px;
                 margin: 22px 0 22px;
-
+                img{
+                    width: 100%;
+                }
                 @include media-for (null, $tablet){
-                    width: 30px;
-                    height: 30px;
+                    width: 50px;
+                    height: 40px;
                     display: flex;
-
-                    img{
-                        width: 100%;
-                    }
                     
                 }
             }

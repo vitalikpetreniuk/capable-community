@@ -67,9 +67,9 @@
 
 
         @include media-for (null, $sm){
-            text-align: left;
             white-space: nowrap;
             padding: 0.8rem .2rem;
+            text-align: center;
         }
     }
 
