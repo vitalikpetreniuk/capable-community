@@ -83,7 +83,7 @@ var swiperReviews = new Swiper(".swiperReviews", {
 		},
 	
 		820: {
-		  slidesPerView: 1.7,
+		  slidesPerView: 2,
 		  spaceBetween: 30,
 		},
 	
@@ -102,8 +102,8 @@ var swiperReviews = new Swiper(".swiperReviews", {
 var swiperNews = new Swiper(".swiperNews", {
 	loop: true,
 	speed: 1200,
-	slidesPerView: 4,
-	spaceBetween: 50,
+	slidesPerView: 4.5,
+	spaceBetween: 40,
 	pagination: {
 	  el: ".swiper-pagination-news",
 	  clickable: true,
@@ -127,8 +127,8 @@ var swiperNews = new Swiper(".swiperNews", {
 		},
 
 		1100: {
-		  slidesPerView: 4,
-		  spaceBetween: 50,
+		  slidesPerView: 4.5,
+		  spaceBetween: 40,
 		},
 
 
@@ -145,8 +145,8 @@ var swiperNews = new Swiper(".swiperNews", {
 var swiperBlogs = new Swiper(".swiperBlogs", {
 	loop: true,
 	speed: 1200,
-	slidesPerView: 3,
-	spaceBetween: 50,
+	slidesPerView: 3.5,
+	spaceBetween: 40,
 	pagination: {
 	  el: ".swiper-pagination-blogs",
 	  clickable: true,
@@ -170,8 +170,8 @@ var swiperBlogs = new Swiper(".swiperBlogs", {
 		},
 	
 		1100: {
-		  slidesPerView: 3,
-		  spaceBetween: 50,
+		  slidesPerView: 3.5,
+		  spaceBetween: 40,
 		},
 	
 	}
