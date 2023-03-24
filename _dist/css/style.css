@@ -4474,7 +4474,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .statistics .statistics-card .numb {
   font-size: 60px;
-  text-shadow: 3px 0px 0px #007793;
+  text-shadow: 3px 0px 0px #424ab7;
 }
 
 .statistics .statistics-card .text {
@@ -4759,6 +4759,7 @@ header .lang-desctop-active .arrow-wrap {
   display: inline-block;
   padding: 0.3rem 0.3rem;
   line-height: 1.4;
+  padding-left: 0;
 }
 
 .about-project-section-top .img-top {
@@ -11844,10 +11845,6 @@ footer img {
     border-bottom: none;
   }
 
-  .widget-btns {
-    top: 400px;
-  }
-
   .widget-btns .widget-btn {
     width: 41px;
     height: 41px;
@@ -11866,9 +11863,9 @@ footer img {
   }
 
   .section-top .bg-blue {
-    position: absolute;
-    left: 0;
     text-align: left;
+    white-space: nowrap;
+    padding: 0.8rem 0.2rem;
   }
 
   .section-top h1 {
@@ -12360,6 +12357,7 @@ footer img {
     font-size: 16px;
     height: 2.5rem;
     margin: 0;
+    margin-top: 0.4rem;
   }
 
   .course-blocks .course-card .period-course {
@@ -12377,6 +12375,17 @@ footer img {
 
   .course-type h3 {
     font-size: 17px;
+  }
+
+  .course-type .ol-wrap ol:first-child {
+    margin-bottom: 0;
+  }
+
+  .course-type .ol-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .course-type ol li {
@@ -12406,7 +12415,7 @@ footer img {
     width: auto;
     margin-right: 0;
     margin-bottom: 0.5rem;
-    padding: 2px 5px;
+    padding: 2px 13px;
   }
 
   .course-type .btns-wrap .btn-link span {

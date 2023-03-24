@@ -30,7 +30,7 @@
 
         .numb{
             font-size: 60px;
-            text-shadow: 3px 0px 0px $green-shadow;
+            text-shadow: 3px 0px 0px #424ab7;
 
             @include media-for (null, $tablet){
                 font-size: 40px;

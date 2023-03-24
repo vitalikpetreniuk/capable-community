@@ -58,6 +58,17 @@
     .ol-wrap{
         display: flex;
         justify-content: space-between;
+        ol{
+            @include media-for (null, $sm){
+                &:first-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        @include media-for (null, $sm){
+            flex-direction: column;
+        }
     }
 
     ol{
@@ -157,7 +168,7 @@
                 width: auto;
                 margin-right: 0;
                 margin-bottom: .5rem;
-                padding: 2px 5px;
+                padding: 2px 13px;
                 span{
                     display: block;
                 }
