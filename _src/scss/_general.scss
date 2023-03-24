@@ -270,12 +270,17 @@ body{
 
             @include media-for (null, $sm){
                 border-radius: 20px;
+                padding: 20px 20px 15px;
             }
 
             h4{
                 font-weight: 700;
                 font-size: 16px;
-                color: $text-black
+                color: $text-black;
+
+                @include media-for (null, $sm){
+                    font-size: 14px;
+                }
             }
 
             P{

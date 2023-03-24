@@ -6161,6 +6161,12 @@ header .lang-desctop-active .arrow-wrap {
   margin-top: 0;
 }
 
+.news .news-blocks P,
+.blogs .news-blocks P {
+  margin-top: 0.5rem;
+  display: block !important;
+}
+
 .news h1,
 .blogs h1 {
   font-size: 54px;
@@ -11749,6 +11755,11 @@ footer img {
 
   body .slides-items .description {
     border-radius: 20px;
+    padding: 20px 20px 15px;
+  }
+
+  body .slides-items .description h4 {
+    font-size: 14px;
   }
 
   body .slides-items .information {
@@ -12617,6 +12628,12 @@ footer img {
   .blogs .news-blocks h4 {
     height: 2.5rem;
     margin: 0;
+  }
+
+  .news .news-blocks P,
+  .blogs .news-blocks P {
+    height: 2rem;
+    overflow: hidden;
   }
 
   .news h1,

@@ -122,6 +122,16 @@
             }
         }
 
+        P{
+            margin-top: .5rem;
+            display: block !important;
+
+            @include media-for (null, $sm){
+                height: 2rem;
+                overflow: hidden;
+            }
+        }
+
     }
 
     h1{
