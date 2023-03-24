@@ -10930,9 +10930,25 @@ footer img {
   }
 }
 
+@media (max-width: 1799px) {
+  .child-population .prosent-block {
+    margin: auto;
+    margin-top: 25px;
+    margin-right: 4rem;
+  }
+}
+
 @media (max-width: 1709px) {
   .course-page-section-top {
     background: url(../img/about-project-section-top-bg.png) 0 0/89% no-repeat, no-repeat #ffff !important;
+  }
+}
+
+@media (max-width: 1699px) {
+  .child-population .prosent-block {
+    margin: auto;
+    margin-top: 25px;
+    margin-right: 0rem;
   }
 }
 

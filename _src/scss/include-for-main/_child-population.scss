@@ -157,6 +157,18 @@
         margin-top: 25px;
         max-width: 500px;
 
+        @include media-for (null, 1800px){
+            margin: auto;
+            margin-top: 25px;
+            margin-right: 4rem;
+        }
+
+        @include media-for (null, 1700px){
+            margin: auto;
+            margin-top: 25px;
+            margin-right: 0rem;
+        }
+
         @include media-for (null, 1000px){
             max-width: 100%;
         }
