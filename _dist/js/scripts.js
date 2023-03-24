@@ -185,7 +185,7 @@ var swiperBlogs = new Swiper(".swiperBlogs", {
 var swiperCourses = new Swiper(".swiperCourses", {
 	loop: true,
 	speed: 1200,
-	slidesPerView: 3,
+	slidesPerView: 3.5,
 	spaceBetween: 50,
 	breakpoints: {
         
@@ -205,7 +205,7 @@ var swiperCourses = new Swiper(".swiperCourses", {
 		},
 	
 		1100: {
-		  slidesPerView: 3,
+		  slidesPerView: 3.5,
 		  spaceBetween: 50,
 		},
 	

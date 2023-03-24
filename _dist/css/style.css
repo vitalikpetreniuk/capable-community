@@ -3341,6 +3341,7 @@ body .slides-items .information span {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  white-space: nowrap;
 }
 
 .breadcrumbs li:before {
@@ -5222,6 +5223,10 @@ header .lang-desctop-active .arrow-wrap {
   padding: 1rem 0.2rem 0rem;
 }
 
+.course-blocks .container {
+  padding-right: 0;
+}
+
 .course-blocks .course-card {
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
@@ -5258,6 +5263,9 @@ header .lang-desctop-active .arrow-wrap {
   font-weight: 700;
   margin: 15px 0;
   color: #3C79F5;
+  font-size: 27px;
+  height: 4rem;
+  overflow: hidden;
 }
 
 .course-blocks .course-card .period-course {
@@ -11329,6 +11337,10 @@ footer img {
   .blog-section .container {
     padding: 0 50px;
   }
+
+  .course-blocks .container {
+    padding: 0 50px;
+  }
 }
 
 @media (max-width: 1143px) {
@@ -11672,12 +11684,6 @@ footer img {
     overflow: hidden;
   }
 
-  .course-blocks .course-card h4 {
-    font-size: 27px;
-    height: 4rem;
-    overflow: hidden;
-  }
-
   .contacts h1 {
     margin-bottom: 50px;
   }
@@ -11885,6 +11891,10 @@ footer img {
 
   .section-top-inner-pages .btns-wrap {
     margin-bottom: 40px;
+  }
+
+  .section-top-inner-pages .btns-wrap .btn-link:hover {
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .section-top-inner-pages .btns-wrap .btn-link svg path {
@@ -12434,6 +12444,10 @@ footer img {
 
   .course-blocks {
     padding: 1rem 0;
+  }
+
+  .course-blocks .container {
+    padding: 0 15px;
   }
 
   .course-blocks .course-card {
