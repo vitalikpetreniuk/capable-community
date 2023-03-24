@@ -3914,7 +3914,7 @@ header .user-header:hover svg path {
 
 header .lang-desctop {
   position: relative;
-  padding: 0.2rem 0.3rem;
+  padding: 0rem 0.3rem;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 25px;
@@ -3971,6 +3971,14 @@ header .lang-desctop .lang-list {
   -webkit-transform: translate(15%, 100%);
       -ms-transform: translate(15%, 100%);
           transform: translate(15%, 100%);
+}
+
+header .lang-desctop .lang-list .lang-opener {
+  display: block;
+}
+
+header .lang-desctop .lang-list .active {
+  display: none;
 }
 
 header .lang-desctop-active .lang-list {
@@ -5426,7 +5434,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .contacts {
   padding: 130px 0 50px;
-  background: url(../img/bg-contacts.png) 100% 100%/100%, #ffff;
+  background: url(../img/bg-contacts.png) 100% 100%/75%, #ffff;
   background-repeat: no-repeat;
 }
 
@@ -5495,6 +5503,15 @@ header .lang-desctop-active .arrow-wrap {
           flex-direction: column;
 }
 
+.contacts form input::-webkit-outer-spin-button,
+.contacts form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.contacts form input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .contacts form input,
 .contacts form textarea {
   width: 100%;
@@ -5504,6 +5521,9 @@ header .lang-desctop-active .arrow-wrap {
   transition: all 0.2s ease-in-out;
   outline: none;
   background: none;
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
 }
 
 .contacts form input::-webkit-input-placeholder, .contacts form textarea::-webkit-input-placeholder {
@@ -5545,7 +5565,27 @@ header .lang-desctop-active .arrow-wrap {
 .contacts form textarea {
   border-radius: 34px;
   resize: none;
-  padding-left: 7px;
+  padding-left: 10px;
+}
+
+.contacts form textarea::-webkit-input-placeholder {
+  padding-top: 3px;
+}
+
+.contacts form textarea::-moz-placeholder {
+  padding-top: 3px;
+}
+
+.contacts form textarea:-ms-input-placeholder {
+  padding-top: 3px;
+}
+
+.contacts form textarea::-ms-input-placeholder {
+  padding-top: 3px;
+}
+
+.contacts form textarea::placeholder {
+  padding-top: 3px;
 }
 
 .contacts form .input-container {
@@ -5835,6 +5875,7 @@ header .lang-desctop-active .arrow-wrap {
   color: #272C49;
   font-size: 14px;
   font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }
 
 .news-articles .information-wrap .quenty a,
@@ -5929,7 +5970,6 @@ header .lang-desctop-active .arrow-wrap {
   background: #3C79F5;
   border-radius: 22px;
   color: #ffff;
-  font-family: "KyivTypeSans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   height: 110px;
@@ -5937,7 +5977,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .news-articles .btn-link svg,
 .blog-articles .btn-link svg {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .news-articles .btn-link svg path,

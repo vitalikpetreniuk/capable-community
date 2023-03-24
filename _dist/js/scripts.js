@@ -289,6 +289,9 @@ $('.lang-list a').on('click', function (e) {
 	const lang = $(this).data("lang");
 	$(".lang-desctop-wrap a").removeClass("active");
 	$(`.lang-desctop-wrap a[data-lang="${lang}"]`).addClass("active");
+
+	$(".lang-list a").removeClass("active");
+	$(`.lang-list a[data-lang="${lang}"]`).addClass("active");
 })
 
 
@@ -304,6 +307,8 @@ function toggleAccordion() {
   for (i = 0; i < items.length; i++) {
     items[i].setAttribute('aria-expanded', 'false');
 	$(this).removeClass("img-class-active")
+
+
 	
   }
   

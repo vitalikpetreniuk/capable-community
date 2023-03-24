@@ -1,6 +1,6 @@
 .contacts{
     padding: 130px 0 50px;
-    background: url(../img/bg-contacts.png) 100% 100%/100%,  $text-white;
+    background: url(../img/bg-contacts.png) 100% 100%/75%,  $text-white;
     background-repeat: no-repeat;
 
     @include media-for (null, 1025px){
@@ -87,12 +87,23 @@
         display: flex;
         flex-direction: column;
 
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+
+        input[type='number'] {
+            -moz-appearance: textfield;
+        }
+
         input,textarea{
             width: 100%;
             border: none;
             transition: all .2s ease-in-out;
             outline: none;
             background: none;
+            appearance: none;
+            -moz-appearance: textfield;
 
             @include media-for (null, $sm){
                 border-radius: 16px;
@@ -109,7 +120,10 @@
         textarea{
             border-radius: 34px;
             resize: none;
-            padding-left: 7px;
+            padding-left: 10px;
+            &::placeholder{
+                padding-top: 3px;
+            }
         }
 
         .input-container{

@@ -249,6 +249,7 @@
                 color: #272C49;
                 font-size: 14px;
                 font-weight: 700;
+                font-family: 'Montserrat', sans-serif;
             }
         }
 
@@ -353,7 +354,6 @@
         background: $accent;
         border-radius: 22px;
         color: $text-white;
-        font-family: "KyivTypeSans", sans-serif;
         font-weight: 700;
         font-size: 20px;
         height: 110px;
@@ -365,7 +365,7 @@
         }
         
         svg{
-            margin-right: 1rem;
+            margin-right: .5rem;
 
             path{
                 fill: $text-white !important;
