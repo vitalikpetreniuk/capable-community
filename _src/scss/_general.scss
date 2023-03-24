@@ -143,6 +143,11 @@ body{
         color: $text-gray;
         white-space: nowrap;
         font-family: 'Montserrat', sans-serif;
+        transition: all .2s ease-in-out;
+
+        &:hover{
+            background: #ebe6e6;
+        }
 
 
         @include media-for (null, $tablet){
@@ -207,7 +212,9 @@ body{
         }
 
         &:hover{
+            background: #fd853b !important;
             color: $text-white;
+
         }
 
         svg{
@@ -655,6 +662,10 @@ body{
             margin-right: 1rem;
             font-weight: 500;
 
+            &:hover{
+                background-color: $accent;
+            }
+
             @include media-for (null, $sm){
                 svg{
                     path{
@@ -672,7 +683,7 @@ body{
 
 
 .btn-link-yelow{
-    font-family: "KyivTypeSans", sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     background: $bg-yellow;
     border-radius: 25px;
@@ -682,6 +693,10 @@ body{
     max-width: 115px;
     color: $text-white;
     height: 35px;
+
+    &:hover{
+        background: #fd853b ;
+    }
 }
 
 

@@ -173,6 +173,12 @@
                     display: block;
                 }
             }
+
+            &:hover{
+                background: #fd853b;
+                color: $text-white;
+                border: 2px solid #fd853b;
+            }
         }
     
         .btn-link-active{
