@@ -4318,8 +4318,8 @@ header .lang-desctop-active .arrow-wrap {
 .we-believe {
   padding: 100px 0 110px;
   background: url(../img/we-believe-bg.png), #3C79F5;
-  background-size: 107%;
-  background-position: 50% 100%;
+  background-size: 97%;
+  background-position: 0% 100%;
   background-repeat: no-repeat;
   color: #ffff;
 }
