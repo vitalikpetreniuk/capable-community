@@ -134,7 +134,7 @@
 
             .col-right{
                 width: 90%;
-                padding-left: 1rem;
+                padding:0 1rem;
 
                 @include media-for (null, $tablet){
                     padding: 0;

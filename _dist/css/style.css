@@ -4565,7 +4565,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .reviews-section .swiper-slide .review-blocks .col-right {
   width: 90%;
-  padding-left: 1rem;
+  padding: 0 1rem;
 }
 
 .news-section {
