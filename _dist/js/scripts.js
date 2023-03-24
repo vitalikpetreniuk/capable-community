@@ -303,12 +303,13 @@ const items = document.querySelectorAll(".accordion button");
 
 function toggleAccordion() {
   const itemToggle = this.getAttribute('aria-expanded');
-  
+
+
+ 
+
   for (i = 0; i < items.length; i++) {
     items[i].setAttribute('aria-expanded', 'false');
-	$(this).removeClass("img-class-active")
-
-
+	$('.accordion-item, button').removeClass("img-class-active");
 	
   }
   
