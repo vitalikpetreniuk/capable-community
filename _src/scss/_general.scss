@@ -146,7 +146,14 @@ body{
         transition: all .2s ease-in-out;
 
         &:hover{
-            background: #ebe6e6;
+            background: #fd853b !important;
+            color: $text-white !important;
+            
+            svg{
+                path{
+                    fill: $text-white;
+                }
+            }
         }
 
 
@@ -664,8 +671,8 @@ body{
             font-weight: 500;
 
             &:hover{
-                background-color: $accent;
-
+                background-color: rgba($color: #ffff, $alpha: .5) !important;
+               
                 @include media-for (null, $sm){
                     background-color: rgba($color: #000000, $alpha: .0);
                 }

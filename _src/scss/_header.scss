@@ -271,6 +271,9 @@ header{
 
     .btn-link-active{
         background-color: $accent !important;
+        &:hover{
+            background-color: $bgdark-blue !important;
+        }
     }
     
 }
