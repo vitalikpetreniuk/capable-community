@@ -114,7 +114,7 @@ body{
 
 
     .btns-wrap{
-        padding: 20px 40px;
+        padding: 20px 25px;
         background-color: $text-white;
         display: flex;
         align-items: center;
@@ -142,6 +142,7 @@ body{
         font-weight: 500;
         color: $text-gray;
         white-space: nowrap;
+        font-family: 'Montserrat', sans-serif;
 
 
         @include media-for (null, $tablet){
@@ -513,7 +514,7 @@ body{
         position: relative;
         color: rgba($color: #ffff, $alpha: .5);
         margin-right: 14px;
-        font-family: "KyivTypeSans", sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-size: 16px;
 
@@ -533,7 +534,7 @@ body{
             height: 1px;
         }
         a{
-            font-family: "KyivTypeSans", sans-serif;
+            font-family: 'Montserrat', sans-serif;
             color: $text-white;
             font-weight: 500;
             font-size: 16px;

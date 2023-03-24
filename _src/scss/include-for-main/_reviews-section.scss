@@ -1,5 +1,6 @@
 .reviews-section{
     padding: 48px 0 80px;
+    overflow: hidden;
 
     @include media-for (null, $tablet){
         padding: 1rem 0 0;

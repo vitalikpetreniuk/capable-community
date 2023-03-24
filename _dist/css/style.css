@@ -3037,7 +3037,7 @@ body h1 {
 }
 
 body .btns-wrap {
-  padding: 20px 40px;
+  padding: 20px 25px;
   background-color: #ffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3070,6 +3070,7 @@ body .btn-link {
   font-weight: 500;
   color: #969696;
   white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
 }
 
 body .btn-link svg {
@@ -3329,7 +3330,7 @@ body .slides-items .information span {
   position: relative;
   color: rgba(255, 255, 255, 0.5);
   margin-right: 14px;
-  font-family: "KyivTypeSans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
@@ -3348,7 +3349,7 @@ body .slides-items .information span {
 }
 
 .breadcrumbs li a {
-  font-family: "KyivTypeSans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #ffff;
   font-weight: 500;
   font-size: 16px;
@@ -4253,10 +4254,9 @@ header .lang-desctop-active .arrow-wrap {
 }
 
 .child-population .prosent-block {
+  margin: auto;
   margin-top: 25px;
   max-width: 500px;
-  margin-left: auto;
-  margin-right: 0;
 }
 
 .child-population .prosent-block .mob-color {
@@ -4292,7 +4292,7 @@ header .lang-desctop-active .arrow-wrap {
   color: #ffff;
   font-weight: 700;
   font-size: 16px;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .child-population .prosent-block div p {
@@ -4481,6 +4481,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .reviews-section {
   padding: 48px 0 80px;
+  overflow: hidden;
 }
 
 .reviews-section h3 {
@@ -11781,6 +11782,10 @@ footer img {
     position: absolute;
     background-color: rgba(0, 0, 0, 0);
     border-bottom: 1px solid rgba(0, 0, 0, 0);
+  }
+
+  .nav-black {
+    border-bottom: none;
   }
 
   .widget-btns {
