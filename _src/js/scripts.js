@@ -468,6 +468,13 @@ $(function($) {
   });
 
 
+//jq-mask
+
+// $("#phone-number").mask("(999) 999-99-99", {placeholder: "(0__) ___-__-__"});
+
+$("#phone-number-your").mask("(+380) 999-99-99", { placeholder: "(+380)"});
+  
+
 
 
 
