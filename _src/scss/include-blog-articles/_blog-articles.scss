@@ -338,7 +338,7 @@
             overflow: hidden;
             margin-top: 0;
             @include media-for (null, $sm){
-                height: 2.5rem;
+                height: 2.2rem;
                 margin: 0;
             }
         }
@@ -373,12 +373,13 @@
         }
 
         &:hover{
-            background-color: $text-white;
+            background-color: $bgdark-blue !important;
             color: $accent;
-
+            border: 1px solid $bgdark-blue !important;
+            
             svg{
                 path{
-                    fill: $accent!important;
+                    fill: $text-white !important;
                 }
             }
         }

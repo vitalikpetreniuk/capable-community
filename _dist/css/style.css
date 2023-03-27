@@ -3420,6 +3420,10 @@ body .slides-items .information span {
   background-color: #FDA43B;
 }
 
+.section-top-inner-pages .btns-wrap .btn-link-active:hover {
+  background-color: #fd853b !important;
+}
+
 .btn-link-yelow {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -4538,10 +4542,6 @@ header .lang-desctop-active .arrow-wrap {
   overflow: hidden;
 }
 
-.reviews-section .container {
-  padding-right: 0;
-}
-
 .reviews-section h3 {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -4551,6 +4551,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .reviews-section .swiper {
   padding: 1rem 0 3rem;
+  overflow: visible !important;
 }
 
 .reviews-section .swiper-slide {
@@ -4637,10 +4638,6 @@ header .lang-desctop-active .arrow-wrap {
   overflow: hidden;
 }
 
-.news-section .container {
-  padding-right: 0;
-}
-
 .news-section .btn-more {
   color: #FDA43B;
 }
@@ -4654,6 +4651,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .news-section .swiper {
   padding: 1rem 0.2rem 5rem;
+  overflow: visible !important;
 }
 
 .news-section .swiper-pagination {
@@ -4708,10 +4706,7 @@ header .lang-desctop-active .arrow-wrap {
   padding: 5rem 0 3rem;
   height: 720px;
   font-family: "Montserrat", sans-serif;
-}
-
-.blog-section .container {
-  padding-right: 0;
+  overflow: hidden;
 }
 
 .blog-section h3 {
@@ -4724,6 +4719,7 @@ header .lang-desctop-active .arrow-wrap {
 
 .blog-section .swiper {
   padding: 1rem 0.2rem 5rem;
+  overflow: visible !important;
 }
 
 .blog-section .swiper-pagination {
@@ -4942,7 +4938,19 @@ header .lang-desctop-active .arrow-wrap {
   padding: 1rem 0 3rem;
 }
 
+.actual-courses-cards .card-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .actual-courses-cards .courses-cards {
+  min-width: 785px;
   position: relative;
   display: block;
   padding: 30px 20px;
@@ -6064,13 +6072,14 @@ header .lang-desctop-active .arrow-wrap {
 
 .news-articles .btn-link:hover,
 .blog-articles .btn-link:hover {
-  background-color: #ffff;
+  background-color: #2F37A4 !important;
   color: #3C79F5;
+  border: 1px solid #2F37A4 !important;
 }
 
 .news-articles .btn-link:hover svg path,
 .blog-articles .btn-link:hover svg path {
-  fill: #3C79F5 !important;
+  fill: #ffff !important;
 }
 
 .news-articles .right-blogs,
@@ -11053,6 +11062,14 @@ footer img {
   }
 }
 
+@media (max-width: 1875px) {
+  .actual-courses-cards .card-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 1799px) {
   .child-population .prosent-block {
     margin: auto;
@@ -11106,7 +11123,7 @@ footer img {
 
 @media (max-width: 1529px) {
   .section-top .btns-wrap {
-    padding: 8px 10px;
+    padding: 12px 15px;
   }
 }
 
@@ -11159,10 +11176,6 @@ footer img {
   .section-top {
     background-size: 89%;
     padding-bottom: 3rem;
-  }
-
-  .section-top .btns-wrap {
-    width: auto;
   }
 
   .child-population {
@@ -11300,6 +11313,13 @@ footer img {
   }
 }
 
+@media (max-width: 1299px) {
+  .section-top .btns-wrap {
+    width: auto;
+    padding: 8px 10px;
+  }
+}
+
 @media (max-width: 1256px) {
   .course-page-section-top {
     background: url(../img/about-project-section-top-bg.png) 100% 0/126% no-repeat, no-repeat #ffff !important;
@@ -11345,18 +11365,6 @@ footer img {
 
 @media (max-width: 1199px) {
   body .container {
-    padding: 0 50px;
-  }
-
-  .reviews-section .container {
-    padding: 0 50px;
-  }
-
-  .news-section .container {
-    padding: 0 50px;
-  }
-
-  .blog-section .container {
     padding: 0 50px;
   }
 
@@ -11671,6 +11679,10 @@ footer img {
 
   .experts-coach {
     padding-bottom: 0;
+  }
+
+  .actual-courses-cards .courses-cards {
+    min-width: 100%;
   }
 
   .actual-courses-cards .courses-cards .step-wrap {
@@ -12041,6 +12053,10 @@ footer img {
     margin-top: 25px;
   }
 
+  .child-population .down-column p {
+    font-size: 13px;
+  }
+
   .we-believe {
     padding: 40px 0 10px;
     background: url(../img/we-believe-bg.png), #3C79F5;
@@ -12132,10 +12148,6 @@ footer img {
     font-size: 13px;
   }
 
-  .reviews-section .container {
-    padding: 0 15px;
-  }
-
   .reviews-section .swiper-slide .review-blocks {
     padding-bottom: 163px;
   }
@@ -12146,10 +12158,6 @@ footer img {
 
   .reviews-section .swiper-slide .review-blocks h5 {
     font-size: 13px;
-  }
-
-  .news-section .container {
-    padding: 0 15px;
   }
 
   .news-section {
@@ -12171,16 +12179,12 @@ footer img {
   }
 
   .news-section .swiper-slide h4 {
-    height: 2.5rem;
+    height: 2.2rem;
     margin: 0;
   }
 
   .blog-section {
     padding: 30px 0 40px;
-  }
-
-  .blog-section .container {
-    padding: 0 15px;
   }
 
   .blog-section .swiper {
@@ -12664,7 +12668,7 @@ footer img {
 
   .news-articles .news-blocks h4,
   .blog-articles .news-blocks h4 {
-    height: 2.5rem;
+    height: 2.2rem;
     margin: 0;
   }
 
@@ -12741,7 +12745,7 @@ footer img {
 
   .news .news-blocks h4,
   .blogs .news-blocks h4 {
-    height: 2.5rem;
+    height: 2.2rem;
     margin: 0;
   }
 

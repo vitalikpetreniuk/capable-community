@@ -7,17 +7,17 @@
         padding: 0 0 2rem;
     }
 
-    .container{
-        padding-right: 0;
+    // .container{
+    //     padding-right: 0;
 
-        @include media-for (null, $desktop){
-            padding: 0 50px;
-        }
+    //     @include media-for (null, $desktop){
+    //         padding: 0 50px;
+    //     }
 
-        @include media-for (null, $sm){
-            padding: 0 15px;
-        }
-    }
+    //     @include media-for (null, $sm){
+    //         padding: 0 15px;
+    //     }
+    // }
 
 
     @include media-for (null, $sm){
@@ -37,7 +37,7 @@
 
     .swiper{
         padding: 1rem .2rem 5rem;
-
+        overflow: visible !important;
         @include media-for (null, $sm){
             padding: 1rem .2rem 38px;
         }
@@ -88,7 +88,7 @@
             overflow: hidden;
 
             @include media-for (null, $sm){
-                height: 2.5rem;
+                height: 2.2rem;
                 margin: 0;
             }
         }

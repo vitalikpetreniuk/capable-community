@@ -9,7 +9,18 @@
         padding-bottom: 0;
     }
 
+    .card-wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include media-for (null, 1876px){
+            justify-content: center;  
+        }
+    }
+
     .courses-cards{
+        min-width: 785px;
         position: relative;
         display: block;
         padding: 30px 20px;
@@ -21,12 +32,17 @@
         box-shadow: 0  4px 15px 0 rgba($color: #000000, $alpha: .03);
         margin-bottom: 30px;
 
+        
         // @include media-for (null, 1775px){
         //     padding: 30px 10px 5px 163px;
         // }
 
         @include media-for (null, 1601px){
             padding-bottom: 20px;
+        }
+
+        @include media-for (null, $tablet){
+            min-width: 100%;
         }
 
         @include media-for (null, $sm){

@@ -68,8 +68,8 @@ $(window).on("scroll",function() {
 var swiperReviews = new Swiper(".swiperReviews", {
     loop: true,
     speed: 1200,
-	slidesPerView: 1.7,
-	spaceBetween: 75,
+	slidesPerView: 1.9,
+	spaceBetween: 50,
 	breakpoints: {
         
 		320: {
@@ -88,8 +88,8 @@ var swiperReviews = new Swiper(".swiperReviews", {
 		},
 	
 		1100: {
-		  slidesPerView: 1.7,
-		  spaceBetween: 75,
+		  slidesPerView: 1.9,
+		  spaceBetween: 50,
 		},
 	
 	}
@@ -321,33 +321,6 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
-
-// $(".li-visability").on("click",function (event) {
-
-// 	const target = $(this).data("index");	 
-// 	const arrow = $(this).find("img");
-
-// 	$(".togle-li").each(function (index, element) {
-
-// 	  if (target === $(this).data("index")) {
-
-// 		if( $(this).hasClass('togle-li-active') ){
-
-// 			$(this).removeClass("togle-li-active");
-// 			arrow.removeClass("img-class-active")
-// 		}
-// 		else{
-// 			$(".togle-li").removeClass("togle-li-active")
-
-// 			$('.img-class').removeClass('img-class-active')
-// 			$(this).addClass("togle-li-active");
-// 			arrow.addClass("img-class-active")
-// 		}
-		  
-// 	  } 
-// 	});
-
-// });
 
 
 
