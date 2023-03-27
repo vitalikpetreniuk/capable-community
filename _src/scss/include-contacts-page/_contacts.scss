@@ -1,6 +1,7 @@
 .contacts{
     padding: 130px 0 80px;
     background: url(../img/bg-contacts.png) 100% 100%/75%,  $text-white;
+    
     background-repeat: no-repeat;
 
     @include media-for (null, 1025px){
@@ -24,6 +25,9 @@
             a{
                 color: #272C49;
             }
+
+
+
         }
     }
 
