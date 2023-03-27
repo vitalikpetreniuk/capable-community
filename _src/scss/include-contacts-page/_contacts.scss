@@ -1,11 +1,12 @@
 .contacts{
-    padding: 130px 0 50px;
+    padding: 130px 0 80px;
     background: url(../img/bg-contacts.png) 100% 100%/75%,  $text-white;
     background-repeat: no-repeat;
 
     @include media-for (null, 1025px){
         background: $text-white;
         height: 100vh;
+        padding: 130px 0 50px;
     }
     @include media-for (null, $sm){
         height: auto;
