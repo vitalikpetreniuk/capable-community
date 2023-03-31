@@ -25,7 +25,7 @@
     h2{
         font-size: 54px;
 
-        @include media-for (null, $tablet){
+        @include media-for (null, 1025px){
             font-size: 27px;
         }
 

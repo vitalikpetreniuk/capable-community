@@ -13,13 +13,15 @@
         padding-bottom: 3rem;
     }
 
-    @include media-for (null, 1000px){
+    @include media-for (null, 1025px){
         height: auto;
+        background-size: 106%;
     }
 
     @include media-for (null, $tablet){
         padding-top: 105px;
         background-size: 121%;
+        background-size: 89%;
     }
 
 
@@ -38,9 +40,10 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
 
-        @include media-for (null, $sm){
+        @include media-for (null, $tablet){
             margin-bottom: 18px;
         }
+
     }
 
     strong{
@@ -61,12 +64,14 @@
         border-radius: 20px;
         
         @include media-for (null, $tablet){
+            margin-top: 3rem;
             width: 100%;
             margin-bottom: 10px;
         }
 
 
         @include media-for (null, $sm){
+            margin-top: 0rem;
             white-space: nowrap;
             padding: 0.8rem .2rem;
             text-align: center;
@@ -126,6 +131,14 @@
         @include media-for (null, 1348px){
             background-color: rgba($color: #000000, $alpha: .0);
             justify-content: start;
+        }
+
+        @include media-for (null, $tablet){
+            margin-bottom: 2rem;
+        }
+
+        @include media-for (null, $sm){
+            margin-bottom: 0rem;
         }
     }
 

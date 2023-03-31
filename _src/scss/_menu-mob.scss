@@ -219,6 +219,7 @@
     opacity: 0;
     visibility: hidden;
     background-color:  rgba($color: #D9D9D9, $alpha: .1);
+    transition: all .3s linear;
     a{
         display: block !important;
         padding-left: 63px !important;

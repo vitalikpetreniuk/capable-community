@@ -76,8 +76,17 @@
             width: auto;
         }
 
+        @include media-for (null, 1025px){
+            margin-left: 0rem;
+            padding-left: 3rem !important;
+        }
+
         @include media-for (null,  1000px){
             background-size: 87%;
+        }
+
+        @include media-for (null,  $tablet){
+            padding-top: 2rem;
         }
 
         @include media-for (null, $sm){
@@ -126,6 +135,12 @@
         padding: 25px 75px;
         background-repeat: no-repeat;
 
+        @include media-for (null, 1025px){
+            padding: 0px;
+            padding-left: 2rem;
+            padding-top: 15px;
+        }
+
         @include media-for (null, $sm){
             padding: 20px 47px;
         }
@@ -136,6 +151,10 @@
             font-weight: 700;
             margin: 0;
             font-family: 'Montserrat', sans-serif;
+
+            @include media-for (null, 1025px){
+                font-size: 15px;
+            }
 
             @include media-for (null, $sm){
                 font-size: 12px;

@@ -8,7 +8,7 @@
 
     @include media-for (null, $tablet){
         padding: 50px 0;
-        background: url(../img/we-believe-bg.png), $accent;
+        background:  $accent;
         background-size: 132%;
         background-position: 112% 0%;
         background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 
     @include media-for (null, $sm){
         padding: 40px 0 10px;
-        background: url(../img/we-believe-bg.png), $accent;
+        background: $accent;
         background-size: 143%;
         background-position: 92% 0%;
         background-repeat: no-repeat;

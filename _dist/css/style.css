@@ -3819,6 +3819,9 @@ body .slides-items .information span {
   opacity: 0;
   visibility: hidden;
   background-color: rgba(217, 217, 217, 0.1);
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .about-project-navigatiob a {
@@ -11399,6 +11402,30 @@ footer img {
     display: none;
   }
 
+  .section-top {
+    height: auto;
+    background-size: 106%;
+  }
+
+  .child-population .bg-blue-two {
+    margin-left: 0rem;
+    padding-left: 3rem !important;
+  }
+
+  .child-population .bg-blue {
+    padding: 0px;
+    padding-left: 2rem;
+    padding-top: 15px;
+  }
+
+  .child-population .bg-blue p {
+    font-size: 15px;
+  }
+
+  .сommunity-strengthening h2 {
+    font-size: 27px;
+  }
+
   .about-project-section-top h2 {
     margin-top: 4rem;
   }
@@ -11411,10 +11438,6 @@ footer img {
 }
 
 @media (max-width: 999px) {
-  .section-top {
-    height: auto;
-  }
-
   .child-population .child-population-wrapper {
     padding-top: 310px;
     background-size: 100%;
@@ -11522,9 +11545,15 @@ footer img {
   .section-top {
     padding-top: 105px;
     background-size: 121%;
+    background-size: 89%;
+  }
+
+  .section-top p {
+    margin-bottom: 18px;
   }
 
   .section-top .bg-blue {
+    margin-top: 3rem;
     width: 100%;
     margin-bottom: 10px;
   }
@@ -11533,12 +11562,20 @@ footer img {
     left: -19px;
   }
 
+  .section-top .btns-wrap {
+    margin-bottom: 2rem;
+  }
+
   .section-top .btn-link:last-child {
     display: block;
   }
 
   .child-population .bg-blue-first {
     background-size: 74%;
+  }
+
+  .child-population .bg-blue-two {
+    padding-top: 2rem;
   }
 
   .child-population .bg-blue-two .bottom {
@@ -11551,7 +11588,7 @@ footer img {
 
   .we-believe {
     padding: 50px 0;
-    background: url(../img/we-believe-bg.png), #3C79F5;
+    background: #3C79F5;
     background-size: 132%;
     background-position: 112% 0%;
     background-repeat: no-repeat;
@@ -11563,10 +11600,6 @@ footer img {
 
   .сommunity-strengthening {
     padding: 20px 0;
-  }
-
-  .сommunity-strengthening h2 {
-    font-size: 27px;
   }
 
   .why_us {
@@ -11713,6 +11746,16 @@ footer img {
 
   .course-blocks {
     overflow: hidden;
+  }
+
+  .course-type .ol-wrap {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .course-type .ol-wrap ol {
+    margin-right: 2rem;
   }
 
   .contacts h1 {
@@ -11967,6 +12010,10 @@ footer img {
     border-bottom: none;
   }
 
+  .widget-btns {
+    top: 460px;
+  }
+
   .widget-btns .widget-btn {
     width: 41px;
     height: 41px;
@@ -11980,11 +12027,8 @@ footer img {
     background-size: 100%;
   }
 
-  .section-top p {
-    margin-bottom: 18px;
-  }
-
   .section-top .bg-blue {
+    margin-top: 0rem;
     white-space: nowrap;
     padding: 0.8rem 0.2rem;
     text-align: center;
@@ -11999,6 +12043,10 @@ footer img {
     top: 10%;
     width: 70px;
     height: 70px;
+  }
+
+  .section-top .btns-wrap {
+    margin-bottom: 0rem;
   }
 
   .section-top .btn-link svg path {
@@ -12059,7 +12107,7 @@ footer img {
 
   .we-believe {
     padding: 40px 0 10px;
-    background: url(../img/we-believe-bg.png), #3C79F5;
+    background: #3C79F5;
     background-size: 143%;
     background-position: 92% 0%;
     background-repeat: no-repeat;

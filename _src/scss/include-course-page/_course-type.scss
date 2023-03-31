@@ -58,8 +58,17 @@
     .ol-wrap{
         display: flex;
         justify-content: space-between;
+
+        @include media-for (null, $tablet){
+            justify-content: flex-start;
+        }
+
         ol{
+            @include media-for (null, $tablet){
+                margin-right: 2rem;
+            }
             @include media-for (null, $sm){
+
                 &:first-child{
                     margin-bottom: 0;
                 }
