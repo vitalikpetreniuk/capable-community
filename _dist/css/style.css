@@ -11545,7 +11545,7 @@ footer img {
   .section-top {
     padding-top: 105px;
     background-size: 121%;
-    background-size: 89%;
+    background-size: 118%;
   }
 
   .section-top p {
@@ -11776,6 +11776,12 @@ footer img {
   .blogs .news-blocks {
     margin: 0;
     margin-bottom: 33px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-top {
+    background-size: 126%;
   }
 }
 

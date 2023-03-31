@@ -21,7 +21,11 @@
     @include media-for (null, $tablet){
         padding-top: 105px;
         background-size: 121%;
-        background-size: 89%;
+        background-size: 118%;
+    }
+
+    @include media-for (null, 769px){
+        background-size: 126%;
     }
 
 
