@@ -4364,6 +4364,14 @@ header .lang-desctop-active .arrow-wrap {
   font-family: "Montserrat", sans-serif;
 }
 
+.child-population .prosent-block-mob {
+  display: none;
+}
+
+.child-population .prosent-block-desct {
+  display: block;
+}
+
 .we-believe {
   padding: 100px 0 110px;
   background: url(../img/we-believe-bg.png), #3C79F5;
@@ -11422,6 +11430,24 @@ footer img {
     font-size: 15px;
   }
 
+  .child-population .prosent-block {
+    max-width: 100%;
+  }
+
+  .child-population .down-column {
+    margin-top: 50px;
+  }
+
+  .child-population .prosent-block-mob {
+    display: block;
+    margin: 0;
+    margin-top: 3rem;
+  }
+
+  .child-population .prosent-block-desct {
+    display: none;
+  }
+
   .сommunity-strengthening h2 {
     font-size: 27px;
   }
@@ -11449,10 +11475,6 @@ footer img {
 
   .child-population .bg-blue-two {
     background-size: 87%;
-  }
-
-  .child-population .prosent-block {
-    max-width: 100%;
   }
 }
 
@@ -11580,10 +11602,6 @@ footer img {
 
   .child-population .bg-blue-two .bottom {
     margin-top: 9px;
-  }
-
-  .child-population .down-column {
-    margin-top: 50px;
   }
 
   .we-believe {

@@ -188,7 +188,7 @@
             margin-right: 0rem;
         }
 
-        @include media-for (null, 1000px){
+        @include media-for (null, 1025px){
             max-width: 100%;
         }
 
@@ -245,7 +245,7 @@
             margin-top: 150px;
         }
 
-        @include media-for (null, $tablet){
+        @include media-for (null, 1025px){
             margin-top: 50px;
         }
 
@@ -269,5 +269,21 @@
         }
     }
     
-    
+   .prosent-block-mob{
+        display: none;
+
+        @include media-for (null, 1025px){
+            display: block;
+            margin: 0;
+            margin-top: 3rem;
+        }
+   } 
+
+   .prosent-block-desct{
+        display: block;
+
+        @include media-for (null, 1025px){
+            display: none;
+        }
+   }
 }
