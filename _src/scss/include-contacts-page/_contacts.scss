@@ -69,9 +69,10 @@
     }
 
     .email-text{
-        text-decoration: underline;
+        text-decoration: underline !important;
         color: $accent;
         font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .btns-wrap-contacts{
