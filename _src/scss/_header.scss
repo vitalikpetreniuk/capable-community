@@ -157,6 +157,7 @@ header{
         position: absolute;
         right: 1.5rem;
         top: 0;
+        overflow: hidden;
 
         @include media-for (null, 1025px){
             right: 0rem;
@@ -206,7 +207,7 @@ header{
             bottom: 0;
             opacity: 0;
             visibility: hidden;
-            transition: all .3s ease-in-out;
+            transition: all .4s ease-in-out;
             transform: translate(15%, 100%);
             position: relative;
             margin-right: 2rem;

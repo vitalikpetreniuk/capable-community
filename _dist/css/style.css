@@ -3957,6 +3957,7 @@ header .lang-desctop {
   position: absolute;
   right: 1.5rem;
   top: 0;
+  overflow: hidden;
 }
 
 header .lang-desctop:hover {
@@ -4001,9 +4002,9 @@ header .lang-desctop .lang-list {
   bottom: 0;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   -webkit-transform: translate(15%, 100%);
       -ms-transform: translate(15%, 100%);
           transform: translate(15%, 100%);
