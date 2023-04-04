@@ -3937,17 +3937,26 @@ header .btn-link:hover {
   background-color: #3C79F5;
 }
 
+header .user-header {
+  margin-left: 1rem;
+}
+
 header .user-header:hover svg path {
   fill: #ffc107;
 }
 
 header .lang-desctop {
-  position: relative;
   padding: 0rem 0.3rem;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 25px;
-  width: 3.7rem;
+  border-radius: 17px;
+  width: 4.7rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 1.5rem;
+  top: 0;
 }
 
 header .lang-desctop:hover {
@@ -3973,7 +3982,7 @@ header .lang-desctop .lang-desctop-wrap .active {
 }
 
 header .lang-desctop .arrow-wrap {
-  width: 30%;
+  width: 48%;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -3988,8 +3997,6 @@ header .lang-desctop .arrow-wrap svg {
 }
 
 header .lang-desctop .lang-list {
-  position: absolute;
-  left: 0;
   height: 0;
   bottom: 200%;
   opacity: 0;
@@ -4000,19 +4007,26 @@ header .lang-desctop .lang-list {
   -webkit-transform: translate(15%, 100%);
       -ms-transform: translate(15%, 100%);
           transform: translate(15%, 100%);
+  position: relative;
+  margin-right: 2rem;
 }
 
 header .lang-desctop .lang-list .lang-opener {
   display: block;
+  width: 2rem;
+  padding: 0;
 }
 
 header .lang-desctop .lang-list .active {
   display: none;
 }
 
+header .lang-desctop-active {
+  height: 5rem;
+}
+
 header .lang-desctop-active .lang-list {
-  position: absolute;
-  left: 0;
+  position: relative;
   bottom: 0;
   -webkit-transform: translate(15%, 100%);
       -ms-transform: translate(15%, 100%);
@@ -11195,6 +11209,10 @@ footer img {
     margin-bottom: 40px;
   }
 
+  header .user-header {
+    margin-left: 0.5rem;
+  }
+
   .section-top {
     background-size: 89%;
     padding-bottom: 3rem;
@@ -11421,8 +11439,21 @@ footer img {
 }
 
 @media (max-width: 1024px) {
+  header nav ul {
+    margin-right: 0;
+    margin-left: 2rem;
+  }
+
   header .btn-link {
     display: none;
+  }
+
+  header .user-header {
+    margin-left: 0rem;
+  }
+
+  header .lang-desctop {
+    right: 0rem;
   }
 
   .section-top {
