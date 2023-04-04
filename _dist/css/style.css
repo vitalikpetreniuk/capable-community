@@ -3998,12 +3998,12 @@ header .lang-desctop .arrow-wrap svg {
 
 header .lang-desctop .lang-list {
   height: 0;
-  bottom: 200%;
+  bottom: 0;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-transform: translate(15%, 100%);
       -ms-transform: translate(15%, 100%);
           transform: translate(15%, 100%);
