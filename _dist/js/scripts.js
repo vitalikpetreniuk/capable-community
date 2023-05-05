@@ -413,6 +413,9 @@ if(window.location.toString().indexOf('news-page.html')>0){
 if(window.location.toString().indexOf('news-articles.html')>0){
 	$('header').addClass("nav-black")
 }
+if(window.location.toString().indexOf('expert-page.html')>0){
+	$('header').addClass("nav-black")
+}
 
 
 
