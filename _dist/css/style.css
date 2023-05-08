@@ -5027,7 +5027,7 @@ header .lang-desctop-active .arrow-wrap {
   font-size: 14px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 78%;
   line-height: 22.4px;
 }
@@ -11331,6 +11331,10 @@ footer img {
     background: url(../img/about-project-section-top-bg.png) -40% 0/87%, #ffff;
     background-repeat: no-repeat;
   }
+
+  header .lang-desctop {
+    right: -4.5rem;
+  }
 }
 
 @media (max-width: 1399.98px) {
@@ -11451,6 +11455,12 @@ footer img {
 @media (max-width: 1369px) {
   .course-page-section-top {
     background: url(../img/about-project-section-top-bg.png) 0% 0/100% no-repeat, no-repeat #ffff !important;
+  }
+}
+
+@media (max-width: 1367px) {
+  header .lang-desctop {
+    right: -0.5rem;
   }
 }
 
@@ -11763,6 +11773,10 @@ footer img {
     margin-left: 1rem;
   }
 
+  header .lang-desctop {
+    right: -1rem;
+  }
+
   header .lang-desctop .arrow-wrap {
     display: none;
   }
@@ -11942,6 +11956,10 @@ footer img {
   .expert .grid-container {
     gap: 20px 30px;
     grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .expert .item {
+    border-radius: 15px;
   }
 
   .actual-courses-cards .courses-cards {

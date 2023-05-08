@@ -159,8 +159,21 @@ header{
         top: 0;
         overflow: hidden;
 
+        @include media-for (null, 1445px){
+            right: -4.5rem;
+        }
+
+        @include media-for (null, 1368px){
+            right: -.5rem;
+        }
+
+
         @include media-for (null, 1025px){
             right: 0rem;
+        }
+
+        @include media-for (null, $tablet){
+            right: -1rem;
         }
         &:hover{
             border: 1px solid $accent;

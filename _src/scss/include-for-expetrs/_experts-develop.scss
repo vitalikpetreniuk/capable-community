@@ -180,7 +180,7 @@
         font-size: 14px;
         font-weight: 700;
         font-family: 'Montserrat', sans-serif;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         width: 78%;
         line-height: 22.4px;
 
@@ -288,6 +288,10 @@
         overflow: hidden;
         border-radius: 30px;
 
+        @include media-for (null, $tablet){           
+            border-radius: 15px;
+        }
+
         @include media-for (null, $sm){           
             border-radius: 10px;
         }
@@ -295,29 +299,3 @@
 
 }
 
-// @media (max-width: 480px) {
-//     .item1 {
-//       grid-row: 1 / span 1;
-//       grid-column: 1 / span 2;
-//     }
-//     .item2 {
-//       grid-row: 2 / span 1;
-//       grid-column: 1 / span 1;
-//     }
-//     .item3 {
-    //   grid-row: 3 / span 1;
-    //   grid-column: 1 / span 2;
-//     }
-//     .item4 {
-    //   grid-row: 4 / span 2;
-    //   grid-column: 1 / span 2;
-//     }
-//     .item5 {
-    //   grid-row: 6 / span 1;
-    //   grid-column: 1 / span 2;
-//     }
-//     .item6 {
-    //   grid-row: 5 / span 1;
-    //   grid-column: 1 / span 2;
-//     }
-//   }
