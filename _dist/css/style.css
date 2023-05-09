@@ -11547,6 +11547,12 @@ footer img {
   }
 }
 
+@media (max-width: 1334px) {
+  header .lang-desctop {
+    right: -1rem;
+  }
+}
+
 @media (max-width: 1313px) {
   .about-project-section-top {
     background: url(../img/about-project-section-top-bg.png) 0% 0%/95%, url(../img/about-project-section-top-bg-down.png) 100% 100%/22%, #ffff;

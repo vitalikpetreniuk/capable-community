@@ -216,6 +216,10 @@ header{
             right: 1rem;
         }
 
+        @include media-for (null, 1335px){
+            right: -1rem;
+        }
+
 
         @include media-for (null, 1025px){
             right: 0rem;
