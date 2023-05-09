@@ -159,6 +159,18 @@ header{
         top: 0;
         overflow: hidden;
 
+        @include media-for (1750px, null){
+            right: -1rem;
+        }
+
+        @include media-for (1700px, null){
+            right: -2rem;
+        }
+        
+        @include media-for (1541px, null){
+            right: -3rem;
+        }
+
         @include media-for (null, 1545px){
             right: -4.5rem;
         }
