@@ -11275,6 +11275,30 @@ footer img {
   }
 }
 
+@media (min-width: 1810px) {
+  header .lang-desctop {
+    right: 0rem;
+  }
+}
+
+@media (min-width: 1870px) {
+  header .lang-desctop {
+    right: 1rem;
+  }
+}
+
+@media (min-width: 1970px) {
+  header .lang-desctop {
+    right: 2rem;
+  }
+}
+
+@media (min-width: 2020px) {
+  header .lang-desctop {
+    right: 3rem;
+  }
+}
+
 @media (max-width: 11442px) {
   body .btn-link-active {
     background: #FDA43B !important;
