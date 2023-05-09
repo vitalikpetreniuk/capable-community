@@ -159,12 +159,12 @@ header{
         top: 0;
         overflow: hidden;
 
-        @include media-for (null, 1445px){
+        @include media-for (null, 1545px){
             right: -4.5rem;
         }
 
         @include media-for (null, 1368px){
-            right: -.5rem;
+            right: -1.5rem;
         }
 
 

@@ -172,6 +172,7 @@
 
         @include media-for (null, $sm){
             font-size: 13px;
+            margin-bottom: 15px;
         }
     }
 
@@ -200,6 +201,23 @@
     .social-wrap {
         a{
             margin-right: .5rem;
+        }
+    }
+
+    .social-wrap-desc{
+        display: block;
+
+        @include media-for (null, $sm){
+            display: none !important;
+        }
+    }
+
+    .social-wrap-mob{
+        display: none !important;
+
+        @include media-for (null, $sm){
+            display: block !important;
+            margin-bottom: 15px;
         }
     }
 
