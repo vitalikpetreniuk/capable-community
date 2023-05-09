@@ -159,23 +159,44 @@ header{
         top: 0;
         overflow: hidden;
 
-        @include media-for (2020px, null){
-            right:3rem;
-        }
 
-        @include media-for (1970px, null){
-            right: 2rem;
-        }
+        // @include media-for (2295px, null){
+            
+        //     position: relative;
+        // }
 
-        @include media-for (1870px, null){
-            right: 1rem;
-        }
+        // @include media-for (2235px, null){
+        //     right: 6rem;
+        // }
+
+        // @include media-for (2145px, null){
+        //     right: 5rem;
+        // }
+
+        // @include media-for (2085px, null){
+        //     right: 4rem;
+        // }
+
+        // @include media-for (2020px, null){
+        //     right:3rem;
+        // }
+
+        // @include media-for (1970px, null){
+        //     position: relative;
+        //     right: 0;
+        // }
+
+        // @include media-for (1870px, null){
+        //     right: 1rem;
+        // }
 
         @include media-for (1810px, null){
-            right: 0rem;
+            position: relative;
+            right: 0;
         }
 
         @include media-for (1750px, null){
+            position: absolute;
             right: -1rem;
         }
 
@@ -192,7 +213,7 @@ header{
         }
 
         @include media-for (null, 1368px){
-            right: -1.5rem;
+            right: 1rem;
         }
 
 

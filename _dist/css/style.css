@@ -11271,31 +11271,15 @@ footer img {
 
 @media (min-width: 1750px) {
   header .lang-desctop {
+    position: absolute;
     right: -1rem;
   }
 }
 
 @media (min-width: 1810px) {
   header .lang-desctop {
-    right: 0rem;
-  }
-}
-
-@media (min-width: 1870px) {
-  header .lang-desctop {
-    right: 1rem;
-  }
-}
-
-@media (min-width: 1970px) {
-  header .lang-desctop {
-    right: 2rem;
-  }
-}
-
-@media (min-width: 2020px) {
-  header .lang-desctop {
-    right: 3rem;
+    position: relative;
+    right: 0;
   }
 }
 
@@ -11512,7 +11496,7 @@ footer img {
 
 @media (max-width: 1367px) {
   header .lang-desctop {
-    right: -1.5rem;
+    right: 1rem;
   }
 }
 
