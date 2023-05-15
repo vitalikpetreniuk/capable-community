@@ -4091,6 +4091,7 @@ header .lang-desctop-active .arrow-wrap {
   border-radius: 30px 0% 0% 30px;
   background-color: rgba(0, 0, 0, 0);
   z-index: 100;
+  top: calc(100vh - 330px);
 }
 
 .widget-btns .widget-btn {
@@ -11511,7 +11512,7 @@ footer img {
   }
 
   .widget-btns {
-    top: 600px;
+    top: calc(100vh - 200px);
   }
 
   .about-project-section-top h2 {
@@ -12307,7 +12308,7 @@ footer img {
   }
 
   .widget-btns {
-    top: 460px;
+    top: calc(100vh - 160px);
   }
 
   .widget-btns .widget-btn {
