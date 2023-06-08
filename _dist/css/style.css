@@ -4426,9 +4426,11 @@ header .lang-desctop-active .arrow-wrap {
 }
 
 .community-strengthening {
+  position: relative;
+  overflow: hidden;
   padding: 184px 0 200px;
   height: 905px;
-  background: url(../img/community-strengthening.png) 0 100%/40%, url(../img/bg-comunity2.png) 4% 17%/100%, #F5F4FA;
+  background: url(../img/bg-comunity2.png) 4% 17%/100%, #F5F4FA;
   background-repeat: no-repeat;
 }
 
@@ -4484,6 +4486,17 @@ header .lang-desctop-active .arrow-wrap {
 
 .community-strengthening ul li img {
   margin-right: 1rem;
+}
+
+.community-strengthening .img-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50rem;
+}
+
+.community-strengthening .img-left img {
+  width: 100%;
 }
 
 .why_us {
@@ -11324,6 +11337,12 @@ footer img {
   }
 }
 
+@media (max-width: 1627px) {
+  .community-strengthening .img-left {
+    width: 46rem;
+  }
+}
+
 @media (max-width: 1600px) {
   .actual-courses-cards .courses-cards {
     padding-bottom: 20px;
@@ -11356,6 +11375,12 @@ footer img {
 @media (max-width: 1529px) {
   .section-top .btns-wrap {
     padding: 12px 15px;
+  }
+}
+
+@media (max-width: 1519px) {
+  .community-strengthening .img-left {
+    width: 40rem;
   }
 }
 
@@ -11437,7 +11462,7 @@ footer img {
   .community-strengthening {
     padding: 80px 0;
     height: auto;
-    background: url(../img/community-strengthening.png) 0 100%/44%, url(../img/bg-comunity2.png) 16% 100%/100%, #F5F4FA;
+    background: url(../img/bg-comunity2.png) 16% 100%/100%, #F5F4FA;
     background-repeat: no-repeat;
   }
 
@@ -11543,6 +11568,12 @@ footer img {
 
   .section-top .btn-link:last-child {
     display: none;
+  }
+}
+
+@media (max-width: 1339px) {
+  .community-strengthening .img-left {
+    width: 35rem;
   }
 }
 
@@ -11706,6 +11737,10 @@ footer img {
     font-size: 27px;
   }
 
+  .community-strengthening .img-left {
+    width: 30rem;
+  }
+
   .about-project-section-top h2 {
     margin-top: 4rem;
   }
@@ -11772,6 +11807,12 @@ footer img {
 @media (max-width: 949px) {
   .course-page-section-top {
     background: url(../img/about-project-section-top-bg.png) 73% 0/145% no-repeat, no-repeat #ffff !important;
+  }
+}
+
+@media (max-width: 912px) {
+  .community-strengthening .img-left {
+    width: 23rem;
   }
 }
 
@@ -11876,6 +11917,10 @@ footer img {
 
   .community-strengthening {
     padding: 20px 0;
+  }
+
+  .community-strengthening .img-left {
+    width: 20rem;
   }
 
   .why_us {
@@ -12424,8 +12469,8 @@ footer img {
 
   .community-strengthening {
     padding: 40px 0 0;
-    height: 862px;
-    background: url(../img/community-strengthening.png) 0 116%/112%, #F5F4FA;
+    height: 882px;
+    background: #F5F4FA;
     background-repeat: no-repeat;
   }
 
@@ -12444,6 +12489,11 @@ footer img {
   .community-strengthening ul li img {
     width: 31px;
     height: 31px;
+  }
+
+  .community-strengthening .img-left {
+    width: 28rem;
+    bottom: -3rem;
   }
 
   .why_us {

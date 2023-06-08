@@ -1,13 +1,15 @@
 .community-strengthening{
+    position: relative;
+    overflow: hidden;
     padding: 184px 0 200px;
     height: 905px;
-    background: url(../img/community-strengthening.png) 0 100%/40% ,url(../img/bg-comunity2.png) 04% 17%/100% , $bg-gray;
+    background: url(../img/bg-comunity2.png) 04% 17%/100% , $bg-gray;
     background-repeat: no-repeat;
 
     @include media-for (null, $mid-desktop){
         padding: 80px 0;
         height: auto;
-        background: url(../img/community-strengthening.png) 0 100%/44% ,url(../img/bg-comunity2.png) 16% 100%/100%  , $bg-gray;
+        background: url(../img/bg-comunity2.png) 16% 100%/100%  , $bg-gray;
         background-repeat: no-repeat;
     }
 
@@ -17,8 +19,8 @@
 
     @include media-for (null, $sm){
         padding: 40px 0 0;
-        height: 862px;
-        background: url(../img/community-strengthening.png) 0 116%/112% , $bg-gray;
+        height: 882px;
+        background: $bg-gray;
         background-repeat: no-repeat;
     }
 
@@ -93,4 +95,49 @@
         }
     }
 
+    .img-left{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50rem;
+
+        @include media-for (null, 1628px){
+            width: 46rem;
+        }
+
+        @include media-for (null, 1520px){
+            width: 40rem;
+        }
+
+
+        @include media-for (null, 1340px){
+            width: 35rem;
+        }
+
+        @include media-for (null, 1025px){
+            width: 30rem;
+        }
+
+        @include media-for (null, 913px){
+            width: 23rem;
+        }
+
+        @include media-for (null, 822px){
+            width: 20rem;
+        }
+
+        @include media-for (null, $sm){
+            width: 28rem;
+            bottom: -3rem;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+
 }
+
+// url(../img/community-strengthening.png) 0 100%/40% 
+//1400 url(../img/community-strengthening.png) 0 100%/44% 
+//mob url(../img/community-strengthening.png) 0 116%/112% 
