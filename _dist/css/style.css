@@ -6185,7 +6185,8 @@ header .lang-desctop-active .arrow-wrap {
 .news-articles .blogs-blocks,
 .blog-articles .blogs-blocks {
   margin-bottom: 33px;
-  z-index: -1;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .news-articles .blogs-blocks .title a,
@@ -6391,7 +6392,8 @@ header .lang-desctop-active .arrow-wrap {
 .news .blogs-blocks,
 .blogs .blogs-blocks {
   margin-bottom: 50px;
-  z-index: -1;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .news .blogs-blocks .title a,
@@ -6403,6 +6405,7 @@ header .lang-desctop-active .arrow-wrap {
   height: 2.3rem;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+  pointer-events: auto;
 }
 
 .news .blogs-blocks P,

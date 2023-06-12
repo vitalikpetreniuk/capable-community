@@ -31,8 +31,8 @@
 
     .blogs-blocks{
         margin-bottom: 50px;
-        z-index: -1;
-
+        z-index: 1;
+        pointer-events: none;
         @include media-for (null, $sm){
             margin-bottom: 23px;
         }
@@ -45,7 +45,8 @@
                 height: 2.3rem;
                 overflow: hidden; 
                 font-family: 'Montserrat', sans-serif;
-
+                pointer-events: auto;
+                
                 @include media-for (null, $sm){
                     font-size: 13px;
                     height: 1.5rem;
