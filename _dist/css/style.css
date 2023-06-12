@@ -3201,6 +3201,7 @@ body .slides-items .information span a {
   font-weight: 600;
   font-size: 20px;
   font-family: "KyivTypeSans", sans-serif;
+  pointer-events: auto;
 }
 
 body .slides-items .information span:hover a {
@@ -3213,6 +3214,10 @@ body .slides-items .information span:hover svg path {
 
 body .slides-items .information .like {
   margin-bottom: 0.4rem;
+}
+
+body .slides-items .information .like a {
+  pointer-events: auto;
 }
 
 body .slides-items .information span {

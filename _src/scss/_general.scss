@@ -343,7 +343,7 @@ body{
                     font-weight: 600;
                     font-size: 20px;
                     font-family: "KyivTypeSans", sans-serif;
-                    
+                    pointer-events: auto;
                     @include media-for (null, $sm){
                         font-size: 12px;
                         font-weight: 600;
@@ -366,7 +366,12 @@ body{
             }
 
             .like{
+
                 margin-bottom: .4rem;
+
+                a{
+                    pointer-events: auto;
+                }
             }
 
             span{
