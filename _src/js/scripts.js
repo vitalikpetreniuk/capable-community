@@ -394,28 +394,28 @@ $('.copy-btn-email').on('click', function(){
 
 
 ///black navigation
-if(window.location.toString().indexOf('contacts-page.html')>0){
-	$('header').addClass("nav-black")
-}
+// if(window.location.toString().indexOf('contacts-page.html')>0){
+// 	$('header').addClass("nav-black")
+// }
 
-if(window.location.toString().indexOf('blog-articles.html')>0){
-	$('header').addClass("nav-black")
-}
+// if(window.location.toString().indexOf('blog-articles.html')>0){
+// 	$('header').addClass("nav-black")
+// }
 
-if(window.location.toString().indexOf('blogs-page.html')>0){
-	$('header').addClass("nav-black")
-}
+// if(window.location.toString().indexOf('blogs-page.html')>0){
+// 	$('header').addClass("nav-black")
+// }
 
-if(window.location.toString().indexOf('news-page.html')>0){
-	$('header').addClass("nav-black")
-}
+// if(window.location.toString().indexOf('news-page.html')>0){
+// 	$('header').addClass("nav-black")
+// }
 
-if(window.location.toString().indexOf('news-articles.html')>0){
-	$('header').addClass("nav-black")
-}
-if(window.location.toString().indexOf('expert-page.html')>0){
-	$('header').addClass("nav-black")
-}
+// if(window.location.toString().indexOf('news-articles.html')>0){
+// 	$('header').addClass("nav-black")
+// }
+// if(window.location.toString().indexOf('expert-page.html')>0){
+// 	$('header').addClass("nav-black")
+// }
 
 
 
