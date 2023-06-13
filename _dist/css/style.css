@@ -6311,7 +6311,6 @@ header .lang-desctop-active .arrow-wrap {
 .blog-articles .right-blogs::before {
   position: absolute;
   content: "";
-  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -6320,7 +6319,8 @@ header .lang-desctop-active .arrow-wrap {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(7%, rgba(255, 255, 255, 0)), color-stop(1%, rgba(182, 237, 200, 0)), color-stop(113%, #fff));
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 7%, rgba(182, 237, 200, 0) 1%, #fff 113%);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 7%, rgba(182, 237, 200, 0) 1%, #fff 113%);
-  display: none;
+  bottom: 0;
+  height: 36%;
 }
 
 .news-articles .btn-link-yelow,
