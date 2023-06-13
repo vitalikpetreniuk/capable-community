@@ -6304,7 +6304,7 @@ header .lang-desctop-active .arrow-wrap {
 .news-articles .right-blogs,
 .blog-articles .right-blogs {
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .news-articles .right-blogs::before,
@@ -6317,7 +6317,10 @@ header .lang-desctop-active .arrow-wrap {
   height: 100%;
   z-index: 10;
   border-radius: 30px;
-  background: 180deg, rgba(255, 255, 255, 0) 7%, rgba(182, 237, 200, 0) 1%, #fff 113%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(7%, rgba(255, 255, 255, 0)), color-stop(1%, rgba(182, 237, 200, 0)), color-stop(113%, #fff));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 7%, rgba(182, 237, 200, 0) 1%, #fff 113%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 7%, rgba(182, 237, 200, 0) 1%, #fff 113%);
+  display: none;
 }
 
 .news-articles .btn-link-yelow,
