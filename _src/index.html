@@ -59,6 +59,123 @@
 	<script src="libs/jquery.mask.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<script>
+		//slider review
+
+		var swiperReviews = new Swiper(".swiperReviews", {
+			loop: true,
+			speed: 1200,
+			slidesPerView: 1.9,
+			spaceBetween: 50,
+			breakpoints: {
+				
+				320: {
+				slidesPerView: 1.4,
+				spaceBetween: 20,
+				},
+			
+				480: {
+				slidesPerView: 1.4,
+				spaceBetween: 20,
+				},
+			
+				820: {
+				slidesPerView: 2,
+				spaceBetween: 30,
+				},
+			
+				1100: {
+				slidesPerView: 1.9,
+				spaceBetween: 50,
+				},
+			
+			}
+
+		});
+
+
+		//slider News
+
+		var swiperNews = new Swiper(".swiperNews", {
+			loop: true,
+			speed: 1200,
+			slidesPerView: 4.5,
+			spaceBetween: 40,
+			pagination: {
+			el: ".swiper-pagination-news",
+			clickable: true,
+			
+			},
+			breakpoints: {
+					
+				320: {
+				slidesPerView: 1.7,
+				spaceBetween: 20,
+				},
+			
+				480: {
+				slidesPerView: 1.7,
+				spaceBetween: 20,
+				},
+
+				820: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				},
+
+				1100: {
+				slidesPerView: 4.5,
+				spaceBetween: 40,
+				},
+
+
+
+			}
+
+		});
+
+
+
+
+		//slider Blogs
+
+		var swiperBlogs = new Swiper(".swiperBlogs", {
+			loop: true,
+			speed: 1200,
+			slidesPerView: 3.5,
+			spaceBetween: 40,
+			pagination: {
+			el: ".swiper-pagination-blogs",
+			clickable: true,
+				
+			},
+			breakpoints: {
+				
+				320: {
+				slidesPerView: 1.25,
+				spaceBetween: 20,
+				},
+			
+				480: {
+				slidesPerView: 1.25,
+				spaceBetween: 20,
+				},
+			
+				820: {
+				slidesPerView: 2,
+				spaceBetween: 30,
+				},
+			
+				1100: {
+				slidesPerView: 3.5,
+				spaceBetween: 40,
+				},
+			
+			}
+
+		});
+	</script>
 	
 </body>
 
