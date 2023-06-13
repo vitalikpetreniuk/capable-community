@@ -66,42 +66,6 @@ $(window).on("scroll",function() {
 
 
 
-
-//swiper Courses
-
-var swiperCourses = new Swiper(".swiperCourses", {
-	loop: true,
-	speed: 1200,
-	slidesPerView: 3.5,
-	spaceBetween: 50,
-	breakpoints: {
-        
-		320: {
-		  slidesPerView: 2.15,
-		  spaceBetween: 18,
-		},
-	  
-		480: {
-		  slidesPerView: 2.15,
-		  spaceBetween: 18,
-		},
-	
-		820: {
-		  slidesPerView: 2,
-		  spaceBetween: 30,
-		},
-	
-		1100: {
-		  slidesPerView: 3.5,
-		  spaceBetween: 50,
-		},
-	
-	}
-
-});
-
-
-
     
 //widget-btns
 
