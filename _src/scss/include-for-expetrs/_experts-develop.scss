@@ -58,10 +58,13 @@
         margin-bottom: 16px;
         border-radius: 30px;
         overflow: hidden;
-
+        position: relative;
+        padding-bottom: 80%;
         img{
+            position: absolute;
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
     }
     h4{

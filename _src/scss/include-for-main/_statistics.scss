@@ -30,8 +30,8 @@
 
         .numb{
             font-size: 60px;
-            text-shadow: 3px 0px 0px #424ab7;
-
+            text-shadow: 3px 0px 0px #272C49;
+            letter-spacing: 2px;
             @include media-for (null, $tablet){
                 font-size: 40px;
                 line-height: 1.1;

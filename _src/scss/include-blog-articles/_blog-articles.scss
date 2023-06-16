@@ -359,6 +359,10 @@
         font-size: 20px;
         height: 110px;
 
+        @include media-for (null, 1025px){
+            font-size: 16px;
+        }
+
         @include media-for (null, $sm){
             height: 67px;
             border-radius: 18px;
@@ -406,6 +410,7 @@
 
     .btn-link-yelow{
         max-width: 154px;
+        margin-bottom: 5rem;
     }
 
 }

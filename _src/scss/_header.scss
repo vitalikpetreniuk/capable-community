@@ -154,7 +154,7 @@ header{
         border-radius: 17px;
         width: 4.7rem;
         transition: all .4s ease-in-out;
-        position: absolute;
+        position: absolute !important;
         right: 1.5rem;
         top: 0;
         overflow: hidden;

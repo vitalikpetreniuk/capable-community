@@ -295,9 +295,6 @@ $(function($) {
   });
 
 
-//jq-mask
-
-$("#phone-number-your").mask("(+380) 99-999-99-99", { placeholder: "(+380)"});
   
 
 
