@@ -3130,6 +3130,10 @@ body .right-blogs .blogs-blocks {
   pointer-events: auto;
 }
 
+body .blogs .blogs-blocks {
+  pointer-events: auto;
+}
+
 body .slides-items {
   position: relative;
   z-index: 50;
@@ -5065,11 +5069,21 @@ header .lang-desctop-active .arrow-wrap {
 }
 
 .expert .img-wrap {
+  position: relative;
   width: 100%;
+  padding-bottom: 66%;
+  overflow: hidden;
+  border-radius: 30px;
 }
 
 .expert .img-wrap img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .expert h4 {
@@ -5121,6 +5135,19 @@ header .lang-desctop-active .arrow-wrap {
   -ms-grid-rows: (1fr)[4];
   grid-template-rows: repeat(4, 1fr);
   margin-top: 90px;
+}
+
+.expert .grid-container .img-wrap {
+  position: relative;
+  padding-bottom: 0;
+}
+
+.expert .grid-container .img-wrap img {
+  position: relative;
+  height: auto;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .expert .grid-container .item1 {
@@ -5454,6 +5481,10 @@ header .lang-desctop-active .arrow-wrap {
           justify-content: end;
   padding: 0 135px;
   margin-top: 30px;
+}
+
+.ask-section .btns-wrap-section-top .btn-link {
+  padding: 0 20px;
 }
 
 .ask-section .btns-wrap-section-top .btn-link:hover {
@@ -12130,6 +12161,10 @@ footer img {
     padding-bottom: 0;
   }
 
+  .expert .img-wrap {
+    border-radius: 15px;
+  }
+
   .expert .sub-title {
     width: 100%;
   }
@@ -12829,6 +12864,10 @@ footer img {
 
   .expert {
     padding: 80px 0 30px;
+  }
+
+  .expert .img-wrap {
+    border-radius: 10px;
   }
 
   .expert h4 {

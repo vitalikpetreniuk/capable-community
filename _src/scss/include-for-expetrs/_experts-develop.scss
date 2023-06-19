@@ -158,10 +158,27 @@
     }
 
     .img-wrap{
+        position: relative;
         width: 100%;
+        padding-bottom: 66%;
+        overflow: hidden;
 
+        border-radius: 30px;
+
+        @include media-for (null, $tablet){           
+            border-radius: 15px;
+        }
+
+        @include media-for (null, $sm){           
+            border-radius: 10px;
+        }
         img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
             width: 100%;
+            object-fit: cover;
         }
     }
 
@@ -246,6 +263,17 @@
         @include media-for (null, $sm){           
             gap: 10px;
             margin-top: 50px;
+        }
+
+        .img-wrap{
+            position: relative;
+            padding-bottom: 0;
+            img{
+                position: relative;
+                height: auto;
+                width: 100%;
+                object-fit: contain;
+            }
         }
       
         .item1 {
