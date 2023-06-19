@@ -83,7 +83,13 @@
             display: flex;
             align-items: center;
             margin-bottom: 18px;
-            
+            font-weight: 300;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+
+            @include media-for (null, $sm){
+                font-size: 13px;
+            }
             img{
                 margin-right: 1rem;
 

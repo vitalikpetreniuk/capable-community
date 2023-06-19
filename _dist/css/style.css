@@ -4505,6 +4505,9 @@ header .lang-desctop-active .arrow-wrap {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 18px;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .community-strengthening ul li img {
@@ -5969,6 +5972,10 @@ header .lang-desctop-active .arrow-wrap {
 
 .contacts form .input-container-active {
   border: 1px solid #3C79F5;
+}
+
+.contacts .btn-link-yelow {
+  min-width: 115px;
 }
 
 .news-articles,
@@ -12572,6 +12579,10 @@ footer img {
 
   .community-strengthening .btns-wrap {
     margin-top: 2rem;
+  }
+
+  .community-strengthening ul li {
+    font-size: 13px;
   }
 
   .community-strengthening ul li img {
