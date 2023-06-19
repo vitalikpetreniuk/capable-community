@@ -327,6 +327,14 @@ header{
             li{
                 a{
                     color: #272C49;
+                    &::after {    
+                        background: #272C49;
+                    }
+                }
+                .active-nav{
+                    &::after {    
+                        background: #272C49;
+                    }
                 }
             }
         }
