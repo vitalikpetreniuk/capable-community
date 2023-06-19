@@ -1443,7 +1443,7 @@
 
 				</div>
 				<div id="video-container" class="video-container">
-					<iframe width="100%" height="400px" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+					<iframe width="100%" height="400px" data-src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" src="">
 					</iframe>
 				</div>    
 			</div>
@@ -1609,6 +1609,36 @@
 			}
 
 		});
+
+
+
+
+		//modal video
+
+		$('.btn-play').click(function() {
+			openModalVideo();
+		});
+		
+		$('.close, .modal-video').click(function(e) {
+			if ($(e.target).hasClass('modal-video')) {
+			closeModalVideo();
+			}
+		});
+
+
+		function openModalVideo() {
+		$('.modal-video').addClass('show');
+		var iframe = $('.modal-video iframe');
+		var src = iframe.data('src');
+		iframe.attr('src', src);
+		}
+
+		function closeModalVideo() {
+		$('.modal-video').removeClass('show');
+		var iframe = $('.modal-video iframe');
+		iframe.attr('src', '');
+		}
+
 	</script>
 	
 </body>
