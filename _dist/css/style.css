@@ -6494,6 +6494,34 @@ header .lang-desctop-active .arrow-wrap {
   grid-column: 2/4;
 }
 
+.grid {
+  margin-top: 100px;
+}
+
+/* clear fix */
+
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  max-width: 210px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .news,
 .blogs {
   padding: 130px 0 50px;
@@ -11662,6 +11690,10 @@ footer img {
   .course-page-section-top .first-p {
     margin-top: 7rem;
   }
+
+  .grid-item {
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 1369px) {
@@ -12279,6 +12311,10 @@ footer img {
   .news-articles h5,
   .blog-articles h5 {
     margin: 35px 0 30px;
+  }
+
+  .grid-item {
+    max-width: 220px;
   }
 
   .news .news-blocks,
@@ -13382,6 +13418,10 @@ footer img {
     height: 67px;
     border-radius: 18px;
     font-size: 14px;
+  }
+
+  .grid-item {
+    max-width: 100%;
   }
 
   .news,
