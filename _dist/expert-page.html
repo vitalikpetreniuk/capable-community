@@ -340,7 +340,7 @@
                     <div class="col-12">
 
 
-                        <div class="grid-container">
+                        <!-- <div class="grid-container masonry-container">
                             <div class="item item1">
                                 <div class="img-wrap">
                                     <img src="img/diplom1.png" alt="diplom">
@@ -371,7 +371,48 @@
                                     <img src="img/diplom2.png" alt="diplom">
                                 </div>
                             </div>
-                          </div>
+                          </div> -->
+
+
+
+
+						  <div class="grid">
+  
+							<div class="grid-item">
+								<img src="img/diplom2.png" alt="diplom">
+							</div>
+							
+							  <div class="grid-item">
+								<img src="img/diplom1.png" alt="diplom">
+							</div>
+							 
+							  <div class="grid-item">
+								<img src="img/diplom2.png" alt="diplom">
+							</div>
+							 
+							  <div class="grid-item">
+								<img src="img/diplom1.png" alt="diplom">
+							</div>
+							 
+							  <div class="grid-item">
+								<img src="img/diplom2.png" alt="diplom">
+							</div>
+							 
+							  <div class="grid-item">
+								<img src="img/diplom1.png" alt="diplom">
+							</div>
+							
+							 <div class="grid-item">
+								<img src="img/diplom2.png" alt="diplom">
+							</div>
+							
+							 <div class="grid-item">
+								<img src="img/diplom2.png" alt="diplom">
+							</div>
+						  
+
+							
+						  </div>
 
                     </div>
                 </div>
@@ -462,8 +503,21 @@
 	<script src="libs/jquery.js"></script>
     <script src="libs/jquery.mask.min.js"></script>
 	<script src="js/scripts.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-	
+
+	<script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
+	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
+	<script>
+		    $('.grid').imagesLoaded( function() {
+			$('.grid').packery({
+				// options
+				itemSelector: '.grid-item',
+				columnWidth: true,
+				gutter: 40,
+				percentPosition: true,
+				transitionDuration: '0.7s'
+				});
+			});
+	</script>
 </body>
 
 </html>

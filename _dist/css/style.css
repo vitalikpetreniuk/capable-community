@@ -5027,6 +5027,8 @@ header .lang-desctop-active .arrow-wrap {
 .expert {
   position: relative;
   padding: 160px 0 50px;
+  /* clear fix */
+  /* ---- .grid-item ---- */
 }
 
 .expert::before {
@@ -5124,89 +5126,28 @@ header .lang-desctop-active .arrow-wrap {
   display: none !important;
 }
 
-.expert .grid-container {
+.expert .grid {
+  margin-top: 100px;
+}
+
+.expert .grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.expert .grid-item {
+  float: left;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.expert .grid-item img {
   max-width: 100%;
-  margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  gap: 25px 50px;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[4];
-  grid-template-rows: repeat(4, 1fr);
-  margin-top: 90px;
-}
-
-.expert .grid-container .img-wrap {
-  position: relative;
-  padding-bottom: 0;
-}
-
-.expert .grid-container .img-wrap img {
-  position: relative;
-  height: auto;
-  width: 100%;
+  display: block;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.expert .grid-container .item1 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/span 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/span 1;
-}
-
-.expert .grid-container .item2 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/span 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/span 1;
-}
-
-.expert .grid-container .item3 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/span 2;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/span 1;
-}
-
-.expert .grid-container .item4 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  grid-row: 3/span 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/span 1;
-}
-
-.expert .grid-container .item5 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  grid-row: 2/span 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/span 1;
-}
-
-.expert .grid-container .item6 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/span 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/span 1;
-}
-
-.expert .item {
-  overflow: hidden;
-  border-radius: 30px;
 }
 
 .actual-courses-cards {
@@ -11617,6 +11558,10 @@ footer img {
     margin: 100px 0 60px;
   }
 
+  .expert .grid-item {
+    max-width: 350px;
+  }
+
   .actual-courses-cards {
     padding-top: 2rem;
   }
@@ -11870,6 +11815,10 @@ footer img {
   .about-project-section-top .patners-wrap {
     height: auto;
     width: auto;
+  }
+
+  .expert .grid-item {
+    max-width: 430px;
   }
 
   .contacts {
@@ -12175,13 +12124,9 @@ footer img {
     width: 100%;
   }
 
-  .expert .grid-container {
-    gap: 20px 30px;
-    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-  }
-
-  .expert .item {
+  .expert .grid-item {
     border-radius: 15px;
+    max-width: 350px;
   }
 
   .actual-courses-cards .courses-cards {
@@ -12917,67 +12862,9 @@ footer img {
     margin-bottom: 15px;
   }
 
-  .expert .grid-container {
-    gap: 10px;
-    margin-top: 50px;
-  }
-
-  .expert .grid-container .item1 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/span 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
-  }
-
-  .expert .grid-container .item2 {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
-  }
-
-  .expert .grid-container .item3 {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/span 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
-  }
-
-  .expert .grid-container .item4 {
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 2;
-    grid-row: 6/span 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
-  }
-
-  .expert .grid-container .item5 {
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 1;
-    grid-row: 5/span 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
-  }
-
-  .expert .grid-container .item6 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    grid-row: 4/span 1;
-  }
-
-  .expert .item {
+  .expert .grid-item {
     border-radius: 10px;
+    max-width: 100%;
   }
 
   .actual-courses-section-top {
