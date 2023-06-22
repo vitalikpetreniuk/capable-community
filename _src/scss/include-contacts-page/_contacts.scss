@@ -109,10 +109,13 @@
             outline: none;
             background: none;
             appearance: none;
+            touch-action: manipulation;
             -moz-appearance: textfield;
 
             @include media-for (null, $sm){
                 border-radius: 16px;
+                font-size: 14px;
+                
             }
 
             &::placeholder{
@@ -139,6 +142,8 @@
             border-radius: 25px;
             padding: 15px 20px;
             padding-left: 42px;
+
+            
 
             &::before{
                 position: absolute;

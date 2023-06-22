@@ -5901,7 +5901,10 @@ header .lang-desctop-active .arrow-wrap {
   outline: none;
   background: none;
   -webkit-appearance: none;
+     -moz-appearance: none;
           appearance: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
   -moz-appearance: textfield;
 }
 
@@ -13205,6 +13208,7 @@ footer img {
   .contacts form input,
   .contacts form textarea {
     border-radius: 16px;
+    font-size: 14px;
   }
 
   .news-articles,
