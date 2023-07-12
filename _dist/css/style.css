@@ -3552,6 +3552,21 @@ body .slides-items .information span {
   font-weight: 700;
 }
 
+.images-grid .grid-item {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.images-grid .grid-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 310px;
+  min-width: 200px;
+  max-width: 830px;
+}
+
 .burger {
   position: absolute;
   right: 0;

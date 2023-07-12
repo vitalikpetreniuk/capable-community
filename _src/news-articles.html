@@ -783,17 +783,19 @@
 	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
 
 	<script>
-		    $('.grid').imagesLoaded( function() {
-			$('.grid').packery({
-				// options
-				itemSelector: '.grid-item',
-				columnWidth: true,
-				gutter: 10,
-				percentPosition: true,
-				transitionDuration: '0.7s'
-				});
-			});
-
+        $ = jQuery;
+        $('.grid').imagesLoaded( function() {
+            $('.grid').packery({
+                // options
+                itemSelector: '.grid-item',
+                columnWidth: true,
+                gutter: 20,
+                percentPosition: true,
+                transitionDuration: '0.7s',
+                fitWidth: true
+                
+            });
+        });
 		
 		//slider News
 
