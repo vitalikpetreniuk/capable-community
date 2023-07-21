@@ -5280,16 +5280,6 @@ header .lang-desctop-active .arrow-wrap {
   margin-bottom: 30px;
 }
 
-.actual-courses-cards .courses-cards .link {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-}
-
 .actual-courses-cards .courses-cards .img-wrap {
   position: absolute;
   bottom: 0;
@@ -5419,12 +5409,11 @@ header .lang-desctop-active .arrow-wrap {
 
 .actual-courses-cards .courses-cards .partners-courses .parnter img {
   height: 100%;
-}
-
-.actual-courses-cards .courses-cards .partners-courses .parnter-first img {
-  width: 100%;
-  height: auto;
-  margin-top: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
 }
 
 .ask-section {
@@ -5514,6 +5503,10 @@ header .lang-desctop-active .arrow-wrap {
   font-size: 14px;
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
+}
+
+.ask-section .accordion .accordion-content {
+  display: block !important;
 }
 
 .ask-section .btns-wrap-section-top {
@@ -6535,6 +6528,10 @@ header .lang-desctop-active .arrow-wrap {
   display: block;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.vc_col-sm-6 {
+  width: 100% !important;
 }
 
 .news,
@@ -11536,7 +11533,7 @@ footer img {
 
 @media (max-width: 1600px) {
   .actual-courses-cards .courses-cards {
-    padding-bottom: 20px;
+    padding-bottom: 85px;
   }
 
   .actual-courses-cards .courses-cards .period {
@@ -13084,7 +13081,7 @@ footer img {
   }
 
   .actual-courses-cards .courses-cards {
-    padding: 55px 20px 60px;
+    padding: 55px 20px 72px;
     padding-left: 147px;
   }
 
@@ -13144,11 +13141,6 @@ footer img {
     left: 26px;
     width: 87%;
     bottom: 4px;
-  }
-
-  .actual-courses-cards .courses-cards .partners-courses .parnter img {
-    width: 100%;
-    height: auto;
   }
 
   .ask-section {

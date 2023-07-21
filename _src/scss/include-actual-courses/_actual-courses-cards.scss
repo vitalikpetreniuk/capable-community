@@ -38,7 +38,7 @@
         // }
 
         @include media-for (null, 1601px){
-            padding-bottom: 20px;
+            padding-bottom: 85px;
         }
 
         @include media-for (null, $tablet){
@@ -46,21 +46,21 @@
         }
 
         @include media-for (null, $sm){
-            padding: 55px 20px 60px;
+            padding: 55px 20px 72px;
             padding-left: 147px;
             
         }
 
 
-        .link{
-            position: absolute;
-            display: block;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 10;
-        }
+        // .link{
+        //     position: absolute;
+        //     display: block;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     z-index: 10;
+        // }
 
         .img-wrap{
             position: absolute;
@@ -247,22 +247,21 @@
 
                 img{
                     height: 100%;
-
-                    @include media-for (null, $sm){
-                        width: 100%;
-                        height: auto;
-                    }
+                    object-fit: contain;
+                    margin-left: auto;
+                    margin-right: 0;
+                    display: block;
                 }
 
             }
 
-            .parnter-first{
-                img{
-                    width: 100%;
-                    height: auto;
-                    margin-top: 1rem;
-                }
-            }
+            // .parnter-first{
+            //     img{
+            //         width: 100%;
+            //         height: auto;
+            //         margin-top: 1rem;
+            //     }
+            // }
         }
 
 
