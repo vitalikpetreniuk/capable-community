@@ -55,12 +55,15 @@
     }
 
     .bg-blue{
-        margin-bottom: 20px;
+        margin-bottom: 8px;
         background: $accent;
         background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 377px;
-        height: 42px;
-        padding: 0.8rem 1rem;
+        height: 30px;
+        padding: 0rem 1rem;
         font-size: 12px;
         text-align: center;
         font-weight: 500;
@@ -87,6 +90,28 @@
             margin-top: 4rem;
         }
     }
+
+    .flex-wrap-columns{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        @include media-for (null, $tablet){
+            flex-wrap: wrap;
+        }
+
+        .left-col{
+            max-width: 792px;
+            width: 100%;
+        }
+    
+        .right-col{
+            max-width: 640px;
+            width: 100%;
+        }
+    }
+
+
 
     .img-top{
         position: relative;
@@ -121,7 +146,8 @@
     }
 
     .btns-wrap{
-        width: 700px;
+        max-width: 792px;
+        width: 100%;
 
         @include media-for (null, 1530px){
             padding: 12px 15px;

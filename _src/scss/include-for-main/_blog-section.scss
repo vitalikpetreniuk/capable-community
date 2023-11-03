@@ -4,8 +4,8 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 50% 50%;
-    padding: 5rem 0 3rem;
-    height: 720px;
+    padding: 47px 0 97px;
+    // height: 720px;
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
 
@@ -36,18 +36,18 @@
 
     h3{
         text-align: center;
-        margin-bottom: 1.5rem;
+        margin-bottom: 55px;
         text-transform: uppercase;
         color: $text-white;
         font-family: "KyivTypeSans", sans-serif !important;
     }
     
     .swiper{
-        padding: 1rem .2rem 5rem;
-        overflow: visible !important;
+        padding: 0rem .2rem 5rem;
+        // overflow: visible !important;
 
         @include media-for (null, $sm){
-            padding: 1rem .2rem 50px;
+            padding: 0rem .2rem 50px;
         }
     }
     

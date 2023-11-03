@@ -37,7 +37,7 @@
 
     .swiper{
         padding: 1rem .2rem 5rem;
-        overflow: visible !important;
+        // overflow: visible !important;
         @include media-for (null, $sm){
             padding: 1rem .2rem 38px;
         }
